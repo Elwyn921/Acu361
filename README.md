@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  Yuyue Zhang<sup>1,*</sup>, Tim Reese<sup>1</sup>, Yang He<sup>1</sup>, Michael Zhu<sup>1</sup>
+  Yuyue Zhang<sup>1,*</sup>, Timothy G Reese<sup>1</sup>, Yang He<sup>1</sup>, Michael Zhu<sup>1</sup>
 </p>
 
 <p align="center">
