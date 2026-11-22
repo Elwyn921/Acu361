@@ -1,0 +1,501 @@
+{
+  "dataset": "Acu361",
+  "version": "1.0.0",
+  "license": "CC-BY-SA-4.0",
+  "description": "Proportional bone (skeletal) measurements in B-cun from the WHO 2008 table, with their endpoints on the standing body. Each ruler gives the number of cun between two landmarks; an instance is one realisation on the body (one per side for bilateral rulers) with endpoints a (from) and b (to) and their straight-line distance.",
+  "source": "WHO Standard Acupuncture Point Locations in the Western Pacific Region (WHO Regional Office for the Western Pacific, 2008), Proportional Bone (Skeletal) Measurements, pp. 12-13",
+  "frame": {
+    "units": "mm",
+    "x": "toward the body's left",
+    "y": "up",
+    "z": "anterior (the body faces +z)",
+    "handedness": "right-handed (glTF convention)",
+    "origin": "Z-Anatomy original origin: x = 0 is the mid-sagittal plane of the model, y = 0 is at the soles",
+    "body": "Z-Anatomy male body, standing, undeformed (data/body/*.glb); height of the skin 1709.5 mm"
+  },
+  "counts": {
+    "rulers": 27,
+    "instances": 31,
+    "landmarks": 19
+  },
+  "fields": {
+    "from / to": "{\"code\": ..., \"side\"?: ...} = the point of data/points.json with that code (on the side of the instance unless given; midline codes have side M); {\"landmark\": ...} = an entry of landmarks",
+    "cun": "number of B-cun between the two ends",
+    "side": "present when the ruler is defined for one side only",
+    "instances": "[{side, a, b, length_mm}]: a = from, b = to, in mm; side M = a ruler across or along the midline",
+    "note_en / note_zh": "how the two ends are defined"
+  },
+  "landmarks": {
+    "ant_axillary_fold_L": {"pos": [220.2, 1307.94, 0.53], "definition": "LU5 + 1.5 x (LU3 - LU5), projected to the nearest skin point"},
+    "ant_axillary_fold_R": {"pos": [-220.19, 1307.93, 0.53], "definition": "LU5 + 1.5 x (LU3 - LU5), projected to the nearest skin point"},
+    "anterior_hairline_mid": {"pos": [0.0, 1662.86, 82.46], "definition": "midpoint of the anterior hairline: from GV24, a further 0.5 cun in the direction GV20 -> GV24, projected to the nearest skin point"},
+    "glabella": {"pos": [0.01, 1611.79, 92.87], "definition": "midpoint of left and right BL2, projected to the nearest skin point"},
+    "greater_trochanter_L": {"pos": [170.42, 854.18, -20.7], "definition": "most lateral vertex of the upper 15% of the Z-Anatomy femur, projected laterally onto the skin"},
+    "greater_trochanter_R": {"pos": [-170.42, 854.18, -20.7], "definition": "most lateral vertex of the upper 15% of the Z-Anatomy femur, projected laterally onto the skin"},
+    "lat_malleolus_L": {"pos": [113.98, 55.21, -52.06], "definition": "lowest vertex of the Z-Anatomy fibula, projected laterally onto the skin"},
+    "lat_malleolus_R": {"pos": [-113.98, 55.21, -52.06], "definition": "lowest vertex of the Z-Anatomy fibula, projected laterally onto the skin"},
+    "mastoid_tip_L": {"pos": [59.04, 1553.21, -29.11], "definition": "lowest vertex of the posterior 40% of the Z-Anatomy temporal bone, projected to the nearest skin point"},
+    "mastoid_tip_R": {"pos": [-59.04, 1553.21, -29.11], "definition": "lowest vertex of the posterior 40% of the Z-Anatomy temporal bone, projected to the nearest skin point"},
+    "med_malleolus_L": {"pos": [43.1, 83.37, -40.75], "definition": "most medial vertex of the lowest 8% of the Z-Anatomy tibia, projected medially onto the skin"},
+    "med_malleolus_R": {"pos": [-43.1, 83.37, -40.75], "definition": "most medial vertex of the lowest 8% of the Z-Anatomy tibia, projected medially onto the skin"},
+    "patella_apex_L": {"pos": [87.1, 423.81, 37.01], "definition": "lowest vertex of the Z-Anatomy patella, projected anteriorly onto the skin"},
+    "patella_apex_R": {"pos": [-87.1, 423.81, 37.01], "definition": "lowest vertex of the Z-Anatomy patella, projected anteriorly onto the skin"},
+    "patella_base_L": {"pos": [88.52, 464.73, 52.03], "definition": "highest vertex of the Z-Anatomy patella, projected anteriorly onto the skin"},
+    "patella_base_R": {"pos": [-88.52, 464.73, 52.03], "definition": "highest vertex of the Z-Anatomy patella, projected anteriorly onto the skin"},
+    "posterior_hairline_mid": {"pos": [0.57, 1520.49, -64.75], "definition": "midpoint of the posterior hairline: from GV15, a further GV16-GV15 distance in the direction GV16 -> GV15, projected to the nearest skin point"},
+    "sole_L": {"pos": [46.22, 1.61, -40.75], "definition": "x and z of the medial-malleolus bone vertex; y of the lowest skin vertex within 60 mm (horizontally) below it"},
+    "sole_R": {"pos": [-46.22, 1.61, -40.75], "definition": "x and z of the medial-malleolus bone vertex; y of the lowest skin vertex within 60 mm (horizontally) below it"}
+  },
+  "rulers": [
+    {
+      "id": "head_ant_post_hairline",
+      "label_en": "anterior hairline midpoint to posterior hairline midpoint",
+      "label_zh": "前发际正中至后发际正中",
+      "region": "head and face",
+      "region_zh": "头面部",
+      "cun": 12,
+      "from": {"landmark": "anterior_hairline_mid"},
+      "to": {"landmark": "posterior_hairline_mid"},
+      "note_en": "Both ends are extrapolated from acupoints and projected onto the skin. Anterior end: from GV24, a further 0.5 cun in the direction GV20 -> GV24 (GV24 is 0.5 cun and GV20 5 cun posterior to the anterior hairline). Posterior end: from GV15, a further GV16-GV15 distance in the direction GV16 -> GV15 (taking GV15 as 0.5 cun and GV16 as 1 cun above the posterior hairline). The 12 cun are measured over the scalp; the straight length in instances is shorter.",
+      "note_zh": "两端由穴位外推后投到皮面。前端：自 GV24 沿 GV20→GV24 方向再延 0.5 寸（GV24 在前发际后 0.5 寸，GV20 在前发际后 5 寸）。后端：自 GV15 沿 GV16→GV15 方向再延一段 GV16–GV15 的距离（按 GV15 在后发际上 0.5 寸、GV16 在后发际上 1 寸）。12 寸沿头皮弧线计，instances 中的直线长度偏短。",
+      "source": "WHO Standard Acupuncture Point Locations in the Western Pacific Region (WHO Regional Office for the Western Pacific, 2008), Proportional Bone (Skeletal) Measurements, pp. 12-13",
+      "instances": [
+        {"side": "M", "a": [0.0, 1662.86, 82.46], "b": [0.57, 1520.49, -64.75], "length_mm": 204.8}
+      ]
+    },
+    {
+      "id": "head_glabella_ant_hairline",
+      "label_en": "glabella to midpoint of anterior hairline",
+      "label_zh": "眉间（印堂）至前发际正中",
+      "region": "head and face",
+      "region_zh": "头面部",
+      "cun": 3,
+      "from": {"landmark": "glabella"},
+      "to": {"landmark": "anterior_hairline_mid"},
+      "note_en": "Glabella: midpoint of left and right BL2, projected onto the skin (following the note on Yintang in GB/T 12346-2021). Anterior hairline end as in head_ant_post_hairline.",
+      "note_zh": "眉间取左右 BL2 连线中点，投到皮面（取法依 GB/T 12346-2021 印堂条注）；前发际端同 head_ant_post_hairline。",
+      "source": "WHO Standard Acupuncture Point Locations in the Western Pacific Region (WHO Regional Office for the Western Pacific, 2008), Proportional Bone (Skeletal) Measurements, pp. 12-13",
+      "instances": [
+        {"side": "M", "a": [0.01, 1611.79, 92.87], "b": [0.0, 1662.86, 82.46], "length_mm": 52.1}
+      ]
+    },
+    {
+      "id": "head_frontal_hairline_corners",
+      "label_en": "between the bilateral corners of the anterior hairline",
+      "label_zh": "两额角发际之间",
+      "region": "head and face",
+      "region_zh": "头面部",
+      "cun": 9,
+      "from": {"code": "ST8", "side": "L"},
+      "to": {"code": "ST8", "side": "R"},
+      "note_en": "Ends at left and right ST8, each 4.5 cun lateral to the anterior median line, so the transverse distance between them is 9 cun. The straight line between the two points is shorter than the arc over the forehead.",
+      "note_zh": "两端为左右 ST8，各在前正中线旁开 4.5 寸，两侧横距为 9 寸。两点间直线短于沿额部的弧线。",
+      "source": "WHO Standard Acupuncture Point Locations in the Western Pacific Region (WHO Regional Office for the Western Pacific, 2008), Proportional Bone (Skeletal) Measurements, pp. 12-13",
+      "instances": [
+        {"side": "M", "a": [60.72, 1657.82, 41.39], "b": [-60.73, 1657.82, 41.39], "length_mm": 121.4}
+      ]
+    },
+    {
+      "id": "head_mastoids",
+      "label_en": "between the bilateral mastoid processes",
+      "label_zh": "耳后两乳突之间",
+      "region": "head and face",
+      "region_zh": "头面部",
+      "cun": 9,
+      "from": {"landmark": "mastoid_tip_L"},
+      "to": {"landmark": "mastoid_tip_R"},
+      "note_en": "Bony landmark on the Z-Anatomy temporal bone: tip of the mastoid process, taken as the lowest vertex of the posterior 40% of the temporal bone, projected to the nearest skin point.",
+      "note_zh": "骨性标志：Z-Anatomy 颞骨乳突尖，取颞骨后 40% 部分的最低顶点，投到最近的皮面点。",
+      "source": "WHO Standard Acupuncture Point Locations in the Western Pacific Region (WHO Regional Office for the Western Pacific, 2008), Proportional Bone (Skeletal) Measurements, pp. 12-13",
+      "instances": [
+        {"side": "M", "a": [59.04, 1553.21, -29.11], "b": [-59.04, 1553.21, -29.11], "length_mm": 118.1}
+      ]
+    },
+    {
+      "id": "chest_suprasternal_xiphisternal",
+      "label_en": "suprasternal notch to midpoint of xiphisternal junction",
+      "label_zh": "胸骨上窝至胸剑联合中点",
+      "region": "chest and abdomen",
+      "region_zh": "胸腹部",
+      "cun": 9,
+      "from": {"code": "CV22"},
+      "to": {"code": "CV16"},
+      "note_en": "Ends at CV22 (centre of the suprasternal fossa) and CV16 (midpoint of the xiphisternal junction).",
+      "note_zh": "两端为 CV22（胸骨上窝中央）和 CV16（胸剑结合中点）。",
+      "source": "WHO Standard Acupuncture Point Locations in the Western Pacific Region (WHO Regional Office for the Western Pacific, 2008), Proportional Bone (Skeletal) Measurements, pp. 12-13",
+      "instances": [
+        {"side": "M", "a": [0.21, 1401.89, 56.94], "b": [0.03, 1242.34, 115.43], "length_mm": 169.9}
+      ]
+    },
+    {
+      "id": "abdomen_xiphisternal_umbilicus",
+      "label_en": "midpoint of xiphisternal synchondrosis to centre of umbilicus",
+      "label_zh": "胸剑联合中点至脐中",
+      "region": "chest and abdomen",
+      "region_zh": "胸腹部",
+      "cun": 8,
+      "from": {"code": "CV16"},
+      "to": {"code": "CV8"},
+      "note_en": "Ends at CV16 (midpoint of the xiphisternal junction) and CV8 (centre of the umbilicus).",
+      "note_zh": "两端为 CV16（胸剑结合中点）和 CV8（脐中央）。",
+      "source": "WHO Standard Acupuncture Point Locations in the Western Pacific Region (WHO Regional Office for the Western Pacific, 2008), Proportional Bone (Skeletal) Measurements, pp. 12-13",
+      "instances": [
+        {"side": "M", "a": [0.03, 1242.34, 115.43], "b": [-0.42, 1020.07, 110.14], "length_mm": 222.3}
+      ]
+    },
+    {
+      "id": "abdomen_umbilicus_pubic",
+      "label_en": "centre of umbilicus to superior border of pubic symphysis",
+      "label_zh": "脐中至耻骨联合上缘",
+      "region": "chest and abdomen",
+      "region_zh": "胸腹部",
+      "cun": 5,
+      "from": {"code": "CV8"},
+      "to": {"code": "CV2"},
+      "note_en": "Ends at CV8 (centre of the umbilicus) and CV2 (midpoint of the superior border of the pubic symphysis).",
+      "note_zh": "两端为 CV8（脐中央）和 CV2（耻骨联合上缘中点）。",
+      "source": "WHO Standard Acupuncture Point Locations in the Western Pacific Region (WHO Regional Office for the Western Pacific, 2008), Proportional Bone (Skeletal) Measurements, pp. 12-13",
+      "instances": [
+        {"side": "M", "a": [-0.42, 1020.07, 110.14], "b": [-0.25, 852.27, 78.94], "length_mm": 170.7}
+      ]
+    },
+    {
+      "id": "chest_nipples",
+      "label_en": "between the two nipples",
+      "label_zh": "两乳头之间",
+      "region": "chest and abdomen",
+      "region_zh": "胸腹部",
+      "cun": 8,
+      "from": {"code": "ST17", "side": "L"},
+      "to": {"code": "ST17", "side": "R"},
+      "note_en": "Ends at left and right ST17 (centre of the nipple).",
+      "note_zh": "两端为左右 ST17（乳头中央）。",
+      "source": "WHO Standard Acupuncture Point Locations in the Western Pacific Region (WHO Regional Office for the Western Pacific, 2008), Proportional Bone (Skeletal) Measurements, pp. 12-13",
+      "instances": [
+        {"side": "M", "a": [115.52, 1278.98, 118.8], "b": [-115.51, 1278.98, 118.79], "length_mm": 231.0}
+      ]
+    },
+    {
+      "id": "back_scapular_medial_borders",
+      "label_en": "between the bilateral medial borders of the scapula",
+      "label_zh": "两肩胛骨内侧缘之间",
+      "region": "back",
+      "region_zh": "背腰部",
+      "cun": 6,
+      "from": {"code": "BL44", "side": "L"},
+      "to": {"code": "BL44", "side": "R"},
+      "note_en": "The medial border of the scapula is represented by the second line of the Bladder meridian, 3 cun lateral to the posterior median line; ends at left and right BL44 (level of T5). Other points on that line (e.g. BL42, BL43) would serve equally.",
+      "note_zh": "以膀胱经第二侧线（后正中线旁开 3 寸）代表肩胛骨内侧缘，两端取左右 BL44（平第 5 胸椎）；同线的 BL42、BL43 等亦可。",
+      "source": "WHO Standard Acupuncture Point Locations in the Western Pacific Region (WHO Regional Office for the Western Pacific, 2008), Proportional Bone (Skeletal) Measurements, pp. 12-13",
+      "instances": [
+        {"side": "M", "a": [64.42, 1317.48, -134.99], "b": [-64.42, 1317.48, -134.99], "length_mm": 128.8}
+      ]
+    },
+    {
+      "id": "upper_arm_ant_axillary_fold_cubital_L",
+      "label_en": "anterior axillary fold to cubital crease",
+      "label_zh": "腋前纹头至肘横纹",
+      "region": "upper limb",
+      "region_zh": "上肢部",
+      "cun": 9,
+      "side": "L",
+      "from": {"landmark": "ant_axillary_fold_L"},
+      "to": {"code": "LU5", "side": "L"},
+      "note_en": "Upper end: anterior axillary fold, extrapolated from acupoints. LU3 is 3 cun below the fold and LU5 is on the cubital crease, so the fold is placed 9 cun from LU5 in the direction LU5 -> LU3 (1.5 times the LU5-LU3 distance) and projected onto the skin. Lower end: LU5. The WHO table also allows measuring from the posterior axillary fold; that variant is not provided.",
+      "note_zh": "上端腋前纹头由穴位外推：LU3 在腋前纹头下 3 寸，LU5 在肘横纹上，沿 LU5→LU3 方向取至 9 寸处（LU5–LU3 距离的 1.5 倍），投到皮面。下端为 LU5。WHO 表中此段也可自腋后纹头量起，本表未给。",
+      "source": "WHO Standard Acupuncture Point Locations in the Western Pacific Region (WHO Regional Office for the Western Pacific, 2008), Proportional Bone (Skeletal) Measurements, pp. 12-13",
+      "instances": [
+        {"side": "L", "a": [220.2, 1307.94, 0.53], "b": [239.32, 1118.83, -7.16], "length_mm": 190.2}
+      ]
+    },
+    {
+      "id": "upper_arm_ant_axillary_fold_cubital_R",
+      "label_en": "anterior axillary fold to cubital crease",
+      "label_zh": "腋前纹头至肘横纹",
+      "region": "upper limb",
+      "region_zh": "上肢部",
+      "cun": 9,
+      "side": "R",
+      "from": {"landmark": "ant_axillary_fold_R"},
+      "to": {"code": "LU5", "side": "R"},
+      "note_en": "Upper end: anterior axillary fold, extrapolated from acupoints. LU3 is 3 cun below the fold and LU5 is on the cubital crease, so the fold is placed 9 cun from LU5 in the direction LU5 -> LU3 (1.5 times the LU5-LU3 distance) and projected onto the skin. Lower end: LU5. The WHO table also allows measuring from the posterior axillary fold; that variant is not provided.",
+      "note_zh": "上端腋前纹头由穴位外推：LU3 在腋前纹头下 3 寸，LU5 在肘横纹上，沿 LU5→LU3 方向取至 9 寸处（LU5–LU3 距离的 1.5 倍），投到皮面。下端为 LU5。WHO 表中此段也可自腋后纹头量起，本表未给。",
+      "source": "WHO Standard Acupuncture Point Locations in the Western Pacific Region (WHO Regional Office for the Western Pacific, 2008), Proportional Bone (Skeletal) Measurements, pp. 12-13",
+      "instances": [
+        {"side": "R", "a": [-220.19, 1307.93, 0.53], "b": [-239.32, 1118.83, -7.16], "length_mm": 190.2}
+      ]
+    },
+    {
+      "id": "forearm_LU5_LU9",
+      "label_en": "cubital crease to wrist crease",
+      "label_zh": "肘横纹至腕横纹（前臂桡侧）",
+      "region": "upper limb",
+      "region_zh": "上肢部",
+      "cun": 12,
+      "from": {"code": "LU5"},
+      "to": {"code": "LU9"},
+      "note_en": "Ends at LU5 (on the cubital crease) and LU9 (on the palmar wrist crease); one instance per side.",
+      "note_zh": "两端为 LU5（肘横纹上）和 LU9（腕掌侧横纹上），左右各一。",
+      "source": "WHO Standard Acupuncture Point Locations in the Western Pacific Region (WHO Regional Office for the Western Pacific, 2008), Proportional Bone (Skeletal) Measurements, pp. 12-13",
+      "instances": [
+        {"side": "L", "a": [239.32, 1118.83, -7.16], "b": [288.82, 862.14, 31.37], "length_mm": 264.2},
+        {"side": "R", "a": [-239.32, 1118.83, -7.16], "b": [-288.82, 862.14, 31.37], "length_mm": 264.2}
+      ]
+    },
+    {
+      "id": "forearm_PC3_PC7",
+      "label_en": "cubital crease to wrist crease (midline)",
+      "label_zh": "肘横纹至腕横纹（前臂正中）",
+      "region": "upper limb",
+      "region_zh": "上肢部",
+      "cun": 12,
+      "from": {"code": "PC3"},
+      "to": {"code": "PC7"},
+      "note_en": "The same 12-cun segment as forearm_LU5_LU9, represented by PC3 and PC7 on the middle of the forearm; one instance per side.",
+      "note_zh": "与 forearm_LU5_LU9 为同一段骨度，以前臂正中的 PC3、PC7 为两端；左右各一。",
+      "source": "WHO Standard Acupuncture Point Locations in the Western Pacific Region (WHO Regional Office for the Western Pacific, 2008), Proportional Bone (Skeletal) Measurements, pp. 12-13",
+      "instances": [
+        {"side": "L", "a": [215.61, 1106.88, -5.5], "b": [261.88, 860.45, 39.1], "length_mm": 254.7},
+        {"side": "R", "a": [-215.61, 1106.88, -5.5], "b": [-261.88, 860.45, 39.1], "length_mm": 254.7}
+      ]
+    },
+    {
+      "id": "thigh_pubic_patella_base_L",
+      "label_en": "superior border of pubic symphysis to base of patella",
+      "label_zh": "耻骨联合上缘至髌底",
+      "region": "lower limb",
+      "region_zh": "下肢部",
+      "cun": 18,
+      "side": "L",
+      "from": {"code": "KI11", "side": "L"},
+      "to": {"landmark": "patella_base_L"},
+      "note_en": "Upper end: KI11 (at the superior border of the pubic symphysis, 0.5 cun lateral to the anterior median line). Lower end: base of the patella, taken as the highest vertex of the Z-Anatomy patella and projected anteriorly onto the skin.",
+      "note_zh": "上端为 KI11（耻骨联合上缘、前正中线旁开 0.5 寸）；下端髌底取 Z-Anatomy 髌骨最高顶点，向前投到皮面。",
+      "source": "WHO Standard Acupuncture Point Locations in the Western Pacific Region (WHO Regional Office for the Western Pacific, 2008), Proportional Bone (Skeletal) Measurements, pp. 12-13",
+      "instances": [
+        {"side": "L", "a": [11.57, 847.41, 74.92], "b": [88.52, 464.73, 52.03], "length_mm": 391.0}
+      ]
+    },
+    {
+      "id": "leg_patella_apex_med_malleolus_L",
+      "label_en": "apex of patella to prominence of medial malleolus",
+      "label_zh": "髌尖（腘横纹中点）至内踝尖",
+      "region": "lower limb",
+      "region_zh": "下肢部",
+      "cun": 15,
+      "side": "L",
+      "from": {"landmark": "patella_apex_L"},
+      "to": {"landmark": "med_malleolus_L"},
+      "note_en": "Both ends are bony landmarks on Z-Anatomy. Apex of the patella: lowest vertex of the patella, projected anteriorly onto the skin. Prominence of the medial malleolus: most medial vertex of the lowest 8% of the tibia, projected medially onto the skin.",
+      "note_zh": "两端均为 Z-Anatomy 骨性标志。髌尖：髌骨最低顶点，向前投到皮面。内踝尖：胫骨最下 8% 部分中最内侧的顶点，向内投到皮面。",
+      "source": "WHO Standard Acupuncture Point Locations in the Western Pacific Region (WHO Regional Office for the Western Pacific, 2008), Proportional Bone (Skeletal) Measurements, pp. 12-13",
+      "instances": [
+        {"side": "L", "a": [87.1, 423.81, 37.01], "b": [43.1, 83.37, -40.75], "length_mm": 352.0}
+      ]
+    },
+    {
+      "id": "knee_SP9_patella_apex_L",
+      "label_en": "inferior border of medial condyle of tibia (SP9) to apex of patella",
+      "label_zh": "胫骨内侧髁下缘（阴陵泉）至髌尖",
+      "region": "lower limb",
+      "region_zh": "下肢部",
+      "cun": 2,
+      "side": "L",
+      "from": {"code": "SP9", "side": "L"},
+      "to": {"landmark": "patella_apex_L"},
+      "note_en": "Counted as 2 cun according to the note under the lower-limb rows of the WHO table. Ends at SP9 and the apex of the patella (lowest vertex of the Z-Anatomy patella, projected anteriorly onto the skin).",
+      "note_zh": "依 WHO 表下肢部分的表注，此段计 2 寸。两端为 SP9 和髌尖（Z-Anatomy 髌骨最低顶点，向前投到皮面）。",
+      "source": "WHO Standard Acupuncture Point Locations in the Western Pacific Region (WHO Regional Office for the Western Pacific, 2008), Proportional Bone (Skeletal) Measurements, pp. 12-13 (note under the lower-limb rows)",
+      "instances": [
+        {"side": "L", "a": [40.26, 387.78, -40.61], "b": [87.1, 423.81, 37.01], "length_mm": 97.6}
+      ]
+    },
+    {
+      "id": "thigh_greater_trochanter_popliteal_L",
+      "label_en": "lateral prominence of greater trochanter to popliteal crease",
+      "label_zh": "股骨大转子至腘横纹",
+      "region": "lower limb",
+      "region_zh": "下肢部",
+      "cun": 19,
+      "side": "L",
+      "from": {"landmark": "greater_trochanter_L"},
+      "to": {"code": "BL40", "side": "L"},
+      "note_en": "Upper end: prominence of the greater trochanter, taken as the most lateral vertex of the upper 15% of the Z-Anatomy femur and projected laterally onto the skin. Lower end: BL40 (midpoint of the popliteal crease). The WHO measurement runs along the lateral side of the thigh; BL40 lies at the back of the knee, so the straight line here is slightly oblique.",
+      "note_zh": "上端大转子取 Z-Anatomy 股骨上 15% 部分最外侧的顶点，向外投到皮面；下端为 BL40（腘横纹中点）。WHO 此段沿大腿外侧纵向量取，BL40 在膝后正中，故此处直线略斜。",
+      "source": "WHO Standard Acupuncture Point Locations in the Western Pacific Region (WHO Regional Office for the Western Pacific, 2008), Proportional Bone (Skeletal) Measurements, pp. 12-13",
+      "instances": [
+        {"side": "L", "a": [170.42, 854.18, -20.7], "b": [82.35, 459.06, -82.31], "length_mm": 409.5}
+      ]
+    },
+    {
+      "id": "leg_popliteal_lat_malleolus_L",
+      "label_en": "popliteal crease to prominence of lateral malleolus",
+      "label_zh": "腘横纹至外踝尖",
+      "region": "lower limb",
+      "region_zh": "下肢部",
+      "cun": 16,
+      "side": "L",
+      "from": {"code": "BL39", "side": "L"},
+      "to": {"landmark": "lat_malleolus_L"},
+      "note_en": "Upper end: BL39 (lateral end of the popliteal crease). Lower end: prominence of the lateral malleolus, taken as the lowest vertex of the Z-Anatomy fibula and projected laterally onto the skin.",
+      "note_zh": "上端为 BL39（腘横纹外侧端）；下端外踝尖取 Z-Anatomy 腓骨最低顶点，向外投到皮面。",
+      "source": "WHO Standard Acupuncture Point Locations in the Western Pacific Region (WHO Regional Office for the Western Pacific, 2008), Proportional Bone (Skeletal) Measurements, pp. 12-13",
+      "instances": [
+        {"side": "L", "a": [102.22, 461.67, -74.99], "b": [113.98, 55.21, -52.06], "length_mm": 407.3}
+      ]
+    },
+    {
+      "id": "foot_med_malleolus_sole_L",
+      "label_en": "prominence of medial malleolus to sole",
+      "label_zh": "内踝尖至足底",
+      "region": "lower limb",
+      "region_zh": "下肢部",
+      "cun": 3,
+      "side": "L",
+      "from": {"landmark": "med_malleolus_L"},
+      "to": {"landmark": "sole_L"},
+      "note_en": "Upper end: prominence of the medial malleolus, as in leg_patella_apex_med_malleolus. Lower end: the sole, at the height of the lowest skin vertex within 60 mm (horizontally) of the medial-malleolus bone point, with the x and z of that bone point.",
+      "note_zh": "上端内踝尖同 leg_patella_apex_med_malleolus。下端足底：取内踝骨性点水平 60 mm 范围内最低皮面顶点的高度（y），x、z 沿用该骨性点。",
+      "source": "WHO Standard Acupuncture Point Locations in the Western Pacific Region (WHO Regional Office for the Western Pacific, 2008), Proportional Bone (Skeletal) Measurements, pp. 12-13",
+      "instances": [
+        {"side": "L", "a": [43.1, 83.37, -40.75], "b": [46.22, 1.61, -40.75], "length_mm": 81.8}
+      ]
+    },
+    {
+      "id": "thigh_pubic_patella_base_R",
+      "label_en": "superior border of pubic symphysis to base of patella",
+      "label_zh": "耻骨联合上缘至髌底",
+      "region": "lower limb",
+      "region_zh": "下肢部",
+      "cun": 18,
+      "side": "R",
+      "from": {"code": "KI11", "side": "R"},
+      "to": {"landmark": "patella_base_R"},
+      "note_en": "Upper end: KI11 (at the superior border of the pubic symphysis, 0.5 cun lateral to the anterior median line). Lower end: base of the patella, taken as the highest vertex of the Z-Anatomy patella and projected anteriorly onto the skin.",
+      "note_zh": "上端为 KI11（耻骨联合上缘、前正中线旁开 0.5 寸）；下端髌底取 Z-Anatomy 髌骨最高顶点，向前投到皮面。",
+      "source": "WHO Standard Acupuncture Point Locations in the Western Pacific Region (WHO Regional Office for the Western Pacific, 2008), Proportional Bone (Skeletal) Measurements, pp. 12-13",
+      "instances": [
+        {"side": "R", "a": [-11.57, 847.41, 74.92], "b": [-88.52, 464.73, 52.03], "length_mm": 391.0}
+      ]
+    },
+    {
+      "id": "leg_patella_apex_med_malleolus_R",
+      "label_en": "apex of patella to prominence of medial malleolus",
+      "label_zh": "髌尖（腘横纹中点）至内踝尖",
+      "region": "lower limb",
+      "region_zh": "下肢部",
+      "cun": 15,
+      "side": "R",
+      "from": {"landmark": "patella_apex_R"},
+      "to": {"landmark": "med_malleolus_R"},
+      "note_en": "Both ends are bony landmarks on Z-Anatomy. Apex of the patella: lowest vertex of the patella, projected anteriorly onto the skin. Prominence of the medial malleolus: most medial vertex of the lowest 8% of the tibia, projected medially onto the skin.",
+      "note_zh": "两端均为 Z-Anatomy 骨性标志。髌尖：髌骨最低顶点，向前投到皮面。内踝尖：胫骨最下 8% 部分中最内侧的顶点，向内投到皮面。",
+      "source": "WHO Standard Acupuncture Point Locations in the Western Pacific Region (WHO Regional Office for the Western Pacific, 2008), Proportional Bone (Skeletal) Measurements, pp. 12-13",
+      "instances": [
+        {"side": "R", "a": [-87.1, 423.81, 37.01], "b": [-43.1, 83.37, -40.75], "length_mm": 352.0}
+      ]
+    },
+    {
+      "id": "knee_SP9_patella_apex_R",
+      "label_en": "inferior border of medial condyle of tibia (SP9) to apex of patella",
+      "label_zh": "胫骨内侧髁下缘（阴陵泉）至髌尖",
+      "region": "lower limb",
+      "region_zh": "下肢部",
+      "cun": 2,
+      "side": "R",
+      "from": {"code": "SP9", "side": "R"},
+      "to": {"landmark": "patella_apex_R"},
+      "note_en": "Counted as 2 cun according to the note under the lower-limb rows of the WHO table. Ends at SP9 and the apex of the patella (lowest vertex of the Z-Anatomy patella, projected anteriorly onto the skin).",
+      "note_zh": "依 WHO 表下肢部分的表注，此段计 2 寸。两端为 SP9 和髌尖（Z-Anatomy 髌骨最低顶点，向前投到皮面）。",
+      "source": "WHO Standard Acupuncture Point Locations in the Western Pacific Region (WHO Regional Office for the Western Pacific, 2008), Proportional Bone (Skeletal) Measurements, pp. 12-13 (note under the lower-limb rows)",
+      "instances": [
+        {"side": "R", "a": [-40.25, 387.78, -40.61], "b": [-87.1, 423.81, 37.01], "length_mm": 97.6}
+      ]
+    },
+    {
+      "id": "thigh_greater_trochanter_popliteal_R",
+      "label_en": "lateral prominence of greater trochanter to popliteal crease",
+      "label_zh": "股骨大转子至腘横纹",
+      "region": "lower limb",
+      "region_zh": "下肢部",
+      "cun": 19,
+      "side": "R",
+      "from": {"landmark": "greater_trochanter_R"},
+      "to": {"code": "BL40", "side": "R"},
+      "note_en": "Upper end: prominence of the greater trochanter, taken as the most lateral vertex of the upper 15% of the Z-Anatomy femur and projected laterally onto the skin. Lower end: BL40 (midpoint of the popliteal crease). The WHO measurement runs along the lateral side of the thigh; BL40 lies at the back of the knee, so the straight line here is slightly oblique.",
+      "note_zh": "上端大转子取 Z-Anatomy 股骨上 15% 部分最外侧的顶点，向外投到皮面；下端为 BL40（腘横纹中点）。WHO 此段沿大腿外侧纵向量取，BL40 在膝后正中，故此处直线略斜。",
+      "source": "WHO Standard Acupuncture Point Locations in the Western Pacific Region (WHO Regional Office for the Western Pacific, 2008), Proportional Bone (Skeletal) Measurements, pp. 12-13",
+      "instances": [
+        {"side": "R", "a": [-170.42, 854.18, -20.7], "b": [-82.35, 459.06, -82.31], "length_mm": 409.5}
+      ]
+    },
+    {
+      "id": "leg_popliteal_lat_malleolus_R",
+      "label_en": "popliteal crease to prominence of lateral malleolus",
+      "label_zh": "腘横纹至外踝尖",
+      "region": "lower limb",
+      "region_zh": "下肢部",
+      "cun": 16,
+      "side": "R",
+      "from": {"code": "BL39", "side": "R"},
+      "to": {"landmark": "lat_malleolus_R"},
+      "note_en": "Upper end: BL39 (lateral end of the popliteal crease). Lower end: prominence of the lateral malleolus, taken as the lowest vertex of the Z-Anatomy fibula and projected laterally onto the skin.",
+      "note_zh": "上端为 BL39（腘横纹外侧端）；下端外踝尖取 Z-Anatomy 腓骨最低顶点，向外投到皮面。",
+      "source": "WHO Standard Acupuncture Point Locations in the Western Pacific Region (WHO Regional Office for the Western Pacific, 2008), Proportional Bone (Skeletal) Measurements, pp. 12-13",
+      "instances": [
+        {"side": "R", "a": [-102.22, 461.67, -74.99], "b": [-113.98, 55.21, -52.06], "length_mm": 407.3}
+      ]
+    },
+    {
+      "id": "foot_med_malleolus_sole_R",
+      "label_en": "prominence of medial malleolus to sole",
+      "label_zh": "内踝尖至足底",
+      "region": "lower limb",
+      "region_zh": "下肢部",
+      "cun": 3,
+      "side": "R",
+      "from": {"landmark": "med_malleolus_R"},
+      "to": {"landmark": "sole_R"},
+      "note_en": "Upper end: prominence of the medial malleolus, as in leg_patella_apex_med_malleolus. Lower end: the sole, at the height of the lowest skin vertex within 60 mm (horizontally) of the medial-malleolus bone point, with the x and z of that bone point.",
+      "note_zh": "上端内踝尖同 leg_patella_apex_med_malleolus。下端足底：取内踝骨性点水平 60 mm 范围内最低皮面顶点的高度（y），x、z 沿用该骨性点。",
+      "source": "WHO Standard Acupuncture Point Locations in the Western Pacific Region (WHO Regional Office for the Western Pacific, 2008), Proportional Bone (Skeletal) Measurements, pp. 12-13",
+      "instances": [
+        {"side": "R", "a": [-43.1, 83.37, -40.75], "b": [-46.22, 1.61, -40.75], "length_mm": 81.8}
+      ]
+    },
+    {
+      "id": "leg_SP9_KI3",
+      "label_en": "inferior border of medial condyle of tibia (SP9) to prominence of medial malleolus",
+      "label_zh": "阴陵泉至内踝尖（小腿内侧）",
+      "region": "lower limb",
+      "region_zh": "下肢部",
+      "cun": 13,
+      "from": {"code": "SP9"},
+      "to": {"code": "KI3"},
+      "note_en": "According to the note under the lower-limb rows of the WHO table, SP9 to the prominence of the medial malleolus is 13 cun. The lower end is KI3, level with the prominence of the medial malleolus between it and the calcaneal tendon, so it lies about one finger-breadth posterior to the malleolus.",
+      "note_zh": "依 WHO 表下肢部分的表注，SP9 至内踝尖为 13 寸。下端用 KI3（平内踝尖，在内踝尖与跟腱之间），故比内踝尖偏后约一横指。",
+      "source": "WHO Standard Acupuncture Point Locations in the Western Pacific Region (WHO Regional Office for the Western Pacific, 2008), Proportional Bone (Skeletal) Measurements, pp. 12-13 (note under the lower-limb rows)",
+      "instances": [
+        {"side": "L", "a": [40.26, 387.78, -40.61], "b": [51.82, 85.62, -72.56], "length_mm": 304.1},
+        {"side": "R", "a": [-40.25, 387.78, -40.61], "b": [-51.81, 85.62, -72.56], "length_mm": 304.1}
+      ]
+    },
+    {
+      "id": "thigh_gluteal_popliteal",
+      "label_en": "gluteal fold to popliteal crease",
+      "label_zh": "臀横纹至腘横纹",
+      "region": "lower limb",
+      "region_zh": "下肢部",
+      "cun": 14,
+      "from": {"code": "BL36"},
+      "to": {"code": "BL40"},
+      "note_en": "Ends at BL36 (midpoint of the gluteal fold) and BL40 (midpoint of the popliteal crease).",
+      "note_zh": "两端为 BL36（臀横纹中点）和 BL40（腘横纹中点）。",
+      "source": "WHO Standard Acupuncture Point Locations in the Western Pacific Region (WHO Regional Office for the Western Pacific, 2008), Proportional Bone (Skeletal) Measurements, pp. 12-13",
+      "instances": [
+        {"side": "L", "a": [73.41, 763.61, -114.23], "b": [82.35, 459.06, -82.31], "length_mm": 306.3},
+        {"side": "R", "a": [-73.41, 763.61, -114.23], "b": [-82.35, 459.06, -82.31], "length_mm": 306.3}
+      ]
+    }
+  ]
+}

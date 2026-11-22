@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Acu361 data/rulers.json",
+  "description": "Proportional bone (skeletal) measurements in B-cun from the WHO 2008 table, with endpoints on the standing body. Coordinates in mm, same frame as data/points.json.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["dataset", "version", "license", "description", "source", "frame", "counts", "fields", "landmarks", "rulers"],
+  "properties": {
+    "dataset": {"const": "Acu361"},
+    "version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "license": {"const": "CC-BY-SA-4.0"},
+    "description": {"type": "string", "minLength": 1},
+    "source": {"type": "string", "minLength": 1},
+    "frame": {"$ref": "#/$defs/frame"},
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rulers", "instances", "landmarks"],
+      "properties": {
+        "rulers": {"type": "integer", "minimum": 1},
+        "instances": {"type": "integer", "minimum": 1},
+        "landmarks": {"type": "integer", "minimum": 0}
+      }
+    },
+    "fields": {"type": "object", "additionalProperties": {"type": "string"}},
+    "landmarks": {
+      "type": "object",
+      "description": "derived endpoints that are not acupoints; key = landmark name (_L / _R for sided ones)",
+      "additionalProperties": false,
+      "patternProperties": {
+        "^[a-z][a-z_]*(_L|_R)?$": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["pos", "definition"],
+          "properties": {"pos": {"$ref": "#/$defs/vec3"}, "definition": {"type": "string", "minLength": 1}}
+        }
+      }
+    },
+    "rulers": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/ruler"}}
+  },
+  "$defs": {
+    "frame": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["units", "x", "y", "z", "handedness", "origin", "body"],
+      "properties": {
+        "units": {"const": "mm"},
+        "x": {"type": "string"},
+        "y": {"type": "string"},
+        "z": {"type": "string"},
+        "handedness": {"type": "string"},
+        "origin": {"type": "string"},
+        "body": {"type": "string"}
+      }
+    },
+    "vec3": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "number"}},
+    "endpoint": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["code"],
+          "properties": {
+            "code": {"type": "string", "pattern": "^(LU|LI|ST|SP|HT|SI|BL|KI|PC|TE|GB|LR|GV|CV)[1-9][0-9]?$"},
+            "side": {"enum": ["L", "R"]}
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["landmark"],
+          "properties": {"landmark": {"type": "string", "pattern": "^[a-z][a-z_]*(_L|_R)?$"}}
+        }
+      ]
+    },
+    "ruler": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "label_en", "label_zh", "region", "region_zh", "cun", "from", "to", "note_en", "note_zh", "source", "instances"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[A-Za-z0-9_]+$"},
+        "label_en": {"type": "string", "minLength": 1},
+        "label_zh": {"type": "string", "minLength": 1},
+        "region": {"enum": ["head and face", "chest and abdomen", "back", "upper limb", "lower limb"]},
+        "region_zh": {"type": "string", "minLength": 1},
+        "cun": {"type": "number", "exclusiveMinimum": 0, "description": "B-cun between the two ends"},
+        "side": {"enum": ["L", "R"], "description": "present when the ruler is defined for one side only"},
+        "from": {"$ref": "#/$defs/endpoint"},
+        "to": {"$ref": "#/$defs/endpoint"},
+        "note_en": {"type": "string", "minLength": 1},
+        "note_zh": {"type": "string", "minLength": 1},
+        "source": {"type": "string", "minLength": 1},
+        "instances": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 2,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["side", "a", "b", "length_mm"],
+            "properties": {
+              "side": {"enum": ["L", "R", "M"]},
+              "a": {"$ref": "#/$defs/vec3"},
+              "b": {"$ref": "#/$defs/vec3"},
+              "length_mm": {"type": "number", "exclusiveMinimum": 0, "description": "straight-line distance between a and b"}
+            }
+          }
+        }
+      }
+    }
+  }
+}

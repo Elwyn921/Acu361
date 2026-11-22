@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Acu361 data/manifest.json",
+  "description": "Index of the data files with their sizes and SHA-256 digests, plus counts and the coordinate frame.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["dataset", "version", "title", "license", "frame", "counts", "files"],
+  "properties": {
+    "dataset": {"const": "Acu361"},
+    "version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "title": {"type": "string", "minLength": 1},
+    "license": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["data", "code"],
+      "properties": {"data": {"type": "string"}, "code": {"type": "string"}}
+    },
+    "frame": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["units", "x", "y", "z", "handedness", "origin", "body"],
+      "properties": {
+        "units": {"const": "mm"},
+        "x": {"type": "string"},
+        "y": {"type": "string"},
+        "z": {"type": "string"},
+        "handedness": {"type": "string"},
+        "origin": {"type": "string"},
+        "body": {"type": "string"}
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["codes", "points", "bilateral_codes", "midline_codes", "codes_per_meridian", "meridians", "meridian_segments",
+                   "meridian_samples", "rulers", "ruler_instances", "ruler_landmarks", "body_layers"],
+      "properties": {
+        "codes": {"const": 361},
+        "points": {"const": 670},
+        "bilateral_codes": {"const": 309},
+        "midline_codes": {"const": 52},
+        "codes_per_meridian": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["LU", "LI", "ST", "SP", "HT", "SI", "BL", "KI", "PC", "TE", "GB", "LR", "GV", "CV"],
+          "patternProperties": {"^(LU|LI|ST|SP|HT|SI|BL|KI|PC|TE|GB|LR|GV|CV)$": {"type": "integer", "minimum": 1}}
+        },
+        "meridians": {"const": 14},
+        "meridian_segments": {"type": "integer", "minimum": 14},
+        "meridian_samples": {"type": "integer", "minimum": 1},
+        "rulers": {"type": "integer", "minimum": 1},
+        "ruler_instances": {"type": "integer", "minimum": 1},
+        "ruler_landmarks": {"type": "integer", "minimum": 0},
+        "body_layers": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["skin", "bone", "ligament", "muscle", "organ", "vessel", "nerve"],
+          "patternProperties": {
+            "^(skin|bone|ligament|muscle|organ|vessel|nerve)$": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["nodes", "meshes", "vertices", "triangles"],
+              "properties": {
+                "nodes": {"type": "integer", "minimum": 1},
+                "meshes": {"type": "integer", "minimum": 1},
+                "vertices": {"type": "integer", "minimum": 3},
+                "triangles": {"type": "integer", "minimum": 1}
+              }
+            }
+          }
+        }
+      }
+    },
+    "files": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "bytes", "sha256"],
+        "properties": {
+          "path": {"type": "string", "pattern": "^data/[A-Za-z0-9_./-]+$", "description": "path relative to the package root"},
+          "bytes": {"type": "integer", "minimum": 0},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "title": "Acu361: an open, expert-annotated 3D atlas of the 361 WHO standard acupoints",
+  "upload_type": "dataset",
+  "description": "<p>Acu361 is a dataset of 3D coordinates for the 361 acupoints of the WHO standard (<em>WHO Standard Acupuncture Point Locations in the Western Pacific Region</em>, 2008): 670 points in total, 309 bilateral codes on both sides and 52 on the midline. An acupuncturist placed every point on the skin of an openly licensed anatomical model, the Z-Anatomy male body. The body comes with seven anatomical layers (skin, muscle, bone, ligament, organ, vessel, nerve), so each point can be read against the structures beneath it.</p><p>The package contains the points as JSON and CSV, surface lines of the 14 meridians, the 27 proportional bone (B-cun) measurements of the WHO standard measured on the body, the seven layers of the body as GLB files, JSON Schemas, a validation script and the source of the online 3D explorer. Coordinates are in millimetres.</p><p>Data are released under CC BY-SA 4.0; code under MIT. The body is adapted from Z-Anatomy, which is based on BodyParts3D; see ATTRIBUTIONS.md in the package.</p>",
+  "creators": [
+    {
+      "name": "Zhang, Yuyue",
+      "affiliation": "Human Motion & Molecular Health Lab, Department of Statistics, Purdue University"
+    },
+    {
+      "name": "Reese, Tim",
+      "affiliation": "Human Motion & Molecular Health Lab, Department of Statistics, Purdue University"
+    },
+    {
+      "name": "He, Yang",
+      "affiliation": "Human Motion & Molecular Health Lab, Department of Statistics, Purdue University"
+    },
+    {
+      "name": "Zhu, Michael",
+      "affiliation": "Human Motion & Molecular Health Lab, Department of Statistics, Purdue University"
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-by-sa-4.0",
+  "language": "eng",
+  "keywords": [
+    "acupuncture",
+    "acupoint",
+    "acupoints",
+    "meridians",
+    "3D atlas",
+    "anatomy",
+    "traditional Chinese medicine",
+    "WHO standard acupuncture point locations",
+    "Z-Anatomy",
+    "dataset"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://elwyn921.github.io/Acu361/",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+      "relation": "isDerivedFrom",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.1093/nar/gkn613",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ]
+}

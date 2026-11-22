@@ -1,0 +1,68 @@
+{
+  "dataset": "Acu361",
+  "version": "1.0.0",
+  "title": "Acu361: an open, expert-annotated 3D atlas of the 361 WHO standard acupoints",
+  "license": {
+    "data": "CC-BY-SA-4.0 (data/, schema/; see LICENSE)",
+    "code": "MIT (scripts/; see LICENSE-CODE)"
+  },
+  "frame": {
+    "units": "mm",
+    "x": "toward the body's left",
+    "y": "up",
+    "z": "anterior (the body faces +z)",
+    "handedness": "right-handed (glTF convention)",
+    "origin": "Z-Anatomy original origin: x = 0 is the mid-sagittal plane of the model, y = 0 is at the soles",
+    "body": "Z-Anatomy male body, standing, undeformed (data/body/*.glb); height of the skin 1709.5 mm"
+  },
+  "counts": {
+    "codes": 361,
+    "points": 670,
+    "bilateral_codes": 309,
+    "midline_codes": 52,
+    "codes_per_meridian": {
+      "LU": 11,
+      "LI": 20,
+      "ST": 45,
+      "SP": 21,
+      "HT": 9,
+      "SI": 19,
+      "BL": 67,
+      "KI": 27,
+      "PC": 9,
+      "TE": 23,
+      "GB": 44,
+      "LR": 14,
+      "GV": 28,
+      "CV": 24
+    },
+    "meridians": 14,
+    "meridian_segments": 66,
+    "meridian_samples": 10894,
+    "rulers": 27,
+    "ruler_instances": 31,
+    "ruler_landmarks": 19,
+    "body_layers": {
+      "skin": {"nodes": 1, "meshes": 1, "vertices": 28271, "triangles": 50876},
+      "bone": {"nodes": 246, "meshes": 246, "vertices": 291940, "triangles": 582676},
+      "ligament": {"nodes": 380, "meshes": 380, "vertices": 70317, "triangles": 123334},
+      "muscle": {"nodes": 675, "meshes": 675, "vertices": 384877, "triangles": 759653},
+      "organ": {"nodes": 277, "meshes": 277, "vertices": 143956, "triangles": 276206},
+      "vessel": {"nodes": 653, "meshes": 653, "vertices": 111771, "triangles": 206006},
+      "nerve": {"nodes": 580, "meshes": 580, "vertices": 237152, "triangles": 451795}
+    }
+  },
+  "files": [
+    {"path": "data/body/bone.glb", "bytes": 14184180, "sha256": "4c00e92bd42764ddff4d3a86cd9f1fba206d95aa8e7145cc3a71f82e9c2c16ff"},
+    {"path": "data/body/ligament.glb", "bytes": 3459876, "sha256": "05ebc8a2680057eb88963762db6e4f7f60d8919989b2a305f7111602b59fa7ef"},
+    {"path": "data/body/muscle.glb", "bytes": 18876048, "sha256": "cb88d2ad0f254d713a51e441456fcca6aa7c42a4bd05c6667c54096db928f9fb"},
+    {"path": "data/body/nerve.glb", "bytes": 11557268, "sha256": "d4e215a9ea2ec4a173dd5816136a762229f5ce2b0c9a939c482b5aef006aa84c"},
+    {"path": "data/body/organ.glb", "bytes": 6978352, "sha256": "ff885c85d2de23b728152ba6630b5c1c6905f2f22ae2cf01d045326edd6eaf46"},
+    {"path": "data/body/skin.glb", "bytes": 1290124, "sha256": "ae2b9357646c96d3e0b214801073f06aa71c7cb98aa056525c242b96a1792839"},
+    {"path": "data/body/vessel.glb", "bytes": 5654488, "sha256": "7c624b9e3584acf7b4acc2d5d841f22b4679d898f06d7f26bba1e57dd40dac71"},
+    {"path": "data/meridians.json", "bytes": 295985, "sha256": "17e2f0aba75309608908da9db529c7ab6f1015279c98a8b6a58397dc074868bd"},
+    {"path": "data/points.csv", "bytes": 49274, "sha256": "e4cc6be4e95f722e38f30d609712ec57cfaf8a6523bc6bc8f7652f71410426a7"},
+    {"path": "data/points.json", "bytes": 149599, "sha256": "9a14bbbd4e71be42c9f7436101cf0bb75bc727b299ccee68d352c45363566416"},
+    {"path": "data/rulers.json", "bytes": 34489, "sha256": "5625a1c57df58c1e17086bbcdb88351c9d4af5d6133f37b8ac76534612424692"}
+  ]
+}

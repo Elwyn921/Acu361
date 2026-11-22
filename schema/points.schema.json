@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Acu361 data/points.json",
+  "description": "Positions of the 361 WHO 2008 standard acupoints (670 points) on the Z-Anatomy male standing body. Coordinates in mm: +x toward the body's left, +y up, +z anterior (the body faces +z), right-handed (glTF convention).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["dataset", "version", "license", "description", "annotation", "nomenclature", "frame", "counts", "fields", "points"],
+  "properties": {
+    "dataset": {"const": "Acu361"},
+    "version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "license": {"const": "CC-BY-SA-4.0"},
+    "description": {"type": "string", "minLength": 1},
+    "annotation": {"type": "string", "minLength": 1, "description": "How the points were placed."},
+    "nomenclature": {"type": "string", "minLength": 1, "description": "Source of the point codes and of the point set."},
+    "frame": {"$ref": "#/$defs/frame"},
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["codes", "points", "bilateral_codes", "midline_codes", "codes_per_meridian", "points_per_meridian"],
+      "properties": {
+        "codes": {"const": 361},
+        "points": {"const": 670},
+        "bilateral_codes": {"const": 309},
+        "midline_codes": {"const": 52},
+        "codes_per_meridian": {"$ref": "#/$defs/per_meridian"},
+        "points_per_meridian": {"$ref": "#/$defs/per_meridian"}
+      }
+    },
+    "fields": {
+      "type": "object",
+      "description": "Plain-language description of every field of a point record.",
+      "additionalProperties": {"type": "string"}
+    },
+    "points": {
+      "type": "array",
+      "minItems": 670,
+      "maxItems": 670,
+      "items": {"$ref": "#/$defs/point"}
+    }
+  },
+  "$defs": {
+    "meridian": {
+      "enum": ["LU", "LI", "ST", "SP", "HT", "SI", "BL", "KI", "PC", "TE", "GB", "LR", "GV", "CV"]
+    },
+    "per_meridian": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["LU", "LI", "ST", "SP", "HT", "SI", "BL", "KI", "PC", "TE", "GB", "LR", "GV", "CV"],
+      "patternProperties": {"^(LU|LI|ST|SP|HT|SI|BL|KI|PC|TE|GB|LR|GV|CV)$": {"type": "integer", "minimum": 1}}
+    },
+    "vec3": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {"type": "number"},
+      "description": "[x, y, z] in mm"
+    },
+    "frame": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["units", "x", "y", "z", "handedness", "origin", "body"],
+      "properties": {
+        "units": {"const": "mm"},
+        "x": {"type": "string"},
+        "y": {"type": "string"},
+        "z": {"type": "string"},
+        "handedness": {"type": "string"},
+        "origin": {"type": "string"},
+        "body": {"type": "string"}
+      }
+    },
+    "point": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "code", "side", "meridian", "index", "name_pinyin", "name_zh", "pos", "nearest_bone", "bone_distance_mm"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^(LU|LI|ST|SP|HT|SI|BL|KI|PC|TE|GB|LR|GV|CV)[1-9][0-9]?_(L|R|M)$", "description": "<code>_<side>"},
+        "code": {"type": "string", "pattern": "^(LU|LI|ST|SP|HT|SI|BL|KI|PC|TE|GB|LR|GV|CV)[1-9][0-9]?$", "description": "WHO 2008 point code"},
+        "side": {"enum": ["L", "R", "M"], "description": "L = body left, R = body right, M = midline"},
+        "meridian": {"$ref": "#/$defs/meridian"},
+        "index": {"type": "integer", "minimum": 1, "maximum": 67, "description": "number of the point within its meridian"},
+        "name_pinyin": {"type": "string", "pattern": "^[A-Z][a-z]+(, [A-Z][a-z]+)*$", "description": "Hanyu Pinyin without tone marks"},
+        "name_zh": {"type": "string", "minLength": 1, "description": "simplified Chinese characters"},
+        "pos": {"$ref": "#/$defs/vec3"},
+        "nearest_bone": {"type": "string", "minLength": 1, "description": "node name in data/body/bone.glb whose surface is closest to pos"},
+        "bone_distance_mm": {"type": "number", "minimum": 0, "maximum": 300, "description": "straight-line distance from pos to the closest point on the surface of any node of data/body/bone.glb, rounded to 0.1 mm; not a needling depth"}
+      }
+    }
+  }
+}

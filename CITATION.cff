@@ -1,0 +1,92 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "Acu361: an open, expert-annotated 3D atlas of the 361 WHO standard acupoints"
+version: 1.0.0
+license: CC-BY-SA-4.0
+repository-code: "https://github.com/Elwyn921/Acu361"
+url: "https://elwyn921.github.io/Acu361/"
+abstract: >-
+  3D coordinates of the 361 acupoints of the WHO Standard Acupuncture Point
+  Locations in the Western Pacific Region (2008), 670 points in total, on the
+  undeformed male standing body of the open anatomical model Z-Anatomy. All 361
+  acupoints were located and finalized one by one by an acupuncturist in a 3D
+  annotation tool; bilateral points are left-right symmetric, each right-side
+  point being the mirror image of its left-side counterpart. The package also
+  contains surface lines of the 14 meridians on the skin, the WHO proportional
+  bone (skeletal) measurements in B-cun with endpoints on the body, and the
+  seven anatomical layers of the body as GLB files.
+keywords:
+  - acupuncture
+  - acupoints
+  - meridians
+  - WHO standard acupuncture point locations
+  - 3D anatomy
+  - Z-Anatomy
+  - BodyParts3D
+authors:
+  - family-names: Zhang
+    given-names: Yuyue
+    affiliation: "Human Motion & Molecular Health Lab, Department of Statistics, Purdue University"
+  - family-names: Reese
+    given-names: Tim
+    affiliation: "Human Motion & Molecular Health Lab, Department of Statistics, Purdue University"
+  - family-names: He
+    given-names: Yang
+    affiliation: "Human Motion & Molecular Health Lab, Department of Statistics, Purdue University"
+  - family-names: Zhu
+    given-names: Michael
+    affiliation: "Human Motion & Molecular Health Lab, Department of Statistics, Purdue University"
+contact:
+  - family-names: Zhang
+    given-names: Yuyue
+    email: zhan6013@purdue.edu
+    affiliation: "Human Motion & Molecular Health Lab, Department of Statistics, Purdue University"
+references:
+  - type: software
+    title: "Z-Anatomy - The libre 3D atlas of anatomy"
+    authors:
+      - family-names: Kervyn
+        given-names: Gauthier
+      - family-names: Zielinski
+        given-names: Marcin
+    license: CC-BY-SA-4.0
+    repository: "https://github.com/Z-Anatomy/Models-of-human-anatomy"
+    notes: "Blender template; source of the anatomical body. Attribution: Z-Anatomy - The libre 3D atlas of anatomy - CC-BY-SA 4.0."
+  - type: database
+    title: "BodyParts3D"
+    authors:
+      - name: "The Database Center for Life Science"
+    url: "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html"
+    notes: "Licensed under CC BY-SA 2.1 Japan. Attribution: BodyParts3D - The Database Center for Life Science - CC-BY-SA 2.1 Japan."
+  - type: article
+    title: "BodyParts3D: 3D structure database for anatomical concepts"
+    authors:
+      - family-names: Mitsuhashi
+        given-names: N.
+      - family-names: Fujieda
+        given-names: K.
+      - family-names: Tamura
+        given-names: T.
+      - family-names: Kawamoto
+        given-names: S.
+      - family-names: Takagi
+        given-names: T.
+      - family-names: Okubo
+        given-names: K.
+    journal: "Nucleic Acids Research"
+    volume: 37
+    issue: "Database issue"
+    start: D782
+    end: D785
+    year: 2009
+    doi: 10.1093/nar/gkn613
+  - type: standard
+    title: "WHO Standard Acupuncture Point Locations in the Western Pacific Region"
+    authors:
+      - name: "World Health Organization Regional Office for the Western Pacific"
+    publisher:
+      name: "World Health Organization Regional Office for the Western Pacific"
+      city: Manila
+    year: 2008
+    isbn: "978-92-9061-248-7"

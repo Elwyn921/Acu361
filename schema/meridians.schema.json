@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Acu361 data/meridians.json",
+  "description": "Surface lines of the 14 meridians on the skin of data/body/skin.glb. Coordinates in mm, same frame as data/points.json.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["dataset", "version", "license", "description", "method", "frame", "step_mm", "lift_mm", "counts", "fields", "meridians"],
+  "properties": {
+    "dataset": {"const": "Acu361"},
+    "version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "license": {"const": "CC-BY-SA-4.0"},
+    "description": {"type": "string", "minLength": 1},
+    "method": {"type": "string", "minLength": 1},
+    "frame": {"$ref": "#/$defs/frame"},
+    "step_mm": {"type": "number", "exclusiveMinimum": 0, "description": "target spacing of the samples along a line"},
+    "lift_mm": {"type": "number", "minimum": 0, "description": "offset of the samples from the skin along the skin normal"},
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["meridians", "segments", "samples"],
+      "properties": {
+        "meridians": {"const": 14},
+        "segments": {"type": "integer", "minimum": 14},
+        "samples": {"type": "integer", "minimum": 1}
+      }
+    },
+    "fields": {"type": "object", "additionalProperties": {"type": "string"}},
+    "meridians": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["LU", "LI", "ST", "SP", "HT", "SI", "BL", "KI", "PC", "TE", "GB", "LR", "GV", "CV"],
+      "patternProperties": {"^(LU|LI|ST|SP|HT|SI|BL|KI|PC|TE|GB|LR|GV|CV)$": {"$ref": "#/$defs/meridian"}}
+    }
+  },
+  "$defs": {
+    "frame": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["units", "x", "y", "z", "handedness", "origin", "body"],
+      "properties": {
+        "units": {"const": "mm"},
+        "x": {"type": "string"},
+        "y": {"type": "string"},
+        "z": {"type": "string"},
+        "handedness": {"type": "string"},
+        "origin": {"type": "string"},
+        "body": {"type": "string"}
+      }
+    },
+    "vec3": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "number"}},
+    "meridian": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name_en", "lines"],
+      "properties": {
+        "name_en": {"type": "string", "minLength": 1, "description": "meridian name as in WHO 2008"},
+        "lines": {
+          "type": "object",
+          "description": "per side: L and R for the 12 bilateral meridians, M for GV and CV",
+          "additionalProperties": false,
+          "minProperties": 1,
+          "patternProperties": {"^(L|R|M)$": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/segment"}}}
+        }
+      }
+    },
+    "segment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "codes", "via", "knots", "points"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "codes": {
+          "type": "array",
+          "minItems": 2,
+          "items": {"type": "string", "pattern": "^((LU|LI|ST|SP|HT|SI|BL|KI|PC|TE|GB|LR|GV|CV)[1-9][0-9]?|mid:[A-Z]{2}[1-9][0-9]?:[A-Z]{2}[1-9][0-9]?)$"},
+          "description": "point codes (and waypoints) in drawing order; mid:A:B = midpoint of A and B projected onto the skin"
+        },
+        "via": {"type": "array", "items": {"type": "string"}, "description": "entries of codes that are waypoints, not points of this meridian"},
+        "knots": {"type": "array", "minItems": 2, "items": {"type": "integer", "minimum": 0}, "description": "index into points of each entry of codes"},
+        "points": {"type": "array", "minItems": 2, "items": {"$ref": "#/$defs/vec3"}}
+      }
+    }
+  }
+}

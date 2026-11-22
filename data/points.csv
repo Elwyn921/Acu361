@@ -1,0 +1,671 @@
+id,code,side,meridian,index,name_pinyin,name_zh,x_mm,y_mm,z_mm,nearest_bone,bone_distance_mm
+LU1_L,LU1,L,LU,1,Zhongfu,中府,116.68,1390.99,36.84,Second rib.l,36.4
+LU1_R,LU1,R,LU,1,Zhongfu,中府,-116.68,1390.98,36.84,Second rib.r,36.4
+LU2_L,LU2,L,LU,2,Yunmen,云门,104.68,1407.23,22.65,Clavicle.l,17.2
+LU2_R,LU2,R,LU,2,Yunmen,云门,-104.68,1407.23,22.65,Clavicle.r,17.2
+LU3_L,LU3,L,LU,3,Tianfu,天府,225.4,1245.13,-3.31,Humerus.l,25.7
+LU3_R,LU3,R,LU,3,Tianfu,天府,-225.38,1245.13,-3.32,Humerus.r,25.7
+LU4_L,LU4,L,LU,4,Xiabai,侠白,227.32,1229.52,-2.41,Humerus.l,28.3
+LU4_R,LU4,R,LU,4,Xiabai,侠白,-227.32,1229.52,-2.41,Humerus.r,28.3
+LU5_L,LU5,L,LU,5,Chize,尺泽,239.32,1118.83,-7.16,Humerus.l,21.8
+LU5_R,LU5,R,LU,5,Chize,尺泽,-239.32,1118.83,-7.16,Humerus.r,21.8
+LU6_L,LU6,L,LU,6,Kongzui,孔最,256.51,1011.41,17.26,Radius.l,31.1
+LU6_R,LU6,R,LU,6,Kongzui,孔最,-256.51,1011.41,17.26,Radius.r,31.1
+LU7_L,LU7,L,LU,7,Lieque,列缺,289.03,889.26,12.34,Radius.l,8.6
+LU7_R,LU7,R,LU,7,Lieque,列缺,-289.04,889.26,12.34,Radius.r,8.6
+LU8_L,LU8,L,LU,8,Jingqu,经渠,285.97,879.28,25.83,Radius.l,8.2
+LU8_R,LU8,R,LU,8,Jingqu,经渠,-285.96,879.28,25.82,Radius.r,8.2
+LU9_L,LU9,L,LU,9,Taiyuan,太渊,288.82,862.14,31.37,Trapezium bone.l,10.1
+LU9_R,LU9,R,LU,9,Taiyuan,太渊,-288.82,862.14,31.37,Trapezium bone.r,10.1
+LU10_L,LU10,L,LU,10,Yuji,鱼际,308.44,837.34,47.79,First metacarpal bone.l,8.5
+LU10_R,LU10,R,LU,10,Yuji,鱼际,-308.45,837.35,47.79,First metacarpal bone.r,8.5
+LU11_L,LU11,L,LU,11,Shaoshang,少商,335.26,778.27,74.49,Distal phalanx of first finger of hand.l,4.4
+LU11_R,LU11,R,LU,11,Shaoshang,少商,-335.26,778.27,74.49,Distal phalanx of first finger of hand.r,4.4
+LI1_L,LI1,L,LI,1,Shangyang,商阳,323.55,714.61,76.52,Distal phalanx of second finger of hand.l,4.3
+LI1_R,LI1,R,LI,1,Shangyang,商阳,-323.56,714.61,76.52,Distal phalanx of second finger of hand.r,4.3
+LI2_L,LI2,L,LI,2,Erjian,二间,311.86,763.72,37.8,Proximal phalanx of second finger of hand.l,6.0
+LI2_R,LI2,R,LI,2,Erjian,二间,-311.86,763.72,37.8,Proximal phalanx of second finger of hand.r,6.0
+LI3_L,LI3,L,LI,3,Sanjian,三间,310.02,781.5,31.35,Second metacarpal bone.l,10.9
+LI3_R,LI3,R,LI,3,Sanjian,三间,-310.03,781.5,31.35,Second metacarpal bone.r,10.9
+LI4_L,LI4,L,LI,4,Hegu,合谷,311.88,815.28,23.86,First metacarpal bone.l,12.9
+LI4_R,LI4,R,LI,4,Hegu,合谷,-311.87,815.28,23.87,First metacarpal bone.r,12.9
+LI5_L,LI5,L,LI,5,Yangxi,阳溪,295.31,859.9,17.25,Radius.l,6.9
+LI5_R,LI5,R,LI,5,Yangxi,阳溪,-295.31,859.9,17.25,Radius.r,6.9
+LI6_L,LI6,L,LI,6,Pianli,偏历,282.6,919.22,0.65,Radius.l,9.5
+LI6_R,LI6,R,LI,6,Pianli,偏历,-282.59,919.22,0.65,Radius.r,9.5
+LI7_L,LI7,L,LI,7,Wenliu,温溜,278.73,962.33,-10.34,Radius.l,11.8
+LI7_R,LI7,R,LI,7,Wenliu,温溜,-278.73,962.33,-10.34,Radius.r,11.8
+LI8_L,LI8,L,LI,8,Xialian,下廉,281.72,1028.57,-24.34,Radius.l,26.2
+LI8_R,LI8,R,LI,8,Xialian,下廉,-281.71,1028.57,-24.34,Radius.r,26.2
+LI9_L,LI9,L,LI,9,Shanglian,上廉,280.47,1046.02,-27.24,Radius.l,28.4
+LI9_R,LI9,R,LI,9,Shanglian,上廉,-280.48,1046.02,-27.24,Radius.r,28.4
+LI10_L,LI10,L,LI,10,Shousanli,手三里,276.21,1074.2,-30.91,Radius.l,29.3
+LI10_R,LI10,R,LI,10,Shousanli,手三里,-276.21,1074.2,-30.91,Radius.r,29.3
+LI11_L,LI11,L,LI,11,Quchi,曲池,265.05,1117.43,-37.97,Humerus.l,17.3
+LI11_R,LI11,R,LI,11,Quchi,曲池,-265.06,1117.43,-37.97,Humerus.r,17.3
+LI12_L,LI12,L,LI,12,Zhouliao,肘髎,257.6,1136.47,-39.21,Humerus.l,19.7
+LI12_R,LI12,R,LI,12,Zhouliao,肘髎,-257.6,1136.47,-39.21,Humerus.r,19.7
+LI13_L,LI13,L,LI,13,Shouwuli,手五里,248.32,1191.0,-34.36,Humerus.l,30.5
+LI13_R,LI13,R,LI,13,Shouwuli,手五里,-248.32,1191.0,-34.36,Humerus.r,30.5
+LI14_L,LI14,L,LI,14,Binao,臂臑,233.64,1283.6,-21.75,Humerus.l,25.0
+LI14_R,LI14,R,LI,14,Binao,臂臑,-233.63,1283.6,-21.75,Humerus.r,25.0
+LI15_L,LI15,L,LI,15,Jianyu,肩髃,177.65,1419.69,-23.37,Scapula.l,11.8
+LI15_R,LI15,R,LI,15,Jianyu,肩髃,-177.65,1419.69,-23.37,Scapula.r,11.8
+LI16_L,LI16,L,LI,16,Jugu,巨骨,138.8,1436.71,-66.22,Clavicle.l,23.4
+LI16_R,LI16,R,LI,16,Jugu,巨骨,-138.8,1436.71,-66.22,Clavicle.r,23.4
+LI17_L,LI17,L,LI,17,Tianding,天鼎,55.74,1466.64,9.09,Vertebra C5,35.9
+LI17_R,LI17,R,LI,17,Tianding,天鼎,-55.75,1466.64,9.09,Vertebra C5,35.9
+LI18_L,LI18,L,LI,18,Futu,扶突,50.76,1490.02,14.01,Mandible,32.3
+LI18_R,LI18,R,LI,18,Futu,扶突,-50.76,1490.02,14.01,Mandible,32.3
+LI19_L,LI19,L,LI,19,Kouheliao,口禾髎,18.29,1547.47,91.54,Maxilla.l,8.6
+LI19_R,LI19,R,LI,19,Kouheliao,口禾髎,-18.29,1547.47,91.54,Maxilla.r,8.6
+LI20_L,LI20,L,LI,20,Yingxiang,迎香,-19.56,1555.38,87.36,Maxilla.r,8.6
+LI20_R,LI20,R,LI,20,Yingxiang,迎香,19.56,1555.38,87.36,Maxilla.l,8.6
+ST1_L,ST1,L,ST,1,Chengqi,承泣,32.47,1574.99,79.41,Zygomatic bone.l,9.6
+ST1_R,ST1,R,ST,1,Chengqi,承泣,-32.47,1574.99,79.41,Zygomatic bone.r,9.6
+ST2_L,ST2,L,ST,2,Sibai,四白,32.19,1565.38,83.37,Maxilla.l,11.7
+ST2_R,ST2,R,ST,2,Sibai,四白,-32.19,1565.38,83.37,Maxilla.r,11.7
+ST3_L,ST3,L,ST,3,Juliao,巨髎,32.69,1553.22,83.64,Maxilla.l,12.8
+ST3_R,ST3,R,ST,3,Juliao,巨髎,-32.69,1553.22,83.64,Maxilla.r,12.8
+ST4_L,ST4,L,ST,4,Dicang,地仓,34.71,1532.62,81.07,Upper first premolar.l,11.5
+ST4_R,ST4,R,ST,4,Dicang,地仓,-34.71,1532.62,81.07,Upper first premolar.r,11.5
+ST5_L,ST5,L,ST,5,Daying,大迎,52.55,1518.25,36.12,Mandible,13.8
+ST5_R,ST5,R,ST,5,Daying,大迎,-52.55,1518.25,36.12,Mandible,13.8
+ST6_L,ST6,L,ST,6,Jiache,颊车,61.35,1540.38,23.63,Mandible,17.2
+ST6_R,ST6,R,ST,6,Jiache,颊车,-61.35,1540.38,23.63,Mandible,17.2
+ST7_L,ST7,L,ST,7,Xiaguan,下关,69.13,1573.48,21.36,Temporal bone.l,7.8
+ST7_R,ST7,R,ST,7,Xiaguan,下关,-69.13,1573.48,21.36,Temporal bone.r,7.8
+ST8_L,ST8,L,ST,8,Touwei,头维,60.72,1657.82,41.39,Frontal bone,5.9
+ST8_R,ST8,R,ST,8,Touwei,头维,-60.73,1657.82,41.39,Frontal bone,5.9
+ST9_L,ST9,L,ST,9,Renying,人迎,34.13,1477.76,31.02,Hyoid bone,25.1
+ST9_R,ST9,R,ST,9,Renying,人迎,-34.13,1477.76,31.02,Hyoid bone,25.1
+ST10_L,ST10,L,ST,10,Shuitu,水突,31.79,1452.61,37.22,Clavicle.l,36.6
+ST10_R,ST10,R,ST,10,Shuitu,水突,-31.79,1452.61,37.22,Clavicle.r,36.6
+ST11_L,ST11,L,ST,11,Qishe,气舍,29.87,1424.5,48.68,Clavicle.l,11.8
+ST11_R,ST11,R,ST,11,Qishe,气舍,-29.87,1424.5,48.68,Clavicle.r,11.8
+ST12_L,ST12,L,ST,12,Quepen,缺盆,69.01,1427.98,32.54,Clavicle.l,15.1
+ST12_R,ST12,R,ST,12,Quepen,缺盆,-69.01,1427.98,32.54,Clavicle.r,15.1
+ST13_L,ST13,L,ST,13,Qihu,气户,75.0,1404.75,49.81,Clavicle.l,16.3
+ST13_R,ST13,R,ST,13,Qihu,气户,-75.0,1404.75,49.81,Clavicle.r,16.3
+ST14_L,ST14,L,ST,14,Kufang,库房,83.39,1379.2,69.33,Second rib.l,31.2
+ST14_R,ST14,R,ST,14,Kufang,库房,-83.39,1379.2,69.33,Second rib.r,31.2
+ST15_L,ST15,L,ST,15,Wuyi,屋翳,94.77,1346.15,89.56,Third rib.l,38.4
+ST15_R,ST15,R,ST,15,Wuyi,屋翳,-94.77,1346.15,89.56,Third rib.r,38.4
+ST16_L,ST16,L,ST,16,Yingchuang,膺窗,103.65,1317.13,101.93,Fourth rib.l,34.8
+ST16_R,ST16,R,ST,16,Yingchuang,膺窗,-103.65,1317.13,101.93,Fourth rib.r,34.8
+ST17_L,ST17,L,ST,17,Ruzhong,乳中,115.52,1278.98,118.8,Fifth rib.l,41.4
+ST17_R,ST17,R,ST,17,Ruzhong,乳中,-115.51,1278.98,118.79,Fifth rib.r,41.4
+ST18_L,ST18,L,ST,18,Rugen,乳根,109.32,1229.22,108.09,Sixth rib.l,18.2
+ST18_R,ST18,R,ST,18,Rugen,乳根,-109.32,1229.22,108.09,Sixth rib.r,18.2
+ST19_L,ST19,L,ST,19,Burong,不容,52.78,1179.15,130.47,Sixth rib.l,61.6
+ST19_R,ST19,R,ST,19,Burong,不容,-52.78,1179.15,130.47,Sixth rib.r,61.6
+ST20_L,ST20,L,ST,20,Chengman,承满,52.19,1155.05,129.59,Sixth rib.l,75.2
+ST20_R,ST20,R,ST,20,Chengman,承满,-52.19,1155.05,129.59,Sixth rib.r,75.2
+ST21_L,ST21,L,ST,21,Liangmen,梁门,51.71,1127.18,125.23,Seventh rib.l,87.1
+ST21_R,ST21,R,ST,21,Liangmen,梁门,-51.71,1127.18,125.23,Seventh rib.r,87.1
+ST22_L,ST22,L,ST,22,Guanmen,关门,50.73,1098.89,119.01,Eighth rib.l,94.0
+ST22_R,ST22,R,ST,22,Guanmen,关门,-50.73,1098.89,119.01,Eighth rib.r,94.0
+ST23_L,ST23,L,ST,23,Taiyi,太乙,50.46,1070.12,117.57,Eighth rib.l,107.9
+ST23_R,ST23,R,ST,23,Taiyi,太乙,-50.46,1070.12,117.57,Eighth rib.r,107.9
+ST24_L,ST24,L,ST,24,Huaroumen,滑肉门,49.85,1043.61,114.56,Vertebra L3,105.2
+ST24_R,ST24,R,ST,24,Huaroumen,滑肉门,-49.85,1043.61,114.56,Vertebra L3,105.2
+ST25_L,ST25,L,ST,25,Tianshu,天枢,50.16,1018.39,114.27,Vertebra L3,106.0
+ST25_R,ST25,R,ST,25,Tianshu,天枢,-50.16,1018.39,114.27,Vertebra L3,106.1
+ST26_L,ST26,L,ST,26,Wailing,外陵,51.01,987.39,114.81,Hip bone.l,95.9
+ST26_R,ST26,R,ST,26,Wailing,外陵,-51.01,987.39,114.8,Hip bone.r,95.9
+ST27_L,ST27,L,ST,27,Daju,大巨,50.35,949.63,107.86,Hip bone.l,84.2
+ST27_R,ST27,R,ST,27,Daju,大巨,-50.35,949.63,107.86,Hip bone.r,84.2
+ST28_L,ST28,L,ST,28,Shuidao,水道,48.76,919.55,100.98,Hip bone.l,84.0
+ST28_R,ST28,R,ST,28,Shuidao,水道,-48.76,919.55,100.98,Hip bone.r,84.0
+ST29_L,ST29,L,ST,29,Guilai,归来,47.25,879.99,87.52,Hip bone.l,52.5
+ST29_R,ST29,R,ST,29,Guilai,归来,-47.25,879.99,87.52,Hip bone.r,52.5
+ST30_L,ST30,L,ST,30,Qichong,气冲,41.68,845.86,70.26,Hip bone.l,24.7
+ST30_R,ST30,R,ST,30,Qichong,气冲,-41.68,845.86,70.26,Hip bone.r,24.7
+ST31_L,ST31,L,ST,31,Biguan,髀关,125.02,806.22,70.77,Femur.l,69.9
+ST31_R,ST31,R,ST,31,Biguan,髀关,-125.02,806.22,70.77,Femur.r,69.9
+ST32_L,ST32,L,ST,32,Futu,伏兔,127.36,597.18,53.84,Femur.l,52.1
+ST32_R,ST32,R,ST,32,Futu,伏兔,-127.36,597.18,53.84,Femur.r,52.1
+ST33_L,ST33,L,ST,33,Yinshi,阴市,119.82,527.75,48.34,Femur.l,49.3
+ST33_R,ST33,R,ST,33,Yinshi,阴市,-119.82,527.75,48.34,Femur.r,49.3
+ST34_L,ST34,L,ST,34,Liangqiu,梁丘,118.11,506.43,46.33,Femur.l,48.7
+ST34_R,ST34,R,ST,34,Liangqiu,梁丘,-118.1,506.43,46.32,Femur.r,48.7
+ST35_L,ST35,L,ST,35,Dubi,犊鼻,122.65,426.13,28.59,Patella.l,29.8
+ST35_R,ST35,R,ST,35,Dubi,犊鼻,-122.65,426.13,28.59,Patella.r,29.8
+ST36_L,ST36,L,ST,36,Zusanli,足三里,118.3,364.95,11.19,Tibia.l,27.8
+ST36_R,ST36,R,ST,36,Zusanli,足三里,-118.3,364.95,11.19,Tibia.r,27.8
+ST37_L,ST37,L,ST,37,Shangjuxu,上巨虚,118.91,298.16,4.8,Tibia.l,30.1
+ST37_R,ST37,R,ST,37,Shangjuxu,上巨虚,-118.91,298.16,4.8,Tibia.r,30.1
+ST38_L,ST38,L,ST,38,Tiaokou,条口,109.51,257.27,1.05,Tibia.l,23.5
+ST38_R,ST38,R,ST,38,Tiaokou,条口,-109.51,257.27,1.05,Tibia.r,23.5
+ST39_L,ST39,L,ST,39,Xiajuxu,下巨虚,108.85,233.98,-3.53,Tibia.l,22.8
+ST39_R,ST39,R,ST,39,Xiajuxu,下巨虚,-108.85,233.98,-3.53,Tibia.r,22.8
+ST40_L,ST40,L,ST,40,Fenglong,丰隆,125.08,252.39,-8.62,Fibula.l,33.9
+ST40_R,ST40,R,ST,40,Fenglong,丰隆,-125.08,252.39,-8.62,Fibula.r,33.9
+ST41_L,ST41,L,ST,41,Jiexi,解溪,91.56,84.73,0.71,Navicular bone.l,13.3
+ST41_R,ST41,R,ST,41,Jiexi,解溪,-91.57,84.74,0.71,Navicular bone.r,13.4
+ST42_L,ST42,L,ST,42,Chongyang,冲阳,94.31,70.16,25.27,Second metatarsal bone.l,9.4
+ST42_R,ST42,R,ST,42,Chongyang,冲阳,-94.31,70.15,25.27,Second metatarsal bone.r,9.4
+ST43_L,ST43,L,ST,43,Xiangu,陷谷,102.24,38.14,70.99,Third metatarsal bone.l,7.6
+ST43_R,ST43,R,ST,43,Xiangu,陷谷,-102.24,38.14,70.99,Third metatarsal bone.r,7.6
+ST44_L,ST44,L,ST,44,Neiting,内庭,105.51,26.12,94.08,Proximal phalanx of third finger of foot.l,6.3
+ST44_R,ST44,R,ST,44,Neiting,内庭,-105.51,26.12,94.08,Proximal phalanx of third finger of foot.r,6.3
+ST45_L,ST45,L,ST,45,Lidui,厉兑,115.41,17.72,131.68,Distal phalanx of third finger of foot.l,6.3
+ST45_R,ST45,R,ST,45,Lidui,厉兑,-115.41,17.72,131.68,Distal phalanx of third finger of foot.r,6.3
+SP1_L,SP1,L,SP,1,Yinbai,隐白,76.16,19.92,133.12,Distal phalanx of first finger of foot.l,6.0
+SP1_R,SP1,R,SP,1,Yinbai,隐白,-76.16,19.92,133.12,Distal phalanx of first finger of foot.r,6.0
+SP2_L,SP2,L,SP,2,Dadu,大都,65.68,19.55,98.26,Proximal phalanx of first finger of foot.l,2.0
+SP2_R,SP2,R,SP,2,Dadu,大都,-65.68,19.55,98.26,Proximal phalanx of first finger of foot.r,2.0
+SP3_L,SP3,L,SP,3,Taibai,太白,53.72,22.28,69.23,First metatarsal bone.l,8.4
+SP3_R,SP3,R,SP,3,Taibai,太白,-53.72,22.28,69.23,First metatarsal bone.r,8.4
+SP4_L,SP4,L,SP,4,Gongsun,公孙,52.3,32.71,40.9,First metatarsal bone.l,13.0
+SP4_R,SP4,R,SP,4,Gongsun,公孙,-52.29,32.71,40.9,First metatarsal bone.r,13.0
+SP5_L,SP5,L,SP,5,Shangqiu,商丘,44.1,66.04,-16.94,Talus.l,11.2
+SP5_R,SP5,R,SP,5,Shangqiu,商丘,-44.1,66.04,-16.94,Talus.r,11.2
+SP6_L,SP6,L,SP,6,Sanyinjiao,三阴交,50.81,163.62,-47.17,Tibia.l,17.6
+SP6_R,SP6,R,SP,6,Sanyinjiao,三阴交,-50.8,163.62,-47.17,Tibia.r,17.6
+SP7_L,SP7,L,SP,7,Lougu,漏谷,44.32,225.92,-41.57,Tibia.l,25.5
+SP7_R,SP7,R,SP,7,Lougu,漏谷,-44.31,225.92,-41.57,Tibia.r,25.6
+SP8_L,SP8,L,SP,8,Diji,地机,33.35,317.2,-38.98,Tibia.l,37.4
+SP8_R,SP8,R,SP,8,Diji,地机,-33.36,317.2,-38.98,Tibia.r,37.4
+SP9_L,SP9,L,SP,9,Yinlingquan,阴陵泉,40.26,387.78,-40.61,Tibia.l,10.8
+SP9_R,SP9,R,SP,9,Yinlingquan,阴陵泉,-40.25,387.78,-40.61,Tibia.r,10.8
+SP10_L,SP10,L,SP,10,Xuehai,血海,68.69,503.74,48.55,Femur.l,45.4
+SP10_R,SP10,R,SP,10,Xuehai,血海,-68.69,503.74,48.55,Femur.r,45.4
+SP11_L,SP11,L,SP,11,Jimen,箕门,70.73,675.92,57.45,Femur.l,52.6
+SP11_R,SP11,R,SP,11,Jimen,箕门,-70.73,675.92,57.45,Femur.r,52.6
+SP12_L,SP12,L,SP,12,Chongmen,冲门,74.21,849.15,71.9,Hip bone.l,46.9
+SP12_R,SP12,R,SP,12,Chongmen,冲门,-74.21,849.15,71.9,Hip bone.r,46.9
+SP13_L,SP13,L,SP,13,Fushe,府舍,89.77,872.03,76.96,Hip bone.l,54.4
+SP13_R,SP13,R,SP,13,Fushe,府舍,-89.77,872.03,76.96,Hip bone.r,54.4
+SP14_L,SP14,L,SP,14,Fujie,腹结,97.27,982.38,88.27,Hip bone.l,49.1
+SP14_R,SP14,R,SP,14,Fujie,腹结,-97.27,982.38,88.27,Hip bone.r,49.1
+SP15_L,SP15,L,SP,15,Daheng,大横,97.58,1017.12,89.69,Hip bone.l,71.8
+SP15_R,SP15,R,SP,15,Daheng,大横,-97.58,1017.12,89.69,Hip bone.r,71.8
+SP16_L,SP16,L,SP,16,Fuai,腹哀,95.15,1094.51,95.08,Eighth rib.l,57.1
+SP16_R,SP16,R,SP,16,Fuai,腹哀,-95.15,1094.51,95.09,Eighth rib.r,57.1
+SP17_L,SP17,L,SP,17,Shidou,食窦,135.17,1234.96,79.67,Sixth rib.l,20.8
+SP17_R,SP17,R,SP,17,Shidou,食窦,-135.16,1234.96,79.67,Sixth rib.r,20.8
+SP18_L,SP18,L,SP,18,Tianxi,天溪,140.85,1287.35,88.41,Fifth rib.l,39.6
+SP18_R,SP18,R,SP,18,Tianxi,天溪,-140.85,1287.35,88.41,Fifth rib.r,39.6
+SP19_L,SP19,L,SP,19,Xiongxiang,胸乡,134.85,1318.35,79.97,Fourth rib.l,40.3
+SP19_R,SP19,R,SP,19,Xiongxiang,胸乡,-134.85,1318.35,79.97,Fourth rib.r,40.3
+SP20_L,SP20,L,SP,20,Zhourong,周荣,130.01,1355.03,61.72,Third rib.l,45.6
+SP20_R,SP20,R,SP,20,Zhourong,周荣,-130.01,1355.03,61.72,Third rib.r,45.6
+SP21_L,SP21,L,SP,21,Dabao,大包,157.47,1221.32,16.32,Seventh rib.l,16.2
+SP21_R,SP21,R,SP,21,Dabao,大包,-157.46,1221.32,16.32,Seventh rib.r,16.2
+HT1_L,HT1,L,HT,1,Jiquan,极泉,161.49,1276.28,-2.02,Sixth rib.l,25.9
+HT1_R,HT1,R,HT,1,Jiquan,极泉,-161.49,1276.28,-2.02,Sixth rib.r,25.9
+HT2_L,HT2,L,HT,2,Qingling,青灵,171.24,1176.68,-63.04,Humerus.l,34.5
+HT2_R,HT2,R,HT,2,Qingling,青灵,-171.25,1176.68,-63.04,Humerus.r,34.5
+HT3_L,HT3,L,HT,3,Shaohai,少海,189.45,1105.85,-12.54,Humerus.l,16.7
+HT3_R,HT3,R,HT,3,Shaohai,少海,-189.45,1105.85,-12.54,Humerus.r,16.7
+HT4_L,HT4,L,HT,4,Lingdao,灵道,232.87,883.81,23.2,Ulna.l,13.2
+HT4_R,HT4,R,HT,4,Lingdao,灵道,-232.87,883.81,23.2,Ulna.r,13.2
+HT5_L,HT5,L,HT,5,Tongli,通里,234.92,873.91,25.21,Ulna.l,10.4
+HT5_R,HT5,R,HT,5,Tongli,通里,-234.92,873.91,25.2,Ulna.r,10.4
+HT6_L,HT6,L,HT,6,Yinxi,阴郄,236.43,865.47,26.79,Ulna.l,9.1
+HT6_R,HT6,R,HT,6,Yinxi,阴郄,-236.43,865.47,26.79,Ulna.r,9.1
+HT7_L,HT7,L,HT,7,Shenmen,神门,237.6,856.71,28.72,Pisiform bone.l,7.0
+HT7_R,HT7,R,HT,7,Shenmen,神门,-237.6,856.71,28.72,Pisiform bone.r,7.0
+HT8_L,HT8,L,HT,8,Shaofu,少府,242.97,800.33,51.73,Fifth metacarpal bone.l,13.8
+HT8_R,HT8,R,HT,8,Shaofu,少府,-242.97,800.33,51.73,Fifth metacarpal bone.r,13.8
+HT9_L,HT9,L,HT,9,Shaochong,少冲,233.95,728.03,73.31,Distal phalanx of fifth finger of hand.l,3.3
+HT9_R,HT9,R,HT,9,Shaochong,少冲,-233.95,728.02,73.31,Distal phalanx of fifth finger of hand.r,3.3
+SI1_L,SI1,L,SI,1,Shaoze,少泽,224.9,733.93,67.08,Middle phalanx of fifth finger of hand.l,3.3
+SI1_R,SI1,R,SI,1,Shaoze,少泽,-224.9,733.93,67.08,Middle phalanx of fifth finger of hand.r,3.3
+SI2_L,SI2,L,SI,2,Qiangu,前谷,229.86,771.09,52.81,Proximal phalanx of fifth finger of hand.l,5.7
+SI2_R,SI2,R,SI,2,Qiangu,前谷,-229.86,771.09,52.81,Proximal phalanx of fifth finger of hand.r,5.7
+SI3_L,SI3,L,SI,3,Houxi,后溪,225.6,792.55,38.88,Fifth metacarpal bone.l,8.9
+SI3_R,SI3,R,SI,3,Houxi,后溪,-225.61,792.55,38.88,Fifth metacarpal bone.r,8.9
+SI4_L,SI4,L,SI,4,Wangu,腕骨,228.98,830.46,35.5,Fifth metacarpal bone.l,15.2
+SI4_R,SI4,R,SI,4,Wangu,腕骨,-228.97,830.47,35.51,Fifth metacarpal bone.r,15.2
+SI5_L,SI5,L,SI,5,Yanggu,阳谷,237.16,852.18,30.47,Pisiform bone.l,4.0
+SI5_R,SI5,R,SI,5,Yanggu,阳谷,-237.15,852.18,30.47,Pisiform bone.r,4.0
+SI6_L,SI6,L,SI,6,Yanglao,养老,239.6,865.81,-1.66,Ulna.l,7.7
+SI6_R,SI6,R,SI,6,Yanglao,养老,-239.6,865.81,-1.66,Ulna.r,7.7
+SI7_L,SI7,L,SI,7,Zhizheng,支正,210.8,954.06,-13.73,Ulna.l,17.5
+SI7_R,SI7,R,SI,7,Zhizheng,支正,-210.81,954.06,-13.73,Ulna.r,17.5
+SI8_L,SI8,L,SI,8,Xiaohai,小海,182.75,1094.74,-47.34,Humerus.l,10.6
+SI8_R,SI8,R,SI,8,Xiaohai,小海,-182.75,1094.74,-47.34,Humerus.r,10.6
+SI9_L,SI9,L,SI,9,Jianzhen,肩贞,159.47,1321.26,-114.76,Scapula.l,49.2
+SI9_R,SI9,R,SI,9,Jianzhen,肩贞,-159.47,1321.26,-114.75,Scapula.r,49.2
+SI10_L,SI10,L,SI,10,Naoshu,臑俞,154.23,1386.09,-102.7,Scapula.l,31.6
+SI10_R,SI10,R,SI,10,Naoshu,臑俞,-154.23,1386.09,-102.7,Scapula.r,31.6
+SI11_L,SI11,L,SI,11,Tianzong,天宗,112.63,1357.1,-123.85,Scapula.l,33.0
+SI11_R,SI11,R,SI,11,Tianzong,天宗,-112.63,1357.1,-123.85,Scapula.r,33.0
+SI12_L,SI12,L,SI,12,Bingfeng,秉风,124.65,1406.82,-105.18,Scapula.l,22.8
+SI12_R,SI12,R,SI,12,Bingfeng,秉风,-124.65,1406.82,-105.18,Scapula.r,22.8
+SI13_L,SI13,L,SI,13,Quyuan,曲垣,70.87,1393.33,-124.81,Scapula.l,30.0
+SI13_R,SI13,R,SI,13,Quyuan,曲垣,-70.87,1393.33,-124.81,Scapula.r,30.0
+SI14_L,SI14,L,SI,14,Jianwaishu,肩外俞,66.03,1436.57,-102.51,Scapula.l,37.2
+SI14_R,SI14,R,SI,14,Jianwaishu,肩外俞,-66.03,1436.57,-102.51,Scapula.r,37.2
+SI15_L,SI15,L,SI,15,Jianzhongshu,肩中俞,40.67,1453.11,-88.76,Vertebra T2,38.7
+SI15_R,SI15,R,SI,15,Jianzhongshu,肩中俞,-40.67,1453.11,-88.76,Vertebra T2,38.7
+SI16_L,SI16,L,SI,16,Tianchuang,天窗,56.35,1491.23,-3.88,Vertebra C4,28.4
+SI16_R,SI16,R,SI,16,Tianchuang,天窗,-56.33,1491.23,-3.88,Vertebra C4,28.6
+SI17_L,SI17,L,SI,17,Tianrong,天容,51.55,1518.79,10.35,Mandible,13.9
+SI17_R,SI17,R,SI,17,Tianrong,天容,-51.53,1518.79,10.35,Mandible,13.9
+SI18_L,SI18,L,SI,18,Quanliao,颧髎,51.51,1553.4,71.76,Zygomatic bone.l,12.5
+SI18_R,SI18,R,SI,18,Quanliao,颧髎,-51.51,1553.4,71.76,Zygomatic bone.r,12.5
+SI19_L,SI19,L,SI,19,Tinggong,听宫,68.44,1572.45,14.34,Temporal bone.l,9.1
+SI19_R,SI19,R,SI,19,Tinggong,听宫,-68.45,1572.45,14.34,Temporal bone.r,9.1
+BL1_L,BL1,L,BL,1,Jingming,睛明,12.95,1590.88,79.83,Maxilla.l,2.7
+BL1_R,BL1,R,BL,1,Jingming,睛明,-12.95,1590.88,79.83,Maxilla.r,2.7
+BL2_L,BL2,L,BL,2,Zanzhu,攒竹,8.93,1611.86,92.66,Frontal bone,8.3
+BL2_R,BL2,R,BL,2,Zanzhu,攒竹,-8.93,1611.86,92.66,Frontal bone,8.3
+BL3_L,BL3,L,BL,3,Meichong,眉冲,8.63,1670.71,75.81,Frontal bone,4.2
+BL3_R,BL3,R,BL,3,Meichong,眉冲,-8.63,1670.71,75.81,Frontal bone,4.2
+BL4_L,BL4,L,BL,4,Qucha,曲差,21.02,1669.85,73.84,Frontal bone,4.4
+BL4_R,BL4,R,BL,4,Qucha,曲差,-21.02,1669.85,73.84,Frontal bone,4.4
+BL5_L,BL5,L,BL,5,Wuchu,五处,20.19,1682.67,61.24,Frontal bone,4.1
+BL5_R,BL5,R,BL,5,Wuchu,五处,-20.19,1682.67,61.24,Frontal bone,4.1
+BL6_L,BL6,L,BL,6,Chengguang,承光,21.19,1701.05,23.3,Parietal bone.l,4.6
+BL6_R,BL6,R,BL,6,Chengguang,承光,-21.19,1701.05,23.3,Frontal bone,4.7
+BL7_L,BL7,L,BL,7,Tongtian,通天,25.27,1704.99,-11.07,Parietal bone.l,4.3
+BL7_R,BL7,R,BL,7,Tongtian,通天,-25.27,1704.99,-11.07,Parietal bone.r,4.1
+BL8_L,BL8,L,BL,8,Luoque,络却,28.7,1699.68,-51.02,Parietal bone.l,4.7
+BL8_R,BL8,R,BL,8,Luoque,络却,-28.7,1699.68,-51.02,Parietal bone.r,4.6
+BL9_L,BL9,L,BL,9,Yuzhen,玉枕,32.18,1592.42,-96.02,Occipital bone,5.7
+BL9_R,BL9,R,BL,9,Yuzhen,玉枕,-32.18,1592.42,-96.02,Occipital bone,5.7
+BL10_L,BL10,L,BL,10,Tianzhu,天柱,23.01,1533.51,-62.61,Occipital bone,24.6
+BL10_R,BL10,R,BL,10,Tianzhu,天柱,-23.01,1533.51,-62.61,Occipital bone,24.6
+BL11_L,BL11,L,BL,11,Dazhu,大杼,32.98,1434.33,-103.72,Vertebra T1,37.0
+BL11_R,BL11,R,BL,11,Dazhu,大杼,-32.98,1434.33,-103.72,Vertebra T1,37.0
+BL12_L,BL12,L,BL,12,Fengmen,风门,31.49,1410.54,-115.06,Vertebra T2,39.5
+BL12_R,BL12,R,BL,12,Fengmen,风门,-31.49,1410.54,-115.06,Vertebra T2,39.5
+BL13_L,BL13,L,BL,13,Feishu,肺俞,30.56,1380.16,-122.44,Vertebra T3,37.0
+BL13_R,BL13,R,BL,13,Feishu,肺俞,-30.56,1380.16,-122.44,Vertebra T3,37.0
+BL14_L,BL14,L,BL,14,Jueyinshu,厥阴俞,31.07,1348.61,-126.35,Scapula.l,38.2
+BL14_R,BL14,R,BL,14,Jueyinshu,厥阴俞,-31.07,1348.61,-126.35,Scapula.r,38.2
+BL15_L,BL15,L,BL,15,Xinshu,心俞,30.85,1317.11,-130.63,Scapula.l,40.1
+BL15_R,BL15,R,BL,15,Xinshu,心俞,-30.85,1317.11,-130.64,Scapula.r,40.1
+BL16_L,BL16,L,BL,16,Dushu,督俞,31.5,1284.6,-132.27,Vertebra T6,44.5
+BL16_R,BL16,R,BL,16,Dushu,督俞,-31.5,1284.6,-132.27,Vertebra T6,44.5
+BL17_L,BL17,L,BL,17,Geshu,膈俞,31.84,1252.81,-130.81,Eighth rib.l,45.2
+BL17_R,BL17,R,BL,17,Geshu,膈俞,-31.84,1252.81,-130.81,Eighth rib.r,45.2
+BL18_L,BL18,L,BL,18,Ganshu,肝俞,31.78,1192.84,-121.29,Vertebra T9,42.2
+BL18_R,BL18,R,BL,18,Ganshu,肝俞,-31.78,1192.84,-121.29,Vertebra T9,42.2
+BL19_L,BL19,L,BL,19,Danshu,胆俞,32.58,1163.87,-113.35,Vertebra T10,38.7
+BL19_R,BL19,R,BL,19,Danshu,胆俞,-32.58,1163.87,-113.35,Vertebra T10,38.8
+BL20_L,BL20,L,BL,20,Pishu,脾俞,32.55,1131.42,-104.06,Eleventh rib.l,39.6
+BL20_R,BL20,R,BL,20,Pishu,脾俞,-32.55,1131.42,-104.06,Eleventh rib.r,39.6
+BL21_L,BL21,L,BL,21,Weishu,胃俞,31.81,1103.55,-98.92,Twelfth rib.l,37.5
+BL21_R,BL21,R,BL,21,Weishu,胃俞,-31.81,1103.55,-98.92,Twelfth rib.r,37.5
+BL22_L,BL22,L,BL,22,Sanjiaoshu,三焦俞,31.46,1071.6,-95.02,Vertebra L1,41.5
+BL22_R,BL22,R,BL,22,Sanjiaoshu,三焦俞,-31.46,1071.6,-95.02,Vertebra L1,41.5
+BL23_L,BL23,L,BL,23,Shenshu,肾俞,32.03,1044.47,-92.98,Vertebra L2,41.9
+BL23_R,BL23,R,BL,23,Shenshu,肾俞,-32.03,1044.47,-92.98,Vertebra L2,41.9
+BL24_L,BL24,L,BL,24,Qihaishu,气海俞,32.08,1019.93,-94.34,Vertebra L3,43.0
+BL24_R,BL24,R,BL,24,Qihaishu,气海俞,-32.08,1019.93,-94.34,Vertebra L3,43.0
+BL25_L,BL25,L,BL,25,Dachangshu,大肠俞,31.14,989.8,-99.23,Hip bone.l,31.2
+BL25_R,BL25,R,BL,25,Dachangshu,大肠俞,-31.14,989.8,-99.23,Hip bone.r,31.2
+BL26_L,BL26,L,BL,26,Guanyuanshu,关元俞,30.61,960.62,-103.06,Hip bone.l,21.0
+BL26_R,BL26,R,BL,26,Guanyuanshu,关元俞,-30.61,960.62,-103.06,Hip bone.r,21.0
+BL27_L,BL27,L,BL,27,Xiaochangshu,小肠俞,30.46,938.24,-113.34,Hip bone.l,33.6
+BL27_R,BL27,R,BL,27,Xiaochangshu,小肠俞,-30.46,938.24,-113.34,Hip bone.r,33.6
+BL28_L,BL28,L,BL,28,Pangguangshu,膀胱俞,30.0,915.68,-126.96,Sacrum,42.0
+BL28_R,BL28,R,BL,28,Pangguangshu,膀胱俞,-30.0,915.68,-126.96,Sacrum,42.0
+BL29_L,BL29,L,BL,29,Zhonglushu,中膂俞,29.17,892.49,-141.03,Sacrum,49.1
+BL29_R,BL29,R,BL,29,Zhonglushu,中膂俞,-29.17,892.49,-141.02,Sacrum,49.1
+BL30_L,BL30,L,BL,30,Baihuanshu,白环俞,29.02,863.62,-144.32,Sacrum,57.8
+BL30_R,BL30,R,BL,30,Baihuanshu,白环俞,-29.02,863.62,-144.32,Sacrum,57.8
+BL31_L,BL31,L,BL,31,Shangliao,上髎,21.28,935.22,-112.37,Sacrum,33.8
+BL31_R,BL31,R,BL,31,Shangliao,上髎,-21.28,935.22,-112.37,Sacrum,33.8
+BL32_L,BL32,L,BL,32,Chiliao,次髎,19.62,913.87,-121.11,Sacrum,32.8
+BL32_R,BL32,R,BL,32,Chiliao,次髎,-19.62,913.87,-121.11,Sacrum,32.7
+BL33_L,BL33,L,BL,33,Zhongliao,中髎,16.03,891.13,-133.18,Sacrum,38.6
+BL33_R,BL33,R,BL,33,Zhongliao,中髎,-16.03,891.13,-133.18,Sacrum,38.6
+BL34_L,BL34,L,BL,34,Xialiao,下髎,14.56,862.88,-138.8,Sacrum,49.8
+BL34_R,BL34,R,BL,34,Xialiao,下髎,-14.56,862.88,-138.8,Sacrum,49.8
+BL35_L,BL35,L,BL,35,Huiyang,会阳,15.02,828.11,-134.68,Coccyx,55.4
+BL35_R,BL35,R,BL,35,Huiyang,会阳,-15.02,828.11,-134.69,Coccyx,55.4
+BL36_L,BL36,L,BL,36,Chengfu,承扶,73.41,763.61,-114.23,Hip bone.l,78.3
+BL36_R,BL36,R,BL,36,Chengfu,承扶,-73.41,763.61,-114.23,Hip bone.r,78.3
+BL37_L,BL37,L,BL,37,Yinmen,殷门,73.66,630.8,-96.77,Femur.l,80.5
+BL37_R,BL37,R,BL,37,Yinmen,殷门,-73.66,630.8,-96.77,Femur.r,80.5
+BL38_L,BL38,L,BL,38,Fuxi,浮郄,97.02,479.16,-70.77,Femur.l,20.5
+BL38_R,BL38,R,BL,38,Fuxi,浮郄,-97.02,479.16,-70.77,Femur.r,20.5
+BL39_L,BL39,L,BL,39,Weiyang,委阳,102.22,461.67,-74.99,Femur.l,18.0
+BL39_R,BL39,R,BL,39,Weiyang,委阳,-102.22,461.67,-74.99,Femur.r,18.0
+BL40_L,BL40,L,BL,40,Weizhong,委中,82.35,459.06,-82.31,Femur.l,28.4
+BL40_R,BL40,R,BL,40,Weizhong,委中,-82.35,459.06,-82.31,Femur.r,28.4
+BL41_L,BL41,L,BL,41,Fufen,附分,63.75,1411.4,-118.14,Scapula.l,32.5
+BL41_R,BL41,R,BL,41,Fufen,附分,-63.75,1411.4,-118.14,Scapula.r,32.5
+BL42_L,BL42,L,BL,42,Pohu,魄户,63.23,1381.36,-128.15,Scapula.l,28.5
+BL42_R,BL42,R,BL,42,Pohu,魄户,-63.23,1381.36,-128.15,Scapula.r,28.5
+BL43_L,BL43,L,BL,43,Gaohuang,膏肓,63.21,1349.39,-134.11,Scapula.l,31.1
+BL43_R,BL43,R,BL,43,Gaohuang,膏肓,-63.21,1349.39,-134.12,Scapula.r,31.1
+BL44_L,BL44,L,BL,44,Shentang,神堂,64.42,1317.48,-134.99,Scapula.l,25.2
+BL44_R,BL44,R,BL,44,Shentang,神堂,-64.42,1317.48,-134.99,Scapula.r,25.2
+BL45_L,BL45,L,BL,45,Yixi,譩譆,64.73,1284.66,-133.26,Scapula.l,22.9
+BL45_R,BL45,R,BL,45,Yixi,譩譆,-64.73,1284.66,-133.26,Scapula.r,22.9
+BL46_L,BL46,L,BL,46,Geguan,膈关,65.15,1252.78,-132.06,Scapula.l,31.8
+BL46_R,BL46,R,BL,46,Geguan,膈关,-65.15,1252.78,-132.07,Scapula.r,31.8
+BL47_L,BL47,L,BL,47,Hunmen,魂门,64.91,1192.63,-124.62,Ninth rib.l,37.2
+BL47_R,BL47,R,BL,47,Hunmen,魂门,-64.91,1192.63,-124.62,Ninth rib.r,37.2
+BL48_L,BL48,L,BL,48,Yanggang,阳纲,64.63,1163.16,-118.0,Tenth rib.l,37.5
+BL48_R,BL48,R,BL,48,Yanggang,阳纲,-64.63,1163.16,-118.0,Tenth rib.r,37.5
+BL49_L,BL49,L,BL,49,Yishe,意舍,64.47,1134.25,-108.97,Eleventh rib.l,33.9
+BL49_R,BL49,R,BL,49,Yishe,意舍,-64.47,1134.25,-108.97,Eleventh rib.r,33.9
+BL50_L,BL50,L,BL,50,Weicang,胃仓,63.68,1103.35,-99.1,Twelfth rib.l,31.8
+BL50_R,BL50,R,BL,50,Weicang,胃仓,-63.68,1103.35,-99.1,Twelfth rib.r,31.8
+BL51_L,BL51,L,BL,51,Huangmen,肓门,64.39,1071.2,-94.26,Twelfth rib.l,35.5
+BL51_R,BL51,R,BL,51,Huangmen,肓门,-64.39,1071.2,-94.26,Twelfth rib.r,35.5
+BL52_L,BL52,L,BL,52,Zhishi,志室,63.87,1044.92,-89.91,Twelfth rib.l,46.5
+BL52_R,BL52,R,BL,52,Zhishi,志室,-63.87,1044.92,-89.91,Twelfth rib.r,46.5
+BL53_L,BL53,L,BL,53,Baohuang,胞肓,66.93,919.07,-133.82,Hip bone.l,62.4
+BL53_R,BL53,R,BL,53,Baohuang,胞肓,-66.93,919.07,-133.82,Hip bone.r,62.4
+BL54_L,BL54,L,BL,54,Zhibian,秩边,65.27,865.31,-146.94,Sacrum,78.1
+BL54_R,BL54,R,BL,54,Zhibian,秩边,-65.27,865.31,-146.94,Sacrum,78.1
+BL55_L,BL55,L,BL,55,Heyang,合阳,77.61,399.46,-104.58,Tibia.l,45.7
+BL55_R,BL55,R,BL,55,Heyang,合阳,-77.61,399.46,-104.58,Tibia.r,45.7
+BL56_L,BL56,L,BL,56,Chengjin,承筋,84.75,328.33,-117.66,Fibula.l,69.8
+BL56_R,BL56,R,BL,56,Chengjin,承筋,-84.75,328.33,-117.66,Fibula.r,69.8
+BL57_L,BL57,L,BL,57,Chengshan,承山,85.53,258.61,-111.24,Fibula.l,62.3
+BL57_R,BL57,R,BL,57,Chengshan,承山,-85.53,258.61,-111.24,Fibula.r,62.3
+BL58_L,BL58,L,BL,58,Feiyang,飞扬,108.31,233.26,-101.74,Fibula.l,47.8
+BL58_R,BL58,R,BL,58,Feiyang,飞扬,-108.31,233.26,-101.74,Fibula.r,47.8
+BL59_L,BL59,L,BL,59,Fuyang,跗阳,98.17,139.91,-83.99,Fibula.l,26.6
+BL59_R,BL59,R,BL,59,Fuyang,跗阳,-98.17,139.91,-84.0,Fibula.r,26.6
+BL60_L,BL60,L,BL,60,Kunlun,昆仑,91.07,65.27,-78.44,Calcaneus.l,15.5
+BL60_R,BL60,R,BL,60,Kunlun,昆仑,-91.07,65.27,-78.44,Calcaneus.r,15.5
+BL61_L,BL61,L,BL,61,"Pucan, Pushen",仆参,97.44,38.59,-81.69,Calcaneus.l,11.0
+BL61_R,BL61,R,BL,61,"Pucan, Pushen",仆参,-97.44,38.59,-81.69,Calcaneus.r,11.0
+BL62_L,BL62,L,BL,62,Shenmai,申脉,113.52,54.02,-49.49,Fibula.l,9.0
+BL62_R,BL62,R,BL,62,Shenmai,申脉,-113.52,54.02,-49.49,Fibula.r,9.0
+BL63_L,BL63,L,BL,63,Jinmen,金门,125.53,26.65,-19.2,Fifth metatarsal bone.l,11.5
+BL63_R,BL63,R,BL,63,Jinmen,金门,-125.54,26.65,-19.2,Fifth metatarsal bone.r,11.5
+BL64_L,BL64,L,BL,64,Jinggu,京骨,134.81,22.34,0.3,Fifth metatarsal bone.l,15.3
+BL64_R,BL64,R,BL,64,Jinggu,京骨,-134.81,22.34,0.3,Fifth metatarsal bone.r,15.3
+BL65_L,BL65,L,BL,65,Shugu,束骨,146.13,15.46,37.21,Fifth metatarsal bone.l,13.3
+BL65_R,BL65,R,BL,65,Shugu,束骨,-146.13,15.46,37.21,Fifth metatarsal bone.r,13.3
+BL66_L,BL66,L,BL,66,Zutonggu,足通谷,146.91,13.2,58.54,Proximal phalanx of fifth finger of foot.l,7.5
+BL66_R,BL66,R,BL,66,Zutonggu,足通谷,-146.91,13.2,58.54,Proximal phalanx of fifth finger of foot.r,7.5
+BL67_L,BL67,L,BL,67,Zhiyin,至阴,148.98,11.81,85.81,Distal phalanx of fifth finger of foot.l,2.8
+BL67_R,BL67,R,BL,67,Zhiyin,至阴,-148.99,11.81,85.81,Distal phalanx of fifth finger of foot.r,2.8
+KI1_L,KI1,L,KI,1,Yongquan,涌泉,95.09,5.82,35.72,Fourth metatarsal bone.l,27.4
+KI1_R,KI1,R,KI,1,Yongquan,涌泉,-95.09,5.82,35.72,Fourth metatarsal bone.r,27.4
+KI2_L,KI2,L,KI,2,Rangu,然谷,42.73,41.79,-11.17,Navicular bone.l,16.0
+KI2_R,KI2,R,KI,2,Rangu,然谷,-42.72,41.79,-11.17,Navicular bone.r,16.0
+KI3_L,KI3,L,KI,3,Taixi,太溪,51.82,85.62,-72.56,Tibia.l,21.2
+KI3_R,KI3,R,KI,3,Taixi,太溪,-51.81,85.62,-72.56,Tibia.r,21.2
+KI4_L,KI4,L,KI,4,Dazhong,大钟,51.88,62.48,-85.75,Calcaneus.l,17.6
+KI4_R,KI4,R,KI,4,Dazhong,大钟,-51.89,62.48,-85.75,Calcaneus.r,17.6
+KI5_L,KI5,L,KI,5,Shuiquan,水泉,47.47,50.67,-71.01,Calcaneus.l,14.9
+KI5_R,KI5,R,KI,5,Shuiquan,水泉,-47.46,50.67,-71.01,Calcaneus.r,14.9
+KI6_L,KI6,L,KI,6,Zhaohai,照海,42.61,66.05,-38.14,Talus.l,12.6
+KI6_R,KI6,R,KI,6,Zhaohai,照海,-42.61,66.05,-38.14,Talus.r,12.6
+KI7_L,KI7,L,KI,7,Fuliu,复溜,51.32,137.93,-57.64,Tibia.l,19.5
+KI7_R,KI7,R,KI,7,Fuliu,复溜,-51.31,137.93,-57.64,Tibia.r,19.5
+KI8_L,KI8,L,KI,8,Jiaoxin,交信,52.33,138.0,-46.49,Tibia.l,12.9
+KI8_R,KI8,R,KI,8,Jiaoxin,交信,-52.33,138.0,-46.49,Tibia.r,12.9
+KI9_L,KI9,L,KI,9,Zhubin,筑宾,48.2,205.0,-63.36,Tibia.l,34.1
+KI9_R,KI9,R,KI,9,Zhubin,筑宾,-48.21,205.0,-63.36,Tibia.r,34.1
+KI10_L,KI10,L,KI,10,Yingu,阴谷,39.38,434.94,-69.72,Femur.l,16.7
+KI10_R,KI10,R,KI,10,Yingu,阴谷,-39.38,434.94,-69.72,Femur.r,16.7
+KI11_L,KI11,L,KI,11,Henggu,横骨,11.57,847.41,74.92,Hip bone.l,20.0
+KI11_R,KI11,R,KI,11,Henggu,横骨,-11.57,847.41,74.92,Hip bone.r,20.0
+KI12_L,KI12,L,KI,12,Dahe,大赫,12.19,879.89,91.77,Hip bone.l,47.2
+KI12_R,KI12,R,KI,12,Dahe,大赫,-12.19,879.89,91.77,Hip bone.r,47.2
+KI13_L,KI13,L,KI,13,Qixue,气穴,12.71,914.93,105.55,Hip bone.l,81.6
+KI13_R,KI13,R,KI,13,Qixue,气穴,-12.71,914.93,105.55,Hip bone.r,81.6
+KI14_L,KI14,L,KI,14,Siman,四满,13.67,950.79,116.4,Vertebra L5,110.3
+KI14_R,KI14,R,KI,14,Siman,四满,-13.67,950.79,116.4,Vertebra L5,110.3
+KI15_L,KI15,L,KI,15,Zhongzhu,中注,13.61,986.3,122.51,Vertebra L4,109.2
+KI15_R,KI15,R,KI,15,Zhongzhu,中注,-13.61,986.3,122.51,Vertebra L4,109.2
+KI16_L,KI16,L,KI,16,Huangshu,肓俞,12.8,1023.4,118.15,Vertebra L3,100.3
+KI16_R,KI16,R,KI,16,Huangshu,肓俞,-12.8,1023.4,118.15,Vertebra L3,100.3
+KI17_L,KI17,L,KI,17,Shangqu,商曲,13.11,1076.0,122.32,Vertebra L3,105.2
+KI17_R,KI17,R,KI,17,Shangqu,商曲,-13.11,1076.0,122.32,Vertebra L3,105.2
+KI18_L,KI18,L,KI,18,Shiguan,石关,12.85,1101.95,125.43,Vertebra L2,111.1
+KI18_R,KI18,R,KI,18,Shiguan,石关,-12.85,1101.95,125.43,Vertebra L2,111.1
+KI19_L,KI19,L,KI,19,Yindu,阴都,13.0,1131.58,130.13,Xiphoid process,94.4
+KI19_R,KI19,R,KI,19,Yindu,阴都,-13.0,1131.58,130.13,Xiphoid process,94.4
+KI20_L,KI20,L,KI,20,Futonggu,腹通谷,12.56,1158.13,131.12,Xiphoid process,70.0
+KI20_R,KI20,R,KI,20,Futonggu,腹通谷,-12.56,1158.13,131.12,Xiphoid process,70.0
+KI21_L,KI21,L,KI,21,Youmen,幽门,13.78,1189.86,128.97,Xiphoid process,42.4
+KI21_R,KI21,R,KI,21,Youmen,幽门,-13.78,1189.86,128.97,Xiphoid process,42.4
+KI22_L,KI22,L,KI,22,Bulang,步廊,52.01,1242.11,127.33,Body of sternum,39.3
+KI22_R,KI22,R,KI,22,Bulang,步廊,-52.01,1242.11,127.33,Body of sternum,39.3
+KI23_L,KI23,L,KI,23,Shengfeng,神封,51.38,1274.88,128.98,Body of sternum,38.1
+KI23_R,KI23,R,KI,23,Shengfeng,神封,-51.38,1274.88,128.98,Body of sternum,38.1
+KI24_L,KI24,L,KI,24,Lingxu,灵墟,47.99,1304.73,120.62,Fourth rib.l,37.1
+KI24_R,KI24,R,KI,24,Lingxu,灵墟,-47.99,1304.73,120.62,Fourth rib.r,37.1
+KI25_L,KI25,L,KI,25,Shencang,神藏,46.42,1332.77,107.21,Third rib.l,33.4
+KI25_R,KI25,R,KI,25,Shencang,神藏,-46.42,1332.77,107.21,Third rib.r,33.4
+KI26_L,KI26,L,KI,26,Yuzhong,彧中,42.5,1363.61,89.13,Second rib.l,26.0
+KI26_R,KI26,R,KI,26,Yuzhong,彧中,-42.5,1363.61,89.13,Second rib.r,26.0
+KI27_L,KI27,L,KI,27,Shufu,俞府,36.84,1394.75,65.65,Clavicle.l,18.6
+KI27_R,KI27,R,KI,27,Shufu,俞府,-36.84,1394.75,65.65,Clavicle.r,18.6
+PC1_L,PC1,L,PC,1,Tianchi,天池,115.69,1279.7,118.69,Fifth rib.l,41.8
+PC1_R,PC1,R,PC,1,Tianchi,天池,-115.68,1279.7,118.68,Fifth rib.r,41.8
+PC2_L,PC2,L,PC,2,Tianquan,天泉,204.74,1287.9,12.01,Humerus.l,29.8
+PC2_R,PC2,R,PC,2,Tianquan,天泉,-204.74,1287.9,12.01,Humerus.r,29.8
+PC3_L,PC3,L,PC,3,Quze,曲泽,215.61,1106.88,-5.5,Humerus.l,17.4
+PC3_R,PC3,R,PC,3,Quze,曲泽,-215.61,1106.88,-5.5,Humerus.r,17.4
+PC4_L,PC4,L,PC,4,Ximen,郄门,235.31,963.1,23.68,Ulna.l,31.1
+PC4_R,PC4,R,PC,4,Ximen,郄门,-235.31,963.1,23.68,Ulna.r,31.1
+PC5_L,PC5,L,PC,5,Jianshi,间使,245.51,920.34,28.7,Ulna.l,24.0
+PC5_R,PC5,R,PC,5,Jianshi,间使,-245.51,920.34,28.7,Ulna.r,24.0
+PC6_L,PC6,L,PC,6,Neiguan,内关,253.36,892.03,32.85,Ulna.l,21.5
+PC6_R,PC6,R,PC,6,Neiguan,内关,-253.36,892.03,32.86,Ulna.r,21.5
+PC7_L,PC7,L,PC,7,Daling,大陵,261.88,860.45,39.1,Radius.l,13.9
+PC7_R,PC7,R,PC,7,Daling,大陵,-261.88,860.45,39.1,Radius.r,13.9
+PC8_L,PC8,L,PC,8,Laogong,劳宫,274.22,800.69,46.26,Third metacarpal bone.l,15.6
+PC8_R,PC8,R,PC,8,Laogong,劳宫,-274.22,800.69,46.26,Third metacarpal bone.r,15.6
+PC9_L,PC9,L,PC,9,Zhongchong,中冲,283.88,699.4,93.44,Distal phalanx of third finger of hand.l,1.0
+PC9_R,PC9,R,PC,9,Zhongchong,中冲,-283.88,699.4,93.44,Distal phalanx of third finger of hand.r,1.0
+TE1_L,TE1,L,TE,1,Guanchong,关冲,251.46,716.35,93.52,Distal phalanx of fourth finger of hand.l,5.0
+TE1_R,TE1,R,TE,1,Guanchong,关冲,-251.47,716.35,93.52,Distal phalanx of fourth finger of hand.r,5.0
+TE2_L,TE2,L,TE,2,Yemen,液门,243.51,767.88,36.16,Proximal phalanx of fourth finger of hand.l,7.0
+TE2_R,TE2,R,TE,2,Yemen,液门,-243.51,767.88,36.16,Proximal phalanx of fourth finger of hand.r,7.0
+TE3_L,TE3,L,TE,3,Zhongzhu,中渚,244.28,780.74,26.16,Fourth metacarpal bone.l,7.3
+TE3_R,TE3,R,TE,3,Zhongzhu,中渚,-244.28,780.74,26.16,Fourth metacarpal bone.r,7.3
+TE4_L,TE4,L,TE,4,Yangchi,阳池,255.09,849.64,-0.48,Lunate bone.l,10.3
+TE4_R,TE4,R,TE,4,Yangchi,阳池,-255.09,849.64,-0.48,Lunate bone.r,10.3
+TE5_L,TE5,L,TE,5,Waiguan,外关,255.3,890.68,-14.64,Radius.l,17.0
+TE5_R,TE5,R,TE,5,Waiguan,外关,-255.3,890.68,-14.64,Radius.r,17.0
+TE6_L,TE6,L,TE,6,Zhigou,支沟,256.1,911.84,-22.26,Radius.l,17.7
+TE6_R,TE6,R,TE,6,Zhigou,支沟,-256.1,911.84,-22.26,Radius.r,17.7
+TE7_L,TE7,L,TE,7,Huizong,会宗,250.2,911.17,-22.33,Radius.l,20.9
+TE7_R,TE7,R,TE,7,Huizong,会宗,-250.2,911.17,-22.33,Radius.r,20.9
+TE8_L,TE8,L,TE,8,Sanyangluo,三阳络,256.91,931.11,-29.03,Radius.l,18.8
+TE8_R,TE8,R,TE,8,Sanyangluo,三阳络,-256.91,931.11,-29.03,Radius.r,18.8
+TE9_L,TE9,L,TE,9,Sidu,四渎,249.91,991.0,-52.19,Ulna.l,28.1
+TE9_R,TE9,R,TE,9,Sidu,四渎,-249.91,991.0,-52.19,Ulna.r,28.1
+TE10_L,TE10,L,TE,10,Tianjing,天井,210.57,1117.01,-81.63,Ulna.l,28.3
+TE10_R,TE10,R,TE,10,Tianjing,天井,-210.57,1117.01,-81.63,Ulna.r,28.3
+TE11_L,TE11,L,TE,11,Qinglengyuan,清冷渊,209.03,1141.33,-82.6,Humerus.l,33.6
+TE11_R,TE11,R,TE,11,Qinglengyuan,清冷渊,-209.03,1141.33,-82.61,Humerus.r,33.6
+TE12_L,TE12,L,TE,12,Xiaoluo,消泺,211.42,1222.43,-92.61,Humerus.l,45.1
+TE12_R,TE12,R,TE,12,Xiaoluo,消泺,-211.42,1222.43,-92.61,Humerus.r,45.1
+TE13_L,TE13,L,TE,13,Naohui,臑会,205.33,1302.55,-99.32,Humerus.l,59.5
+TE13_R,TE13,R,TE,13,Naohui,臑会,-205.33,1302.55,-99.33,Humerus.r,59.5
+TE14_L,TE14,L,TE,14,Jianliao,肩髎,190.69,1403.84,-72.45,Scapula.l,21.3
+TE14_R,TE14,R,TE,14,Jianliao,肩髎,-190.69,1403.84,-72.45,Scapula.r,21.3
+TE15_L,TE15,L,TE,15,Tianliao,天髎,83.49,1429.83,-106.25,Scapula.l,33.0
+TE15_R,TE15,R,TE,15,Tianliao,天髎,-83.49,1429.83,-106.25,Scapula.r,33.0
+TE16_L,TE16,L,TE,16,Tianyou,天牖,51.55,1529.98,-30.61,Atlas (C1),18.8
+TE16_R,TE16,R,TE,16,Tianyou,天牖,-51.53,1529.98,-30.6,Atlas (C1),18.8
+TE17_L,TE17,L,TE,17,Yifeng,翳风,60.38,1552.89,-6.59,Temporal bone.l,13.5
+TE17_R,TE17,R,TE,17,Yifeng,翳风,-60.39,1552.89,-6.59,Temporal bone.r,13.5
+TE18_L,TE18,L,TE,18,"Chimai, Qimai",瘈脉,66.09,1571.26,-20.13,Temporal bone.l,4.1
+TE18_R,TE18,R,TE,18,"Chimai, Qimai",瘈脉,-66.09,1571.26,-20.13,Temporal bone.r,4.1
+TE19_L,TE19,L,TE,19,Luxi,颅息,74.26,1598.44,-21.9,Temporal bone.l,5.4
+TE19_R,TE19,R,TE,19,Luxi,颅息,-74.24,1598.45,-21.9,Temporal bone.r,5.4
+TE20_L,TE20,L,TE,20,Jiaosun,角孙,78.74,1611.65,-9.24,Temporal bone.l,8.0
+TE20_R,TE20,R,TE,20,Jiaosun,角孙,-78.72,1611.65,-9.24,Temporal bone.r,8.0
+TE21_L,TE21,L,TE,21,Ermen,耳门,70.74,1586.4,11.78,Temporal bone.l,10.2
+TE21_R,TE21,R,TE,21,Ermen,耳门,-70.75,1586.4,11.78,Temporal bone.r,10.2
+TE22_L,TE22,L,TE,22,Erheliao,耳和髎,72.38,1598.41,10.2,Temporal bone.l,11.1
+TE22_R,TE22,R,TE,22,Erheliao,耳和髎,-72.39,1598.41,10.2,Temporal bone.r,11.1
+TE23_L,TE23,L,TE,23,Sizhukong,丝竹空,56.28,1608.68,67.05,Frontal bone,6.8
+TE23_R,TE23,R,TE,23,Sizhukong,丝竹空,-56.28,1608.68,67.05,Frontal bone,6.8
+GB1_L,GB1,L,GB,1,Tongziliao,瞳子髎,56.16,1596.15,63.2,Zygomatic bone.l,5.5
+GB1_R,GB1,R,GB,1,Tongziliao,瞳子髎,-56.16,1596.15,63.2,Zygomatic bone.r,5.5
+GB2_L,GB2,L,GB,2,Tinghui,听会,65.71,1565.34,11.5,Temporal bone.l,13.1
+GB2_R,GB2,R,GB,2,Tinghui,听会,-65.72,1565.34,11.5,Temporal bone.r,13.1
+GB3_L,GB3,L,GB,3,Shangguan,上关,69.64,1588.9,28.76,Temporal bone.l,12.2
+GB3_R,GB3,R,GB,3,Shangguan,上关,-69.65,1588.9,28.76,Temporal bone.r,12.2
+GB4_L,GB4,L,GB,4,Hanyan,颔厌,67.83,1643.85,36.29,Parietal bone.l,6.4
+GB4_R,GB4,R,GB,4,Hanyan,颔厌,-67.84,1643.85,36.29,Parietal bone.r,6.4
+GB5_L,GB5,L,GB,5,Xuanlu,悬颅,72.02,1627.13,28.4,Parietal bone.l,9.3
+GB5_R,GB5,R,GB,5,Xuanlu,悬颅,-72.01,1627.13,28.4,Parietal bone.r,9.3
+GB6_L,GB6,L,GB,6,Xuanli,悬厘,72.94,1612.53,21.16,Temporal bone.l,11.8
+GB6_R,GB6,R,GB,6,Xuanli,悬厘,-72.95,1612.53,21.16,Temporal bone.r,11.8
+GB7_L,GB7,L,GB,7,Qubin,曲鬓,72.75,1601.15,9.76,Temporal bone.l,10.5
+GB7_R,GB7,R,GB,7,Qubin,曲鬓,-72.75,1601.15,9.76,Temporal bone.r,10.5
+GB8_L,GB8,L,GB,8,Shuaigu,率谷,80.59,1639.38,-11.74,Parietal bone.l,7.8
+GB8_R,GB8,R,GB,8,Shuaigu,率谷,-80.6,1639.38,-11.74,Parietal bone.r,7.6
+GB9_L,GB9,L,GB,9,Tianchong,天冲,80.4,1635.87,-24.3,Parietal bone.l,6.6
+GB9_R,GB9,R,GB,9,Tianchong,天冲,-80.41,1635.87,-24.3,Parietal bone.r,6.5
+GB10_L,GB10,L,GB,10,Fubai,浮白,74.94,1613.24,-40.81,Parietal bone.l,4.9
+GB10_R,GB10,R,GB,10,Fubai,浮白,-74.94,1613.24,-40.81,Parietal bone.r,4.9
+GB11_L,GB11,L,GB,11,Touqiaoyin,头窍阴,67.76,1582.98,-43.05,Temporal bone.l,5.7
+GB11_R,GB11,R,GB,11,Touqiaoyin,头窍阴,-67.76,1582.98,-43.05,Temporal bone.r,5.7
+GB12_L,GB12,L,GB,12,Wangu,完骨,61.56,1554.57,-24.78,Temporal bone.l,10.4
+GB12_R,GB12,R,GB,12,Wangu,完骨,-61.56,1554.57,-24.78,Temporal bone.r,10.4
+GB13_L,GB13,L,GB,13,Benshen,本神,41.35,1673.68,54.78,Frontal bone,4.4
+GB13_R,GB13,R,GB,13,Benshen,本神,-41.35,1673.68,54.78,Frontal bone,4.4
+GB14_L,GB14,L,GB,14,Yangbai,阳白,31.56,1634.5,86.4,Frontal bone,4.5
+GB14_R,GB14,R,GB,14,Yangbai,阳白,-31.56,1634.5,86.41,Frontal bone,4.5
+GB15_L,GB15,L,GB,15,Toulinqi,头临泣,28.39,1675.79,64.27,Frontal bone,4.0
+GB15_R,GB15,R,GB,15,Toulinqi,头临泣,-28.39,1675.78,64.26,Frontal bone,4.0
+GB16_L,GB16,L,GB,16,Muchuang,目窗,28.7,1689.96,44.01,Frontal bone,4.5
+GB16_R,GB16,R,GB,16,Muchuang,目窗,-28.7,1689.96,44.01,Frontal bone,4.5
+GB17_L,GB17,L,GB,17,Zhengying,正营,31.8,1697.81,16.61,Parietal bone.l,4.7
+GB17_R,GB17,R,GB,17,Zhengying,正营,-31.8,1697.8,16.61,Parietal bone.r,4.6
+GB18_L,GB18,L,GB,18,Chengling,承灵,34.9,1700.45,-13.03,Parietal bone.l,4.2
+GB18_R,GB18,R,GB,18,Chengling,承灵,-34.9,1700.45,-13.03,Parietal bone.r,3.9
+GB19_L,GB19,L,GB,19,Naokong,脑空,42.63,1594.06,-89.31,Occipital bone,5.6
+GB19_R,GB19,R,GB,19,Naokong,脑空,-42.63,1594.06,-89.31,Occipital bone,5.6
+GB20_L,GB20,L,GB,20,Fengchi,风池,36.61,1557.89,-65.51,Occipital bone,7.3
+GB20_R,GB20,R,GB,20,Fengchi,风池,-36.61,1557.89,-65.51,Occipital bone,7.3
+GB21_L,GB21,L,GB,21,Jianjing,肩井,90.04,1457.68,-70.6,Scapula.l,48.6
+GB21_R,GB21,R,GB,21,Jianjing,肩井,-90.04,1457.68,-70.6,Scapula.r,48.6
+GB22_L,GB22,L,GB,22,Yuanye,渊腋,161.11,1284.63,19.73,Fifth rib.l,30.8
+GB22_R,GB22,R,GB,22,Yuanye,渊腋,-161.11,1284.63,19.73,Fifth rib.r,30.8
+GB23_L,GB23,L,GB,23,Zhejin,辄筋,157.59,1282.89,51.68,Fifth rib.l,34.1
+GB23_R,GB23,R,GB,23,Zhejin,辄筋,-157.58,1282.89,51.68,Fifth rib.r,34.1
+GB24_L,GB24,L,GB,24,Riyue,日月,114.43,1178.86,100.54,Seventh rib.l,16.3
+GB24_R,GB24,R,GB,24,Riyue,日月,-114.43,1178.86,100.54,Seventh rib.r,16.3
+GB25_L,GB25,L,GB,25,Jingmen,京门,130.87,1072.11,-40.25,Eleventh rib.l,25.0
+GB25_R,GB25,R,GB,25,Jingmen,京门,-130.86,1072.11,-40.25,Eleventh rib.r,25.0
+GB26_L,GB26,L,GB,26,Daimai,带脉,152.39,1010.05,3.38,Hip bone.l,29.2
+GB26_R,GB26,R,GB,26,Daimai,带脉,-152.4,1010.05,3.38,Hip bone.r,29.2
+GB27_L,GB27,L,GB,27,Wushu,五枢,101.11,920.61,79.07,Hip bone.l,34.1
+GB27_R,GB27,R,GB,27,Wushu,五枢,-101.11,920.61,79.08,Hip bone.r,34.1
+GB28_L,GB28,L,GB,28,Weidao,维道,91.54,903.2,80.04,Hip bone.l,49.2
+GB28_R,GB28,R,GB,28,Weidao,维道,-91.54,903.2,80.04,Hip bone.r,49.2
+GB29_L,GB29,L,GB,29,Juliao,居髎,165.78,875.87,28.08,Femur.l,47.5
+GB29_R,GB29,R,GB,29,Juliao,居髎,-165.78,875.87,28.08,Femur.r,47.5
+GB30_L,GB30,L,GB,30,Huantiao,环跳,147.93,864.36,-74.13,Femur.l,45.6
+GB30_R,GB30,R,GB,30,Huantiao,环跳,-147.93,864.36,-74.13,Femur.r,45.6
+GB31_L,GB31,L,GB,31,Fengshi,风市,162.76,625.98,-22.37,Femur.l,55.8
+GB31_R,GB31,R,GB,31,Fengshi,风市,-162.77,625.98,-22.37,Femur.r,55.8
+GB32_L,GB32,L,GB,32,Zhongdu,中渎,153.43,577.06,-19.2,Femur.l,48.6
+GB32_R,GB32,R,GB,32,Zhongdu,中渎,-153.44,577.06,-19.2,Femur.r,48.6
+GB33_L,GB33,L,GB,33,Xiyangguan,膝阳关,137.07,487.59,-27.31,Femur.l,29.1
+GB33_R,GB33,R,GB,33,Xiyangguan,膝阳关,-137.07,487.59,-27.31,Femur.r,29.1
+GB34_L,GB34,L,GB,34,Yanglingquan,阳陵泉,139.28,390.65,-25.3,Fibula.l,20.7
+GB34_R,GB34,R,GB,34,Yanglingquan,阳陵泉,-139.29,390.65,-25.3,Fibula.r,20.7
+GB35_L,GB35,L,GB,35,Yangjiao,阳交,139.05,233.27,-54.77,Fibula.l,28.3
+GB35_R,GB35,R,GB,35,Yangjiao,阳交,-139.05,233.27,-54.77,Fibula.r,28.3
+GB36_L,GB36,L,GB,36,Waiqiu,外丘,135.52,232.46,-33.29,Fibula.l,26.8
+GB36_R,GB36,R,GB,36,Waiqiu,外丘,-135.52,232.46,-33.29,Fibula.r,26.8
+GB37_L,GB37,L,GB,37,Guangming,光明,127.97,186.65,-36.81,Fibula.l,22.2
+GB37_R,GB37,R,GB,37,Guangming,光明,-127.96,186.65,-36.81,Fibula.r,22.2
+GB38_L,GB38,L,GB,38,Yangfu,阳辅,123.24,163.52,-37.69,Fibula.l,18.6
+GB38_R,GB38,R,GB,38,Yangfu,阳辅,-123.24,163.52,-37.69,Fibula.r,18.6
+GB39_L,GB39,L,GB,39,Xuanzhong,悬钟,118.26,140.9,-38.72,Fibula.l,13.2
+GB39_R,GB39,R,GB,39,Xuanzhong,悬钟,-118.26,140.9,-38.72,Fibula.r,13.2
+GB40_L,GB40,L,GB,40,Qiuxu,丘墟,109.12,62.79,-25.76,Calcaneus.l,11.6
+GB40_R,GB40,R,GB,40,Qiuxu,丘墟,-109.11,62.79,-25.76,Calcaneus.r,11.6
+GB41_L,GB41,L,GB,41,Zulinqi,足临泣,119.85,44.69,10.83,Fourth metatarsal bone.l,7.8
+GB41_R,GB41,R,GB,41,Zulinqi,足临泣,-119.85,44.69,10.83,Fourth metatarsal bone.r,7.8
+GB42_L,GB42,L,GB,42,Diwuhui,地五会,125.35,33.63,50.92,Fourth metatarsal bone.l,8.6
+GB42_R,GB42,R,GB,42,Diwuhui,地五会,-125.35,33.63,50.92,Fourth metatarsal bone.r,8.6
+GB43_L,GB43,L,GB,43,Xiaxi,侠溪,133.8,24.93,73.7,Proximal phalanx of fourth finger of foot.l,8.3
+GB43_R,GB43,R,GB,43,Xiaxi,侠溪,-133.8,24.93,73.7,Proximal phalanx of fourth finger of foot.r,8.3
+GB44_L,GB44,L,GB,44,Zuqiaoyin,足窍阴,140.83,16.27,106.2,Distal phalanx of fourth finger of foot.l,5.3
+GB44_R,GB44,R,GB,44,Zuqiaoyin,足窍阴,-140.82,16.27,106.2,Distal phalanx of fourth finger of foot.r,5.3
+LR1_L,LR1,L,LR,1,Dadun,大敦,96.29,17.97,123.17,Middle phalanx of second finger of foot.l,3.0
+LR1_R,LR1,R,LR,1,Dadun,大敦,-96.28,17.97,123.17,Middle phalanx of second finger of foot.r,3.0
+LR2_L,LR2,L,LR,2,Xingjian,行间,87.79,29.15,95.48,Proximal phalanx of second finger of foot.l,7.8
+LR2_R,LR2,R,LR,2,Xingjian,行间,-87.79,29.15,95.48,Proximal phalanx of second finger of foot.r,7.8
+LR3_L,LR3,L,LR,3,Taichong,太冲,83.91,50.89,54.63,Second metatarsal bone.l,7.5
+LR3_R,LR3,R,LR,3,Taichong,太冲,-83.91,50.89,54.63,Second metatarsal bone.r,7.5
+LR4_L,LR4,L,LR,4,Zhongfeng,中封,64.38,88.22,-1.94,Talus.l,15.3
+LR4_R,LR4,R,LR,4,Zhongfeng,中封,-64.38,88.22,-1.94,Talus.r,15.3
+LR5_L,LR5,L,LR,5,Ligou,蠡沟,60.13,202.75,-24.21,Tibia.l,9.2
+LR5_R,LR5,R,LR,5,Ligou,蠡沟,-60.13,202.75,-24.21,Tibia.r,9.2
+LR6_L,LR6,L,LR,6,Zhongdu,中都,55.26,249.38,-21.83,Tibia.l,14.4
+LR6_R,LR6,R,LR,6,Zhongdu,中都,-55.26,249.38,-21.83,Tibia.r,14.4
+LR7_L,LR7,L,LR,7,Xiguan,膝关,39.22,396.72,-65.78,Tibia.l,19.5
+LR7_R,LR7,R,LR,7,Xiguan,膝关,-39.23,396.72,-65.78,Tibia.r,19.5
+LR8_L,LR8,L,LR,8,Ququan,曲泉,27.86,433.71,-47.42,Femur.l,11.4
+LR8_R,LR8,R,LR,8,Ququan,曲泉,-27.86,433.71,-47.42,Femur.r,11.4
+LR9_L,LR9,L,LR,9,Yinbao,阴包,15.95,557.19,-32.02,Femur.l,58.3
+LR9_R,LR9,R,LR,9,Yinbao,阴包,-15.95,557.19,-32.02,Femur.r,58.3
+LR10_L,LR10,L,LR,10,Zuwuli,足五里,37.36,778.44,50.59,Hip bone.l,54.7
+LR10_R,LR10,R,LR,10,Zuwuli,足五里,-37.36,778.44,50.59,Hip bone.r,54.7
+LR11_L,LR11,L,LR,11,Yinlian,阴廉,33.22,800.37,52.74,Hip bone.l,38.2
+LR11_R,LR11,R,LR,11,Yinlian,阴廉,-33.22,800.37,52.74,Hip bone.r,38.2
+LR12_L,LR12,L,LR,12,Jimai,急脉,50.87,846.71,67.93,Hip bone.l,29.8
+LR12_R,LR12,R,LR,12,Jimai,急脉,-50.87,846.71,67.93,Hip bone.r,29.8
+LR13_L,LR13,L,LR,13,Zhangmen,章门,144.17,1070.09,12.15,Tenth rib.l,19.6
+LR13_R,LR13,R,LR,13,Zhangmen,章门,-144.17,1070.09,12.15,Tenth rib.r,19.6
+LR14_L,LR14,L,LR,14,Qimen,期门,107.9,1215.98,106.05,Sixth rib.l,14.0
+LR14_R,LR14,R,LR,14,Qimen,期门,-107.9,1215.98,106.05,Sixth rib.r,14.0
+GV1_M,GV1,M,GV,1,Changqiang,长强,0.28,808.71,-116.66,Coccyx,46.2
+GV2_M,GV2,M,GV,2,Yaoshu,腰俞,-0.06,883.13,-121.94,Sacrum,31.0
+GV3_M,GV3,M,GV,3,Yaoyangguan,腰阳关,0.05,995.26,-94.85,Vertebra L5,26.8
+GV4_M,GV4,M,GV,4,Mingmen,命门,0.63,1048.29,-87.82,Vertebra L2,23.1
+GV5_M,GV5,M,GV,5,Xuanshu,悬枢,0.63,1075.96,-87.42,Vertebra L1,19.4
+GV6_M,GV6,M,GV,6,Jizhong,脊中,0.0,1132.49,-92.59,Vertebra T11,14.2
+GV7_M,GV7,M,GV,7,Zhongshu,中枢,0.0,1164.03,-99.2,Vertebra T10,9.6
+GV8_M,GV8,M,GV,8,Jinsuo,筋缩,0.0,1195.81,-105.6,Vertebra T9,12.6
+GV9_M,GV9,M,GV,9,Zhiyang,至阳,-0.21,1250.51,-116.14,Vertebra T8,21.1
+GV10_M,GV10,M,GV,10,Lingtai,灵台,0.21,1282.63,-119.79,Vertebra T6,20.1
+GV11_M,GV11,M,GV,11,Shendao,神道,0.21,1312.26,-120.89,Vertebra T5,23.9
+GV12_M,GV12,M,GV,12,Shenzhu,身柱,-0.42,1372.71,-113.03,Vertebra T3,14.4
+GV13_M,GV13,M,GV,13,Taodao,陶道,0.0,1423.46,-102.24,Vertebra T2,18.6
+GV14_M,GV14,M,GV,14,Dazhui,大椎,-0.42,1446.16,-94.62,Vertebra C7,17.6
+GV15_M,GV15,M,GV,15,Yamen,哑门,0.0,1539.27,-67.39,Occipital bone,20.0
+GV16_M,GV16,M,GV,16,Fengfu,风府,-0.42,1557.53,-75.26,Occipital bone,9.2
+GV17_M,GV17,M,GV,17,Naohu,脑户,0.0,1595.54,-102.2,Occipital bone,2.9
+GV18_M,GV18,M,GV,18,Qiangjian,强间,0.0,1658.01,-99.31,Parietal bone.l,4.7
+GV19_M,GV19,M,GV,19,Houding,后顶,0.63,1685.1,-80.35,Parietal bone.r,5.0
+GV20_M,GV20,M,GV,20,Baihui,百会,-0.49,1708.54,-24.16,Parietal bone.r,3.9
+GV21_M,GV21,M,GV,21,Qianding,前顶,0.08,1707.35,6.78,Parietal bone.l,4.0
+GV22_M,GV22,M,GV,22,Xinhui,囟会,0.65,1697.97,43.21,Frontal bone,4.8
+GV23_M,GV23,M,GV,23,Shangxing,上星,0.0,1681.38,67.09,Frontal bone,3.9
+GV24_M,GV24,M,GV,24,Shenting,神庭,0.0,1670.9,76.4,Frontal bone,4.3
+GV25_M,GV25,M,GV,25,Suliao,素髎,0.0,1557.61,116.63,Nasal bone.l,27.2
+GV26_M,GV26,M,GV,26,"Shuigou, Renzhong",水沟,0.0,1542.3,98.61,Upper medial incisor.l,9.0
+GV27_M,GV27,M,GV,27,Duiduan,兑端,-0.56,1534.72,99.66,Upper medial incisor.r,7.1
+GV28_M,GV28,M,GV,28,Yinjiao,龈交,-0.02,1541.09,99.14,Upper medial incisor.r,8.8
+CV1_M,CV1,M,CV,1,Huiyin,会阴,-1.19,756.35,-35.93,Hip bone.r,54.8
+CV2_M,CV2,M,CV,2,Qugu,曲骨,-0.25,852.27,78.94,Hip bone.r,27.4
+CV3_M,CV3,M,CV,3,Zhongji,中极,0.63,883.56,93.95,Hip bone.l,53.0
+CV4_M,CV4,M,CV,4,Guanyuan,关元,0.0,918.39,106.94,Hip bone.r,86.4
+CV5_M,CV5,M,CV,5,Shimen,石门,-0.21,952.14,116.8,Vertebra L5,109.7
+CV6_M,CV6,M,CV,6,Qihai,气海,-0.42,970.72,120.68,Vertebra L5,109.5
+CV7_M,CV7,M,CV,7,Yinjiao,阴交,0.0,992.41,121.9,Vertebra L4,107.6
+CV8_M,CV8,M,CV,8,Shenque,神阙,-0.42,1020.07,110.14,Vertebra L4,92.1
+CV9_M,CV9,M,CV,9,Shuifen,水分,0.0,1049.41,117.85,Vertebra L3,99.3
+CV10_M,CV10,M,CV,10,Xiawan,下脘,0.0,1076.82,121.92,Vertebra L3,104.3
+CV11_M,CV11,M,CV,11,Jianli,建里,0.0,1103.64,125.7,Vertebra L2,110.8
+CV12_M,CV12,M,CV,12,Zhongwan,中脘,0.0,1130.97,128.83,Xiphoid process,93.7
+CV13_M,CV13,M,CV,13,Shangwan,上脘,0.0,1158.13,129.18,Xiphoid process,68.1
+CV14_M,CV14,M,CV,14,Juque,巨阙,0.0,1185.18,127.68,Xiphoid process,43.4
+CV15_M,CV15,M,CV,15,Jiuwei,鸠尾,0.0,1213.53,122.92,Xiphoid process,20.0
+CV16_M,CV16,M,CV,16,Zhongting,中庭,0.03,1242.34,115.43,Body of sternum,5.0
+CV17_M,CV17,M,CV,17,Tanzhong,膻中,0.0,1281.72,113.14,Body of sternum,7.4
+CV18_M,CV18,M,CV,18,Yutang,玉堂,-0.64,1312.17,105.51,Body of sternum,7.9
+CV19_M,CV19,M,CV,19,Zigong,紫宫,-0.42,1338.56,94.62,Body of sternum,6.3
+CV20_M,CV20,M,CV,20,Huagai,华盖,0.0,1358.91,86.81,Body of sternum,3.0
+CV21_M,CV21,M,CV,21,Xuanji,璇玑,0.0,1375.16,76.5,Manubrium of sternum,2.5
+CV22_M,CV22,M,CV,22,Tiantu,天突,0.21,1401.89,56.94,Manubrium of sternum,5.0
+CV23_M,CV23,M,CV,23,Lianquan,廉泉,1.05,1484.5,61.22,Mandible,16.7
+CV24_M,CV24,M,CV,24,Chengjiang,承浆,0.63,1512.84,89.35,Mandible,7.2
