@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Acu361: an open, expert-annotated 3D atlas of the 361 WHO standard acupoints</title>
+<meta name="description" content="Acu361 gives millimetre 3D coordinates of all 361 WHO standard acupoints (670 points), placed by an acupuncturist on an open anatomical body with seven layers, with 14 meridian lines and B-cun rulers. CC BY-SA 4.0.">
+<meta name="keywords" content="acupuncture, acupoints, meridians, WHO standard acupuncture point locations, 3D anatomy, dataset, Z-Anatomy, BodyParts3D, B-cun">
+<meta name="author" content="Yuyue Zhang, Tim Reese, Yang He, Michael Zhu">
+<link rel="canonical" href="{{SITE_URL}}">
+<link rel="alternate" type="text/plain" href="{{SITE_URL}}llms.txt" title="llms.txt">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#f3eee5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121315" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Acu361">
+<meta property="og:title" content="Acu361: an open, expert-annotated 3D atlas of the 361 WHO standard acupoints">
+<meta property="og:description" content="670 acupoint coordinates in millimetres on an open anatomical body with seven layers, 14 meridian lines and B-cun rulers. Explore in 3D or download the data (CC BY-SA 4.0).">
+<meta property="og:url" content="{{SITE_URL}}">
+<meta property="og:image" content="{{SITE_URL}}og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Acu361 body from the front with 670 acupoints coloured by meridian">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Acu361: an open, expert-annotated 3D atlas of the 361 WHO standard acupoints">
+<meta name="twitter:description" content="670 acupoint coordinates in millimetres on an open anatomical body with seven layers. Explore in 3D or download the data.">
+<meta name="twitter:image" content="{{SITE_URL}}og.png">
+<script type="application/ld+json">
+{{JSON_LD}}
+</script>
+<script>
+  // theme and language before first paint
+  (function () {
+    var d = document.documentElement, q = new URLSearchParams(location.search), th = null, lg = null;
+    try { th = localStorage.getItem('acu361.theme'); lg = localStorage.getItem('acu361.lang'); } catch (e) {}
+    if (q.get('theme') === 'dark' || q.get('theme') === 'light') th = q.get('theme');
+    if (q.get('lang') === 'zh' || q.get('lang') === 'en') lg = q.get('lang');
+    if (th === 'dark' || th === 'light') d.setAttribute('data-theme', th);
+    if (lg === 'zh') { d.setAttribute('data-lang', 'zh'); d.lang = 'zh-Hans'; }
+    if (q.has('figure')) d.setAttribute('data-figure', q.get('figure'));
+  })();
+</script>
+</head>
+<body>
+<a class="skip" href="#about"><span data-l="en">Skip to the dataset description</span><span data-l="zh">跳到数据集说明</span></a>
+
+<header class="topbar" id="topbar">
+  <a class="brand" href="#explore" aria-label="Acu361">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14.5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="16" r="4.2" fill="var(--accent)"/><path d="M16 1.5v6M16 24.5v6M1.5 16h6M24.5 16h6" stroke="currentColor" stroke-width="1.5"/></svg>
+    <span class="brand-name">Acu361</span>
+    <span class="brand-tag"><span data-l="en">3D atlas of the 361 WHO standard acupoints</span><span data-l="zh">361 个 WHO 标准经穴三维图谱</span></span>
+  </a>
+  <div class="top-search" id="search-slot"></div>
+  <nav class="top-actions" aria-label="Site">
+    <a class="top-link" href="#about"><span data-l="en">About</span><span data-l="zh">项目说明</span></a>
+    <div class="seg lang-seg" role="group" aria-label="Language">
+      <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-set-lang="zh" aria-pressed="false" lang="zh-Hans">中文</button>
+    </div>
+    <button type="button" class="icon-btn" id="theme-btn" aria-label="Switch colour theme" title="Switch colour theme">
+      <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+      <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 14.6A8 8 0 0 1 9.4 4.5a8 8 0 1 0 10.1 10.1z"/></svg>
+    </button>
+    <a class="icon-btn" href="{{REPO_URL}}" aria-label="GitHub repository" title="GitHub repository">
+      <svg viewBox="0 0 24 24" aria-hidden="true" class="i-fill"><path d="M12 1.8a10.3 10.3 0 0 0-3.3 20.1c.5.1.7-.2.7-.5v-1.8c-2.9.6-3.5-1.3-3.5-1.3-.5-1.2-1.2-1.5-1.2-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.7-1.4-2.3-.3-4.7-1.1-4.7-5.1 0-1.1.4-2.1 1.1-2.8-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.8 1.1a9.6 9.6 0 0 1 5.1 0c2-1.4 2.8-1.1 2.8-1.1.6 1.4.2 2.4.1 2.7 .7.7 1.1 1.7 1.1 2.8 0 4-2.4 4.8-4.7 5.1.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10.3 10.3 0 0 0 12 1.8z"/></svg>
+    </a>
+  </nav>
+</header>
+
+<main>
+<section class="explorer" id="explore" aria-label="3D explorer">
+  <div class="stage" id="stage">
+    <canvas id="gl" aria-label="Interactive 3D view of the body with the acupoints. Use the search field, the meridian list or the view buttons to navigate." tabindex="0"></canvas>
+    <div class="overlay-labels" id="labels" aria-hidden="true"></div>
+    <div class="tooltip" id="tooltip" role="status" aria-live="polite" hidden></div>
+    <div class="loading" id="loading" role="status">
+      <div class="loading-bar"><span id="loading-fill"></span></div>
+      <p><span data-l="en">Loading the body</span><span data-l="zh">正在加载人体</span></p>
+    </div>
+    <figure class="fallback" id="fallback" hidden>
+      <img id="fallback-img" alt="Front, side and back views of the Acu361 body with the 670 acupoints coloured by meridian" width="2400" height="1300">
+      <figcaption><span data-l="en">Your browser could not start WebGL, so the 3D explorer is shown as a still image.</span><span data-l="zh">浏览器未能启动 WebGL，三维浏览器以静态图代替。</span></figcaption>
+    </figure>
+    <noscript>
+      <figure class="fallback"><img src="img/teaser.png" alt="Front, side and back views of the Acu361 body with the 670 acupoints coloured by meridian" width="2400" height="1300"><figcaption>The 3D explorer needs JavaScript and WebGL. The data and its description are below.</figcaption></figure>
+    </noscript>
+  </div>
+  <div id="ui"></div>
+  <a class="scroll-cue" href="#about"><span data-l="en">About the dataset</span><span data-l="zh">数据集说明</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9.5l6 6 6-6"/></svg></a>
+</section>
+
+<article class="page" id="about">
+  <header class="title-block">
+    <p class="eyebrow"><span data-l="en">Dataset · version {{VERSION}}</span><span data-l="zh">数据集 · 版本 {{VERSION}}</span></p>
+    <h1><span class="wordmark">Acu361</span><span class="h1-sub">: an open, expert-annotated 3D atlas of the 361 WHO standard acupoints</span></h1>
+    <p class="title-zh" data-l="zh">开放的、由专家标注的 361 个 WHO 标准经穴三维图谱</p>
+    <p class="authors">
+      <span class="au">Yuyue Zhang<sup>1,*</sup></span>, <span class="au">Tim Reese<sup>1</sup></span>, <span class="au">Yang He<sup>1</sup></span>, <span class="au">Michael Zhu<sup>1</sup></span>
+    </p>
+    <p class="affil"><sup>1</sup> Human Motion &amp; Molecular Health Lab, Department of Statistics, Purdue University</p>
+    <p class="affil"><sup>*</sup> <span data-l="en">Corresponding author</span><span data-l="zh">通讯作者</span>: <a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a></p>
+    <div class="btn-row">
+      <a class="btn primary" href="#explore"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="2.4" class="i-fill"/></svg><span data-l="en">Explore</span><span data-l="zh">浏览</span></a>
+      <a class="btn" href="{{REPO_URL}}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 7.5L3.8 12l4.7 4.5M15.5 7.5l4.7 4.5-4.7 4.5"/></svg>GitHub</a>
+      <a class="btn" href="{{REPO_URL}}/archive/refs/heads/main.zip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7.5 10.5L12 15l4.5-4.5M5 19.5h14"/></svg><span data-l="en">Download data</span><span data-l="zh">下载数据</span></a>
+      <a class="btn" href="#cite"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8.5h4v4c0 2.4-1.2 3.6-3.5 4M14 8.5h4v4c0 2.4-1.2 3.6-3.5 4"/></svg><span data-l="en">Cite</span><span data-l="zh">引用</span></a>
+    </div>
+  </header>
+
+  <section class="abstract" aria-label="Summary">
+    <p data-l="en">Acu361 gives millimetre coordinates of all 361 acupoints of the WHO standard (670 points), each placed by an acupuncturist on the skin of an open anatomical body with seven layers, together with the surface lines of the 14 meridians and the proportional bone measurements in B-cun.</p>
+    <p data-l="zh">Acu361 给出 WHO 标准全部 361 个经穴（共 670 个点）的毫米级三维坐标。每个点由针灸师在一具带七层解剖结构的开放人体模型的皮肤上逐一定位，并附 14 条经脉的体表经线和以 B-cun 计的骨度分寸。</p>
+    <dl class="stats">
+      <div><dt>361</dt><dd><span data-l="en">point codes, WHO 2008</span><span data-l="zh">个穴位编码（WHO 2008）</span></dd></div>
+      <div><dt>670</dt><dd><span data-l="en">points: 309 bilateral × 2 + 52 midline</span><span data-l="zh">个点：309 双侧 × 2 + 52 中线</span></dd></div>
+      <div><dt>14</dt><dd><span data-l="en">meridians, 66 surface segments</span><span data-l="zh">条经脉，66 段体表经线</span></dd></div>
+      <div><dt>7</dt><dd><span data-l="en">anatomical layers, 2,812 objects</span><span data-l="zh">个解剖层，2,812 个结构</span></dd></div>
+      <div><dt>mm</dt><dd><span data-l="en">one coordinate frame for every file</span><span data-l="zh">所有文件共用一个坐标系</span></dd></div>
+      <div><dt>1</dt><dd><span data-l="en">body: Z-Anatomy male, standing, 1709.5 mm</span><span data-l="zh">具人体：Z-Anatomy 男性立位，身高 1709.5 mm</span></dd></div>
+    </dl>
+  </section>
+
+  <section class="sec" id="data" aria-labelledby="h-data">
+    <h2 id="h-data"><span data-l="en">What is in the data</span><span data-l="zh">数据内容</span></h2>
+    <div class="sec-body">
+      <div class="table-wrap">
+      <table class="files">
+        <thead><tr><th><span data-l="en">File</span><span data-l="zh">文件</span></th><th><span data-l="en">Content</span><span data-l="zh">内容</span></th><th class="num"><span data-l="en">Size</span><span data-l="zh">大小</span></th></tr></thead>
+        <tbody>
+          <tr><td><a href="data/points.json"><code>data/points.json</code></a></td><td><span data-l="en">670 points: id, code, side, meridian, index, name in pinyin and Chinese, position <code>pos</code> [x, y, z] in mm, nearest bone and the distance to it</span><span data-l="zh">670 个点：id、编码、侧别、经脉、序号、拼音与汉字名、位置 <code>pos</code> [x, y, z]（mm）、最近骨及到骨距离</span></td><td class="num">{{SIZE:data/points.json}}</td></tr>
+          <tr><td><a href="data/points.csv"><code>data/points.csv</code></a></td><td><span data-l="en">The same table as CSV (UTF-8), one row per point</span><span data-l="zh">同一张表的 CSV（UTF-8），每点一行</span></td><td class="num">{{SIZE:data/points.csv}}</td></tr>
+          <tr><td><a href="data/meridians.json"><code>data/meridians.json</code></a></td><td><span data-l="en">Surface lines of the 14 meridians on the skin: 66 segments, 10,894 samples about every 4 mm</span><span data-l="zh">14 条经脉的体表经线：66 段，约每 4 mm 一个采样点，共 10,894 个</span></td><td class="num">{{SIZE:data/meridians.json}}</td></tr>
+          <tr><td><a href="data/rulers.json"><code>data/rulers.json</code></a></td><td><span data-l="en">27 proportional bone measurements in B-cun with 31 instances on the body and 19 landmarks</span><span data-l="zh">27 条骨度分寸尺（B-cun），在人体上的 31 个实例及 19 个标志点</span></td><td class="num">{{SIZE:data/rulers.json}}</td></tr>
+          <tr><td><a href="{{REPO_URL}}/tree/main/data/body"><code>data/body/*.glb</code></a></td><td><span data-l="en">The body in seven layers (skin, muscle, bone, ligament, organ, vessel, nerve), glTF 2.0 binary, 2,812 named objects</span><span data-l="zh">人体七层（皮肤、肌肉、骨、韧带、内脏、血管、神经），glTF 2.0 二进制，2,812 个命名结构</span></td><td class="num">{{SIZE:body}}</td></tr>
+          <tr><td><a href="data/manifest.json"><code>data/manifest.json</code></a></td><td><span data-l="en">Counts, coordinate frame, and size and SHA-256 of every file</span><span data-l="zh">计数、坐标系，以及每个文件的大小和 SHA-256</span></td><td class="num">{{SIZE:data/manifest.json}}</td></tr>
+          <tr><td><a href="{{REPO_URL}}/tree/main/schema"><code>schema/</code></a></td><td><span data-l="en">JSON Schemas (draft 2020-12) of the JSON files and the conventions of the GLB files</span><span data-l="zh">各 JSON 文件的 JSON Schema（draft 2020-12）与 GLB 文件约定</span></td><td class="num"></td></tr>
+          <tr><td><a href="{{REPO_URL}}/blob/main/scripts/validate.py"><code>scripts/validate.py</code></a></td><td><span data-l="en">Checks the whole package against its schemas, counts, geometry and checksums (Python 3, standard library only)</span><span data-l="zh">按 schema、计数、几何和校验和检查整个数据包（Python 3，仅标准库）</span></td><td class="num"></td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p class="note"><span data-l="en">Each point record looks like this:</span><span data-l="zh">每个点的记录形如：</span></p>
+      <pre class="code"><code>{"id": "LU7_L", "code": "LU7", "side": "L", "meridian": "LU", "index": 7,
+ "name_pinyin": "Lieque", "name_zh": "列缺", "pos": [{{LU7_POS}}],
+ "nearest_bone": "{{LU7_BONE}}", "bone_distance_mm": {{LU7_DIST}}}</code></pre>
+    </div>
+  </section>
+
+  <section class="sec" id="frame" aria-labelledby="h-frame">
+    <h2 id="h-frame"><span data-l="en">Coordinate frame</span><span data-l="zh">坐标系</span></h2>
+    <div class="sec-body">
+
+      <ul class="facts">
+        <li><b><span data-l="en">Units</span><span data-l="zh">单位</span></b><span data-l="en">millimetres</span><span data-l="zh">毫米</span></li>
+        <li><b>+x</b><span data-l="en">toward the body's left</span><span data-l="zh">指向身体左侧</span></li>
+        <li><b>+y</b><span data-l="en">up</span><span data-l="zh">向上</span></li>
+        <li><b>+z</b><span data-l="en">anterior: the body faces +z</span><span data-l="zh">向前：人体面向 +z</span></li>
+        <li><b><span data-l="en">Handedness</span><span data-l="zh">手性</span></b><span data-l="en">right-handed, the glTF convention</span><span data-l="zh">右手系，与 glTF 约定一致</span></li>
+        <li><b><span data-l="en">Origin</span><span data-l="zh">原点</span></b><span data-l="en">x = 0 is the mid-sagittal plane; the soles are at y = 0</span><span data-l="zh">x = 0 为正中矢状面；脚底在 y = 0</span></li>
+        <li><b><span data-l="en">Body</span><span data-l="zh">人体</span></b><span data-l="en">Z-Anatomy male, standing, undeformed; skin height 1709.5 mm</span><span data-l="zh">Z-Anatomy 男性，立位，未变形；皮肤高 1709.5 mm</span></li>
+      </ul>
+      <p class="note wide"><span data-l="en">The JSON and GLB files share this frame, so points, lines and rulers overlay the body without any transform.</span><span data-l="zh">JSON 与 GLB 文件共用这一坐标系，点、经线和分寸尺无需任何变换即可叠加到人体上。</span></p>
+    </div>
+  </section>
+
+  <section class="sec" id="use" aria-labelledby="h-use">
+    <h2 id="h-use"><span data-l="en">Using the data</span><span data-l="zh">使用方法</span></h2>
+    <div class="sec-body">
+      <div class="tabs" role="tablist" aria-label="Code examples">
+        <button type="button" role="tab" id="tab-py" aria-controls="code-py" aria-selected="true">Python</button>
+        <button type="button" role="tab" id="tab-js" aria-controls="code-js" aria-selected="false" tabindex="-1">three.js</button>
+      </div>
+      <div class="code-box" role="tabpanel" id="code-py" aria-labelledby="tab-py">
+        <button type="button" class="copy-btn" data-copy="code-py-src"><span data-l="en">Copy</span><span data-l="zh">复制</span></button>
+<pre class="code"><code id="code-py-src">import json
+import numpy as np
+
+doc = json.load(open("data/points.json", encoding="utf-8"))
+points = {p["id"]: p for p in doc["points"]}
+xyz = np.array([p["pos"] for p in doc["points"]])   # (670, 3), mm
+
+p = points["LU7_L"]
+print(p["code"], p["name_pinyin"], p["name_zh"], p["pos"])
+print(p["nearest_bone"], p["bone_distance_mm"], "mm")
+
+# or as a table
+import pandas as pd
+df = pd.read_csv("data/points.csv")              # x_mm, y_mm, z_mm columns</code></pre>
+      </div>
+      <div class="code-box" role="tabpanel" id="code-js" aria-labelledby="tab-js" hidden>
+        <button type="button" class="copy-btn" data-copy="code-js-src"><span data-l="en">Copy</span><span data-l="zh">复制</span></button>
+<pre class="code"><code id="code-js-src">import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+const scene = new THREE.Scene();          // units: mm, +y up, the body faces +z
+
+new GLTFLoader().load('data/body/skin.glb', (gltf) =&gt; {
+  const skin = new THREE.MeshStandardMaterial({ color: 0xe6d8c6, side: THREE.DoubleSide });
+  gltf.scene.traverse((o) =&gt; { if (o.isMesh) o.material = skin; });
+  scene.add(gltf.scene);
+});
+
+const { points } = await (await fetch('data/points.json')).json();
+const dot = new THREE.SphereGeometry(3);
+for (const p of points) {
+  const m = new THREE.Mesh(dot, new THREE.MeshBasicMaterial({ color: 0xb4432f }));
+  m.position.fromArray(p.pos);
+  m.name = p.id;                          // e.g. "LU7_L"
+  scene.add(m);
+}</code></pre>
+      </div>
+      <p class="note"><span data-l="en">The GLB files have no materials; render them double-sided. Node names are the Z-Anatomy object names (e.g. <code>Radius.l</code>), and <code>nearest_bone</code> uses the same names.</span><span data-l="zh">GLB 文件不含材质，请用双面材质渲染。节点名即 Z-Anatomy 结构名（如 <code>Radius.l</code>），<code>nearest_bone</code> 使用同样的名字。</span></p>
+    </div>
+  </section>
+
+  <section class="sec" id="annotation" aria-labelledby="h-ann">
+    <h2 id="h-ann"><span data-l="en">How the points were placed</span><span data-l="zh">标注方式</span></h2>
+    <div class="sec-body prose">
+      <p data-l="en">An acupuncturist located the 361 acupoints one by one in a 3D annotation tool developed by the lab, working directly on the skin of the standing Z-Anatomy body, and finalized every position. Point codes, the set of points and their order follow the WHO Standard Acupuncture Point Locations in the Western Pacific Region (2008).</p>
+      <p data-l="zh">针灸师在实验室自研的三维标注工具中，直接在 Z-Anatomy 立位人体的皮肤上逐一定位 361 个经穴，并逐个定稿。穴位编码、穴位集合及其顺序依照《WHO 西太平洋地区标准针灸穴位定位》（2008）。</p>
+      <p data-l="en">Bilateral points are left–right symmetric: each right-side point is the mirror image (x → −x) of its left-side counterpart. The nearest bone and the distance to it were computed on the bone layer of the same body. The meridian lines follow the shortest path over the skin between consecutive points, smoothed, resampled about every 4 mm and offset 1.2 mm outward; only the course on the body surface is drawn.</p>
+      <p data-l="zh">双侧穴位左右对称：每个右侧点都是其左侧点的镜像（x → −x）。最近骨与到骨距离在同一具人体的骨层上计算。经线沿皮肤表面连接相邻穴位的最短路径，经平滑、约每 4 mm 重采样并向外偏移 1.2 mm；只画体表循行。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="limitations" aria-labelledby="h-lim">
+    <h2 id="h-lim"><span data-l="en">Limitations</span><span data-l="zh">局限</span></h2>
+    <div class="sec-body">
+      <ul class="limits">
+        <li><b><span data-l="en">One body.</span><span data-l="zh">单一人体。</span></b> <span data-l="en">All points are on a single adult male model in standing posture. Using them on another body needs registration or a proportional (B-cun) mapping.</span><span data-l="zh">所有点都在一具成年男性立位模型上。用到其他人体上需要配准或按骨度比例映射。</span></li>
+        <li><b><span data-l="en">Distance to bone is geometric.</span><span data-l="zh">到骨距离是几何量。</span></b> <span data-l="en"><code>bone_distance_mm</code> is the straight-line distance from the point to the nearest bone surface in this model, not a needling depth.</span><span data-l="zh"><code>bone_distance_mm</code> 是模型中从该点到最近骨表面的直线距离，不是进针深度。</span></li>
+        <li><b><span data-l="en">Surface course only.</span><span data-l="zh">只有体表循行。</span></b> <span data-l="en">The meridian lines show the course on the skin; internal pathways are not included.</span><span data-l="zh">经线只表示皮肤上的循行，不含体内循行。</span></li>
+        <li><b><span data-l="en">Not medical advice.</span><span data-l="zh">不构成医疗建议。</span></b> <span data-l="en">The dataset is made for research and teaching. It is not a clinical reference and does not replace professional training.</span><span data-l="zh">本数据集用于科研和教学，不是临床依据，也不能代替专业训练。</span></li>
+        <li><b><span data-l="en">Display on this website.</span><span data-l="zh">本站的显示方式。</span></b> <span data-l="en">A garment covers the pelvis of the body shown here. The 51 points under it are drawn on its surface; their coordinates in the data remain on the skin.</span><span data-l="zh">本站显示的人体在骨盆处穿有衣物。被衣物覆盖的 51 个点画在衣物表面；数据中的坐标仍在皮肤上。</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec" id="cite" aria-labelledby="h-cite">
+    <h2 id="h-cite"><span data-l="en">Cite</span><span data-l="zh">引用</span></h2>
+    <div class="sec-body">
+      <p class="note"><span data-l="en">If you use Acu361, please cite the dataset. A <a href="{{REPO_URL}}/blob/main/CITATION.cff"><code>CITATION.cff</code></a> file is in the repository.</span><span data-l="zh">如使用 Acu361，请引用本数据集。仓库中附有 <a href="{{REPO_URL}}/blob/main/CITATION.cff"><code>CITATION.cff</code></a>。</span></p>
+      <div class="code-box">
+        <button type="button" class="copy-btn" data-copy="bibtex"><span data-l="en">Copy</span><span data-l="zh">复制</span></button>
+<pre class="code"><code id="bibtex">@dataset{acu361_2026,
+  author    = {Zhang, Yuyue and Reese, Tim and He, Yang and Zhu, Michael},
+  title     = {{Acu361}: an open, expert-annotated {3D} atlas of the 361 {WHO} standard acupoints},
+  year      = {{{YEAR}}},
+  version   = {{{VERSION}}},
+  publisher = {Human Motion \&amp; Molecular Health Lab, Department of Statistics, Purdue University},
+  url       = {{{REPO_URL}}},
+  note      = {Data: CC BY-SA 4.0. Body: Z-Anatomy, based on BodyParts3D}
+}</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="license" aria-labelledby="h-lic">
+    <h2 id="h-lic"><span data-l="en">License &amp; attribution</span><span data-l="zh">许可与署名</span></h2>
+    <div class="sec-body prose">
+      <p><span data-l="en">Data (<code>data/</code>, <code>schema/</code>):</span><span data-l="zh">数据（<code>data/</code>、<code>schema/</code>）：</span> <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a>. <span data-l="en">Code (<code>scripts/</code>, <code>site/</code>):</span><span data-l="zh">代码（<code>scripts/</code>、<code>site/</code>）：</span> <a href="{{REPO_URL}}/blob/main/LICENSE-CODE">MIT</a>. <span data-l="en">The data are an adaptation of Z-Anatomy and are shared under the same license.</span><span data-l="zh">数据是 Z-Anatomy 的改编作品，以相同许可共享。</span></p>
+      <p data-l="en">The body comes from Z-Anatomy, which is based on BodyParts3D. All coordinates in this package are defined on that body. As requested by Z-Anatomy, the models are attributed as follows:</p>
+      <p data-l="zh">人体模型来自 Z-Anatomy，后者基于 BodyParts3D。本数据包中的全部坐标都定义在这具人体上。按 Z-Anatomy 的要求，模型署名如下：</p>
+      <ul class="attrib">
+        <li>“Z-Anatomy - The libre 3D atlas of anatomy - CC-BY-SA 4.0”</li>
+        <li>“BodyParts3D - The Database Center for Life Science - CC-BY-SA 2.1 Japan”</li>
+      </ul>
+      <p>Z-Anatomy: Gauthier Kervyn (design, 3D, anatomy), Marcin Zielinski (Python script) and contributors; <a href="https://github.com/Z-Anatomy/Models-of-human-anatomy">github.com/Z-Anatomy/Models-of-human-anatomy</a>.</p>
+      <p>BodyParts3D: The Database Center for Life Science; original model by Kousaku Okubo; <a href="https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html">dbarchive.biosciencedbc.jp/en/bodyparts3d</a>. Mitsuhashi N, Fujieda K, Tamura T, Kawamoto S, Takagi T, Okubo K. BodyParts3D: 3D structure database for anatomical concepts. <i>Nucleic Acids Research</i> 37 (Database issue): D782-D785, 2009. <a href="https://doi.org/10.1093/nar/gkn613">doi:10.1093/nar/gkn613</a>.</p>
+      <p><span data-l="en">Point codes, the set of 361 points, their order and the meridian names follow:</span><span data-l="zh">穴位编码、361 个穴位的集合与顺序以及经脉名称依照：</span> World Health Organization Regional Office for the Western Pacific. <i>WHO Standard Acupuncture Point Locations in the Western Pacific Region</i>. Manila: WHO Regional Office for the Western Pacific; 2008. ISBN 978-92-9061-248-7. <span data-l="en">No text of the standard is reproduced.</span><span data-l="zh">本数据包不转载该标准的任何文字。</span></p>
+      <p><span data-l="en">The garment shown on this website was made by the lab on the skin of the Z-Anatomy body, for display only. It is not part of the dataset and is shared under CC BY-SA 4.0.</span><span data-l="zh">本站显示的衣物由实验室基于 Z-Anatomy 人体皮肤制作，仅用于显示，不属于数据集，以 CC BY-SA 4.0 共享。</span></p>
+    </div>
+  </section>
+
+  <section class="sec" id="contact" aria-labelledby="h-contact">
+    <h2 id="h-contact"><span data-l="en">Contact</span><span data-l="zh">联系</span></h2>
+    <div class="sec-body prose">
+      <p><span data-l="en">Yuyue Zhang (corresponding author):</span><span data-l="zh">Yuyue Zhang（通讯作者）：</span> <a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a></p>
+      <p><span data-l="en">Human Motion &amp; Molecular Health Lab, Department of Statistics, Purdue University:</span><span data-l="zh">普渡大学统计系 Human Motion &amp; Molecular Health Lab：</span> <a href="{{LAB_URL}}">{{LAB_URL_SHORT}}</a></p>
+      <p><span data-l="en">Questions and corrections:</span><span data-l="zh">问题与勘误：</span> <a href="{{REPO_URL}}/issues">GitHub issues</a></p>
+    </div>
+  </section>
+</article>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p><b>Acu361</b> {{VERSION}} · <span data-l="en">Data</span><span data-l="zh">数据</span> CC BY-SA 4.0 · <span data-l="en">Code</span><span data-l="zh">代码</span> MIT · © {{YEAR}} Human Motion &amp; Molecular Health Lab, Purdue University</p>
+    <p class="small"><span data-l="en">Body:</span><span data-l="zh">人体模型：</span> “Z-Anatomy - The libre 3D atlas of anatomy - CC-BY-SA 4.0”; “BodyParts3D - The Database Center for Life Science - CC-BY-SA 2.1 Japan”. <span data-l="en">Not medical advice.</span><span data-l="zh">不构成医疗建议。</span> <a href="llms.txt">llms.txt</a></p>
+  </div>
+</footer>
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>

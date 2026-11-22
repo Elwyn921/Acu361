@@ -1,0 +1,66 @@
+# Acu361
+
+> {{TITLE}}. Millimetre 3D coordinates of the 361 acupoints of the WHO Standard Acupuncture Point Locations in the Western Pacific Region (2008), 670 points in total, located and finalized by an acupuncturist on the skin of one open anatomical body (the Z-Anatomy male, standing). With surface lines of the 14 meridians, the 27 WHO proportional bone measurements in B-cun, and the body itself in seven anatomical layers. Data CC BY-SA 4.0, code MIT. Version {{VERSION}}.
+
+- Website and 3D explorer: {{SITE_URL}}
+- Repository (all files, schemas, validator): {{REPO_URL}}
+- Authors: Yuyue Zhang (corresponding, {{CONTACT_EMAIL}}), Tim Reese, Yang He, Michael Zhu; Human Motion & Molecular Health Lab, Department of Statistics, Purdue University ({{LAB_URL}})
+- A point can be linked directly: {{SITE_URL}}#LU7_L opens the explorer at Lieque (LU7), left side.
+
+## Data files
+
+- [points.json]({{SITE_URL}}data/points.json): 670 points (309 bilateral codes x 2 + 52 midline codes). The header holds the frame, counts and field descriptions; `points` is a list of records.
+- [points.csv]({{SITE_URL}}data/points.csv): the same table as CSV; columns id, code, side, meridian, index, name_pinyin, name_zh, x_mm, y_mm, z_mm, nearest_bone, bone_distance_mm.
+- [meridians.json]({{SITE_URL}}data/meridians.json): surface lines of the 14 meridians on the skin, 66 segments, 10,894 samples about every 4 mm, offset 1.2 mm outward from the skin. Body-surface course only.
+- [rulers.json]({{SITE_URL}}data/rulers.json): 27 proportional bone (skeletal) measurements in B-cun, 31 instances on the body (each with ends a, b in mm and the straight length), 19 derived landmarks.
+- [manifest.json]({{SITE_URL}}data/manifest.json): counts, frame, size and SHA-256 of every file.
+- Body: {{REPO_URL}}/tree/main/data/body holds skin, muscle, bone, ligament, organ, vessel, nerve as glTF 2.0 binary (.glb), 2,812 objects named with Z-Anatomy object names, no materials.
+
+## Fields of a point
+
+- id: unique point id, `<code>_<side>`, e.g. `LU7_L`
+- code: WHO 2008 point code, e.g. `LU7`
+- side: `L` body left, `R` body right, `M` midline (GV and CV points)
+- meridian: one of LU LI ST SP HT SI BL KI PC TE GB LR GV CV
+- index: number of the point within its meridian
+- name_pinyin: Hanyu Pinyin without tone marks, e.g. `Lieque`
+- name_zh: simplified Chinese name, e.g. `列缺`
+- pos: [x, y, z] in mm on the skin surface of data/body/skin.glb
+- nearest_bone: name of the bone object (in bone.glb) whose surface is closest to pos
+- bone_distance_mm: straight-line distance from pos to that bone surface, 0.1 mm; a geometric distance in this model, not a needling depth
+
+Example: {"id": "LU7_L", "code": "LU7", "side": "L", "meridian": "LU", "index": 7, "name_pinyin": "Lieque", "name_zh": "列缺", "pos": [{{LU7_POS}}], "nearest_bone": "{{LU7_BONE}}", "bone_distance_mm": {{LU7_DIST}}}
+
+## Coordinate frame
+
+Millimetres. +x toward the body's left, +y up, +z anterior (the body faces +z); right-handed, the glTF convention. x = 0 is the mid-sagittal plane; the soles are at y = 0; skin height 1709.5 mm. All JSON and GLB files share this frame.
+
+## How the data were made
+
+An acupuncturist located the 361 acupoints one by one in a 3D annotation tool developed by the lab, on the skin of the undeformed Z-Anatomy male standing body, and finalized each position. Bilateral points are left-right symmetric: each right-side point is the mirror image (x -> -x) of its left-side counterpart. Point codes, the set of points, their order and the meridian names follow WHO 2008; no text of the standard is included.
+
+## Limitations
+
+- One body: a single adult male model in standing posture.
+- bone_distance_mm is a geometric distance in the model, not a needling depth.
+- Meridian lines show the body-surface course only.
+- Not medical advice; for research and teaching.
+
+## Citation
+
+Zhang Y, Reese T, He Y, Zhu M. {{TITLE}}. Version {{VERSION}}. {{YEAR}}. {{REPO_URL}}
+
+@dataset{acu361_2026,
+  author    = {Zhang, Yuyue and Reese, Tim and He, Yang and Zhu, Michael},
+  title     = {{Acu361}: an open, expert-annotated {3D} atlas of the 361 {WHO} standard acupoints},
+  year      = {{{YEAR}}},
+  version   = {{{VERSION}}},
+  publisher = {Human Motion \& Molecular Health Lab, Department of Statistics, Purdue University},
+  url       = {{{REPO_URL}}}
+}
+
+## Attribution of the body
+
+The body comes from Z-Anatomy, which is based on BodyParts3D.
+- "Z-Anatomy - The libre 3D atlas of anatomy - CC-BY-SA 4.0" (Gauthier Kervyn, Marcin Zielinski and contributors; https://github.com/Z-Anatomy/Models-of-human-anatomy)
+- "BodyParts3D - The Database Center for Life Science - CC-BY-SA 2.1 Japan" (https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html; Mitsuhashi N et al., Nucleic Acids Research 37: D782-D785, 2009, doi:10.1093/nar/gkn613)
