@@ -3,6 +3,7 @@ message: "If you use this dataset, please cite it as below."
 type: dataset
 title: "Acu361: an open, expert-annotated 3D atlas of the 361 WHO standard acupoints"
 version: 1.0.0
+date-released: 2026-11-22
 license: CC-BY-SA-4.0
 repository-code: "https://github.com/Elwyn921/Acu361"
 url: "https://elwyn921.github.io/Acu361/"

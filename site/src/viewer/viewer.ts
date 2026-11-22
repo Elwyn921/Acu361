@@ -192,6 +192,8 @@ export class Viewer {
   }
 
   resize(w: number, h: number, dpr = Math.min(window.devicePixelRatio || 1, 2)) {
+    // a hidden or collapsed container reports 0 x 0; keep the camera maths finite
+    w = Math.max(w, 1); h = Math.max(h, 1);
     this.width = w; this.height = h; this.dpr = dpr;
     this.renderer.setPixelRatio(dpr);
     this.renderer.setSize(w, h, false);
