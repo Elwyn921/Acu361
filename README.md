@@ -25,6 +25,7 @@
   <a href="LICENSE"><img alt="Data license: CC BY-SA 4.0" src="https://img.shields.io/badge/data-CC%20BY--SA%204.0-2f6f6a"></a>
   <a href="LICENSE-CODE"><img alt="Code license: MIT" src="https://img.shields.io/badge/code-MIT-2f6f6a"></a>
   <img alt="Version 1.0.0" src="https://img.shields.io/badge/version-1.0.0-555">
+  <a href="https://doi.org/10.5281/zenodo.24448101"><img alt="DOI: 10.5281/zenodo.24448101" src="https://zenodo.org/badge/DOI/10.5281/zenodo.24448101.svg"></a>
 </p>
 
 <p align="center">
@@ -161,6 +162,7 @@ If you use Acu361, please cite it:
   author       = {Zhang, Yuyue and Reese, Tim and He, Yang and Zhu, Michael},
   year         = {2026},
   version      = {1.0.0},
+  doi          = {10.5281/zenodo.24448101},
   howpublished = {\url{https://github.com/Elwyn921/Acu361}},
   note         = {Human Motion \& Molecular Health Lab, Department of Statistics, Purdue University}
 }

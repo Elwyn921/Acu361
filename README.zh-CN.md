@@ -147,7 +147,7 @@ python3 scripts/validate.py
 
 ## 引用
 
-使用 Acu361 请引用：
+使用 Acu361 请引用（DOI：[10.5281/zenodo.24448101](https://doi.org/10.5281/zenodo.24448101)）：
 
 ```bibtex
 @misc{acu361,
@@ -155,6 +155,7 @@ python3 scripts/validate.py
   author       = {Zhang, Yuyue and Reese, Tim and He, Yang and Zhu, Michael},
   year         = {2026},
   version      = {1.0.0},
+  doi          = {10.5281/zenodo.24448101},
   howpublished = {\url{https://github.com/Elwyn921/Acu361}},
   note         = {Human Motion \& Molecular Health Lab, Department of Statistics, Purdue University}
 }

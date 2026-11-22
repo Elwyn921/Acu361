@@ -5,6 +5,7 @@ title: "Acu361: an open, expert-annotated 3D atlas of the 361 WHO standard acupo
 version: 1.0.0
 date-released: 2026-11-22
 license: CC-BY-SA-4.0
+doi: 10.5281/zenodo.24448101
 repository-code: "https://github.com/Elwyn921/Acu361"
 url: "https://elwyn921.github.io/Acu361/"
 abstract: >-
