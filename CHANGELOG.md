@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1 (2026-11-24)
+
+- Documentation: states how the points were located (point-by-point consensus of a panel of seven acupuncturists) and retitles the dataset accordingly.
+- No coordinate changed. The version fields and the annotation note in the data files were updated.
+
 ## 1.0.0 (2026-11-22)
 
 First public release.

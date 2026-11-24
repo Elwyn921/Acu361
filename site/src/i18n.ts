@@ -4,7 +4,7 @@ export type Lang = 'en' | 'zh';
 
 const S = {
   en: {
-    tagline: '3D atlas of the 361 WHO standard acupoints',
+    tagline: 'Expert-consensus locations of the 361 WHO standard acupoints',
     search: 'Search points',
     searchPlaceholder: 'LU7, Lieque, 列缺',
     noResults: 'No matching point',
@@ -38,7 +38,7 @@ const S = {
     layerBusy: (p: number) => `${p}%`,
   },
   zh: {
-    tagline: '361 个 WHO 标准经穴三维图谱',
+    tagline: '361 个 WHO 标准经穴的专家共识定位',
     search: '搜索穴位',
     searchPlaceholder: 'LU7、Lieque、列缺',
     noResults: '没有匹配的穴位',

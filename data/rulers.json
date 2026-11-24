@@ -1,6 +1,6 @@
 {
   "dataset": "Acu361",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "CC-BY-SA-4.0",
   "description": "Proportional bone (skeletal) measurements in B-cun from the WHO 2008 table, with their endpoints on the standing body. Each ruler gives the number of cun between two landmarks; an instance is one realisation on the body (one per side for bilateral rulers) with endpoints a (from) and b (to) and their straight-line distance.",
   "source": "WHO Standard Acupuncture Point Locations in the Western Pacific Region (WHO Regional Office for the Western Pacific, 2008), Proportional Bone (Skeletal) Measurements, pp. 12-13",

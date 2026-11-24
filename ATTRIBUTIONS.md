@@ -41,7 +41,7 @@ Point codes, the set of 361 points, their order and the meridian names follow:
 
 World Health Organization Regional Office for the Western Pacific. *WHO Standard Acupuncture Point Locations in the Western Pacific Region*. Manila: WHO Regional Office for the Western Pacific; 2008. ISBN 978-92-9061-248-7.
 
-The rulers in `data/rulers.json` give the proportional bone (skeletal) measurements in B-cun of the same publication (pp. 12-13). These are used as factual references; no text of the standard is reproduced in this package. The position of every point on this body was determined by an acupuncturist; the package does not contain the location descriptions of the standard.
+The rulers in `data/rulers.json` give the proportional bone (skeletal) measurements in B-cun of the same publication (pp. 12-13). These are used as factual references; no text of the standard is reproduced in this package. The position of every point on this body was determined by consensus of a panel of seven acupuncturists; the package does not contain the location descriptions of the standard.
 
 The note of one ruler (`head_glabella_ant_hairline`) cites the note on Yintang in GB/T 12346-2021, *Nomenclature and location of meridian points* (经穴名称与定位), for how the glabella is taken; no text of that standard is reproduced.
 

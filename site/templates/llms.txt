@@ -1,6 +1,6 @@
 # Acu361
 
-> {{TITLE}}. Millimetre 3D coordinates of the 361 acupoints of the WHO Standard Acupuncture Point Locations in the Western Pacific Region (2008), 670 points in total, located and finalized by an acupuncturist on the skin of one open anatomical body (the Z-Anatomy male, standing). With surface lines of the 14 meridians, the 27 WHO proportional bone measurements in B-cun, and the body itself in seven anatomical layers. Data CC BY-SA 4.0, code MIT. Version {{VERSION}}.
+> {{TITLE}}. Acu361 gives a precise location for each of the 361 WHO standard acupoints (670 points). Every location is the consensus of a panel of seven acupuncturists, who went through the points one by one, and is recorded as a millimetre coordinate on the skin of an open anatomical body with seven layers. With surface lines of the 14 meridians, the 27 WHO proportional bone measurements in B-cun, and the body itself in seven anatomical layers. Data CC BY-SA 4.0, code MIT. Version {{VERSION}}.
 
 - Website and 3D explorer: {{SITE_URL}}
 - Repository (all files, schemas, validator): {{REPO_URL}}
@@ -37,7 +37,7 @@ Millimetres. +x toward the body's left, +y up, +z anterior (the body faces +z); 
 
 ## How the data were made
 
-An acupuncturist located the 361 acupoints one by one in a 3D annotation tool developed by the lab, on the skin of the undeformed Z-Anatomy male standing body, and finalized each position. Bilateral points are left-right symmetric: each right-side point is the mirror image (x -> -x) of its left-side counterpart. Point codes, the set of points, their order and the meridian names follow WHO 2008; no text of the standard is included.
+Each of the 361 acupoints was located by a panel of seven acupuncturists. The panel went through the points one by one. For every point, the members compared where they would place it, discussed the differences, and agreed on a single position. That agreed position was marked on the skin surface of the model in a 3D annotation tool built for this project, and it is the coordinate published here. No point rests on one person's judgment. The members of the panel are not named. Bilateral points are left-right symmetric: each right-side point is the mirror image (x -> -x) of its left-side counterpart. Point codes, the set of points, their order and the meridian names follow WHO 2008; no text of the standard is included.
 
 ## Limitations
 
@@ -52,9 +52,10 @@ Zhang Y, Reese T, He Y, Zhu M. {{TITLE}}. Version {{VERSION}}. {{YEAR}}. {{REPO_
 
 @dataset{acu361_2026,
   author    = {Zhang, Yuyue and Reese, Tim and He, Yang and Zhu, Michael},
-  title     = {{Acu361}: an open, expert-annotated {3D} atlas of the 361 {WHO} standard acupoints},
+  title     = {{Acu361}: Precise, Expert-Consensus Locations of the 361 {WHO} Standard Acupoints},
   year      = {{{YEAR}}},
   version   = {{{VERSION}}},
+  doi       = {10.5281/zenodo.24448101},
   publisher = {Human Motion \& Molecular Health Lab, Department of Statistics, Purdue University},
   url       = {{{REPO_URL}}}
 }

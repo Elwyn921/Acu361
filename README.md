@@ -1,7 +1,7 @@
 <h1 align="center">Acu361</h1>
 
 <p align="center">
-  <b>An open, expert-annotated 3D atlas of the 361 WHO standard acupoints</b>
+  <b>Precise, expert-consensus locations of the 361 WHO standard acupoints</b>
 </p>
 
 <p align="center">
@@ -24,7 +24,7 @@
 <p align="center">
   <a href="LICENSE"><img alt="Data license: CC BY-SA 4.0" src="https://img.shields.io/badge/data-CC%20BY--SA%204.0-2f6f6a"></a>
   <a href="LICENSE-CODE"><img alt="Code license: MIT" src="https://img.shields.io/badge/code-MIT-2f6f6a"></a>
-  <img alt="Version 1.0.0" src="https://img.shields.io/badge/version-1.0.0-555">
+  <img alt="Version 1.0.1" src="https://img.shields.io/badge/version-1.0.1-555">
   <a href="https://doi.org/10.5281/zenodo.24448101"><img alt="DOI: 10.5281/zenodo.24448101" src="https://zenodo.org/badge/DOI/10.5281/zenodo.24448101.svg"></a>
 </p>
 
@@ -34,7 +34,7 @@
   </a>
 </p>
 
-Acu361 is a dataset of 3D coordinates for the 361 acupoints of the WHO standard (*WHO Standard Acupuncture Point Locations in the Western Pacific Region*, 2008). An acupuncturist placed every point on the skin of an openly licensed anatomical model, the [Z-Anatomy](https://github.com/Z-Anatomy/Models-of-human-anatomy) male body. The body comes with seven anatomical layers, so each point can be read against the muscles, bones, vessels and nerves beneath it. Coordinates are in millimetres and the data are released under CC BY-SA 4.0.
+Acu361 is a precise reference for the locations of the 361 WHO standard acupoints (*WHO Standard Acupuncture Point Locations in the Western Pacific Region*, 2008). A panel of seven acupuncturists went through the points one by one, discussed each, and agreed on a single location for it. Each agreed location is recorded as a millimetre coordinate on the skin of an openly licensed anatomical model, the [Z-Anatomy](https://github.com/Z-Anatomy/Models-of-human-anatomy) male body. The body has seven anatomical layers, so every point can be read against the muscles, bones, vessels and nerves beneath it. The data are released under CC BY-SA 4.0.
 
 You can browse every point in the [online 3D explorer](https://elwyn921.github.io/Acu361/) without installing anything.
 
@@ -42,6 +42,7 @@ You can browse every point in the [online 3D explorer](https://elwyn921.github.i
 
 | | |
 |---|---|
+| Locations | Consensus of a panel of seven acupuncturists, reached point by point |
 | Acupoints | 361 WHO standard codes, 670 points (309 bilateral codes on both sides, 52 on the midline) |
 | Meridians | 14, each with a line drawn over the skin through its points |
 | Proportional measurements | 27 B-cun rulers from the WHO standard, measured on the body |
@@ -132,9 +133,9 @@ The script verifies file hashes, the schemas, the point counts per meridian, lef
 
 All files share one frame. Units are millimetres. The body stands facing +z, with +x toward its own left and +y up; the soles are at y = 0 and the mid-sagittal plane is x = 0. This is the right-handed glTF convention, so the GLB files and the JSON coordinates line up without any transform.
 
-## How the points were annotated
+## How the points were located
 
-An acupuncturist (M.Z.) located and finalized all 361 acupoints one by one in a 3D annotation tool built for this project, working directly on the skin surface of the model. Bilateral points are symmetric: each right-side point is the mirror image of its left-side counterpart.
+Each of the 361 acupoints was located by a panel of seven acupuncturists. The panel went through the points one by one. For every point, the members compared where they would place it, discussed the differences, and agreed on a single position. That agreed position was marked on the skin surface of the model in a 3D annotation tool built for this project, and it is the coordinate published here. No point rests on one person's judgment. The members of the panel are not named. Bilateral points are symmetric: each right-side point is the mirror image of its left-side counterpart.
 
 The released coordinates were checked against the body:
 
@@ -158,10 +159,10 @@ If you use Acu361, please cite it:
 
 ```bibtex
 @misc{acu361,
-  title        = {Acu361: An Open, Expert-Annotated {3D} Atlas of the 361 {WHO} Standard Acupoints},
+  title        = {{Acu361}: Precise, Expert-Consensus Locations of the 361 {WHO} Standard Acupoints},
   author       = {Zhang, Yuyue and Reese, Tim and He, Yang and Zhu, Michael},
   year         = {2026},
-  version      = {1.0.0},
+  version      = {1.0.1},
   doi          = {10.5281/zenodo.24448101},
   howpublished = {\url{https://github.com/Elwyn921/Acu361}},
   note         = {Human Motion \& Molecular Health Lab, Department of Statistics, Purdue University}
@@ -181,6 +182,10 @@ The body is adapted from Z-Anatomy, which is based on BodyParts3D:
 - "BodyParts3D - The Database Center for Life Science - CC-BY-SA 2.1 Japan"
 
 Point codes, the set of 361 points and the proportional measurements follow the WHO standard cited above. [`ATTRIBUTIONS.md`](ATTRIBUTIONS.md) lists the full credits and every change made to the upstream meshes.
+
+## Acknowledgments
+
+We thank the members of the panel.
 
 ## Contact
 

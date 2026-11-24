@@ -1,7 +1,7 @@
 {
   "dataset": "Acu361",
-  "version": "1.0.0",
-  "title": "Acu361: an open, expert-annotated 3D atlas of the 361 WHO standard acupoints",
+  "version": "1.0.1",
+  "title": "Acu361: precise, expert-consensus locations of the 361 WHO standard acupoints",
   "license": {
     "data": "CC-BY-SA-4.0 (data/, schema/; see LICENSE)",
     "code": "MIT (scripts/; see LICENSE-CODE)"
@@ -53,16 +53,16 @@
     }
   },
   "files": [
-    {"path": "data/body/bone.glb", "bytes": 14184180, "sha256": "4c00e92bd42764ddff4d3a86cd9f1fba206d95aa8e7145cc3a71f82e9c2c16ff"},
-    {"path": "data/body/ligament.glb", "bytes": 3459876, "sha256": "05ebc8a2680057eb88963762db6e4f7f60d8919989b2a305f7111602b59fa7ef"},
-    {"path": "data/body/muscle.glb", "bytes": 18876048, "sha256": "cb88d2ad0f254d713a51e441456fcca6aa7c42a4bd05c6667c54096db928f9fb"},
-    {"path": "data/body/nerve.glb", "bytes": 11557268, "sha256": "d4e215a9ea2ec4a173dd5816136a762229f5ce2b0c9a939c482b5aef006aa84c"},
-    {"path": "data/body/organ.glb", "bytes": 6978352, "sha256": "ff885c85d2de23b728152ba6630b5c1c6905f2f22ae2cf01d045326edd6eaf46"},
-    {"path": "data/body/skin.glb", "bytes": 1290124, "sha256": "ae2b9357646c96d3e0b214801073f06aa71c7cb98aa056525c242b96a1792839"},
-    {"path": "data/body/vessel.glb", "bytes": 5654488, "sha256": "7c624b9e3584acf7b4acc2d5d841f22b4679d898f06d7f26bba1e57dd40dac71"},
-    {"path": "data/meridians.json", "bytes": 295985, "sha256": "17e2f0aba75309608908da9db529c7ab6f1015279c98a8b6a58397dc074868bd"},
+    {"path": "data/body/bone.glb", "bytes": 14184180, "sha256": "7b94242cace784d532741ad69eb13d585df41ad1ae936a65bf33d6d6af82077e"},
+    {"path": "data/body/ligament.glb", "bytes": 3459876, "sha256": "4261931d533620bffe935e8ae2aebccd742e108ecc108e591a7eccba101bcead"},
+    {"path": "data/body/muscle.glb", "bytes": 18876048, "sha256": "a3ac9aaff0d5680559bed978a4716850d40698f2955142a42c8c608ac37f171f"},
+    {"path": "data/body/nerve.glb", "bytes": 11557268, "sha256": "f87574e23d47c604beacd694585f65a6b2424ec946ea7c3dc70f66b6a994ed02"},
+    {"path": "data/body/organ.glb", "bytes": 6978352, "sha256": "24663705fbb53c22537199e199be6ba38944b2dcb7e6d710e723ef10edf27985"},
+    {"path": "data/body/skin.glb", "bytes": 1290124, "sha256": "80957317899b2ba9c037ca42eb5cb6a09a0629599f49f1e1773e893400c8e517"},
+    {"path": "data/body/vessel.glb", "bytes": 5654488, "sha256": "a222820b3a3678d69f7c9dae9f08727372cc8eee393a0dc0270237611795ead5"},
+    {"path": "data/meridians.json", "bytes": 295985, "sha256": "fcf108aaccc4e21c90cd630ee7ab71e9a60c96a82b7b4526135f25a22576bb25"},
     {"path": "data/points.csv", "bytes": 49274, "sha256": "e4cc6be4e95f722e38f30d609712ec57cfaf8a6523bc6bc8f7652f71410426a7"},
-    {"path": "data/points.json", "bytes": 149599, "sha256": "9a14bbbd4e71be42c9f7436101cf0bb75bc727b299ccee68d352c45363566416"},
-    {"path": "data/rulers.json", "bytes": 34489, "sha256": "5625a1c57df58c1e17086bbcdb88351c9d4af5d6133f37b8ac76534612424692"}
+    {"path": "data/points.json", "bytes": 149742, "sha256": "245ea3b2a3584c699f5070b241d0538b7c792a79ffb92544a09c64c75ae64985"},
+    {"path": "data/rulers.json", "bytes": 34489, "sha256": "c930ffaacb3e1b9b5b1ef4d4ac97b77d4d959ee6a122de960501fb072deb6351"}
   ]
 }

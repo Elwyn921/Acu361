@@ -18,7 +18,7 @@
 ## Container
 
 - glTF 2.0 binary: 12-byte header, one JSON chunk, one BIN chunk, both 4-byte aligned.
-- `asset.generator` is `Acu361 1.0.0`; `asset.copyright` carries the attribution to Z-Anatomy and BodyParts3D.
+- `asset.generator` is `Acu361 1.0.1`; `asset.copyright` carries the attribution to Z-Anatomy and BodyParts3D.
 - One scene listing every node. One node and one mesh per object (`meshes[nodes[i].mesh].name == nodes[i].name`). No hierarchy and no node transforms: vertex positions are already in the frame below.
 - Each mesh has one primitive, `mode` 4 (triangles), with attributes `POSITION` and `NORMAL` (float32 VEC3) and `indices` (uint32 SCALAR). `POSITION` accessors carry `min` / `max` equal to the data.
 - `NORMAL` holds per-vertex normals. 3,056 of the 1,268,284 vertices have the normal (0, 0, 0) because no non-degenerate triangle uses them; do not rely on normals there.

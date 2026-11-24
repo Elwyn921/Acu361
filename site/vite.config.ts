@@ -28,7 +28,7 @@ const jsonLd = {
   '@type': 'Dataset',
   name: TITLE,
   alternateName: 'Acu361',
-  description: 'Millimetre 3D coordinates of the 361 acupoints of the WHO Standard Acupuncture Point Locations in the Western Pacific Region (2008), 670 points in total, located and finalized by an acupuncturist on the skin of the undeformed male standing body of the open anatomical model Z-Anatomy. Includes the surface lines of the 14 meridians, the 27 WHO proportional bone measurements in B-cun with their ends on the body, and the seven anatomical layers of the body (skin, muscle, bone, ligament, organ, vessel, nerve) as GLB files. Units mm; +x toward the body\'s left, +y up, +z anterior.',
+  description: 'Acu361 gives a precise location for each of the 361 WHO standard acupoints (670 points). Every location is the consensus of a panel of seven acupuncturists, who went through the points one by one, and is recorded as a millimetre coordinate on the skin of an open anatomical body with seven layers.',
   url: SITE_URL,
   sameAs: REPO_URL,
   identifier: REPO_URL,
@@ -41,7 +41,7 @@ const jsonLd = {
   creator: authors.map((name, i) => ({ '@type': 'Person', name, affiliation: lab, ...(i === 0 ? { email: CONTACT_EMAIL } : {}) })),
   publisher: lab,
   maintainer: { '@type': 'Person', name: authors[0], email: CONTACT_EMAIL },
-  measurementTechnique: 'Expert annotation by an acupuncturist in a 3D annotation tool, on the skin of a 3D anatomical body model',
+  measurementTechnique: 'Point-by-point consensus of a panel of seven acupuncturists, marked in a 3D annotation tool on the skin of a 3D anatomical body model',
   variableMeasured: [
     { '@type': 'PropertyValue', name: 'pos', description: 'x, y, z position of the point on the skin', unitText: 'mm' },
     { '@type': 'PropertyValue', name: 'bone_distance_mm', description: 'straight-line distance from the point to the nearest bone surface in the model (not a needling depth)', unitText: 'mm' },

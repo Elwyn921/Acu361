@@ -1,6 +1,6 @@
 {
   "dataset": "Acu361",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "CC-BY-SA-4.0",
   "description": "Surface lines of the 14 meridians on the skin of data/body/skin.glb, drawn through the points of data/points.json.",
   "method": "Each segment is an ordered list of point codes. Between consecutive points the line follows the shortest path over the skin surface (Dijkstra on the subdivided skin mesh), is smoothed with re-projection onto the skin, resampled about every 4 mm, and offset 1.2 mm outward along the skin normal so that it renders above the skin. The order of points follows the body-surface course shown in standard meridian charts; internal courses are not drawn. Left and right lines are drawn separately; the crossing of the Large Intestine meridian at the philtrum is not drawn. A code in \"via\" is a waypoint on another meridian; \"mid:A:B\" is the midpoint of points A and B of the same side, projected onto the skin, used as a waypoint.",

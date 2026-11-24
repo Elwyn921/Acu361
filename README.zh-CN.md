@@ -1,7 +1,7 @@
 <h1 align="center">Acu361</h1>
 
 <p align="center">
-  <b>361 个 WHO 标准经穴的开放三维图谱，由针灸师逐穴标注</b>
+  <b>361 个 WHO 标准经穴的专家共识精确定位</b>
 </p>
 
 <p align="center">
@@ -27,7 +27,7 @@
   </a>
 </p>
 
-Acu361 是一份穴位三维坐标数据集，收录 WHO 标准（《WHO 西太平洋地区标准针灸穴位定位》，2008）的全部 361 个经穴。每个穴位都由针灸师标在一具开放许可的解剖模型的皮肤上，这具模型是 [Z-Anatomy](https://github.com/Z-Anatomy/Models-of-human-anatomy) 的男性人体。模型带七层解剖结构，所以每个穴位下面是哪块肌肉、哪根骨头、哪条血管和神经，都可以直接对照。坐标单位是毫米，数据以 CC BY-SA 4.0 发布。
+Acu361 是 WHO 标准（《WHO 西太平洋地区标准针灸穴位定位》，2008）全部 361 个经穴的精确定位参考。七位针灸师组成的专家组逐穴讨论、交换意见，为每个穴位商定唯一的位置。每个商定的位置以毫米坐标记录在一具开放许可的解剖模型的皮肤上，这具模型是 [Z-Anatomy](https://github.com/Z-Anatomy/Models-of-human-anatomy) 的男性人体。模型带七层解剖结构，每个穴位下面的肌肉、骨、血管和神经都可以直接对照。数据以 CC BY-SA 4.0 发布。
 
 不用安装任何东西，打开[在线三维浏览器](https://elwyn921.github.io/Acu361/)就能查看每一个穴位。
 
@@ -35,6 +35,7 @@ Acu361 是一份穴位三维坐标数据集，收录 WHO 标准（《WHO 西太�
 
 | | |
 |---|---|
+| 定位 | 七位针灸师组成的专家组逐穴讨论达成的共识 |
 | 穴位 | 361 个 WHO 标准穴位码，共 670 个点（309 个双侧穴左右各一，52 个在正中线上） |
 | 经脉 | 14 条，每条有一根沿皮肤经过各穴的经线 |
 | 骨度分寸 | WHO 标准中的 27 把骨度尺，在这具身体上量出 |
@@ -125,9 +126,9 @@ python3 scripts/validate.py
 
 所有文件用同一个坐标系，单位毫米。人体面朝 +z 站立，+x 指向他自己的左侧，+y 向上；脚底在 y = 0，正中矢状面是 x = 0。这就是 glTF 的右手坐标系，GLB 文件和 JSON 里的坐标不需要任何变换就能对上。
 
-## 穴位是怎么标的
+## 穴位是怎么定位的
 
-全部 361 个穴位由针灸师（M.Z.）在为本项目开发的三维标注工具里逐穴定位、定稿，直接标在模型的皮肤表面上。双侧穴左右对称：右侧的点是左侧对应点的镜像。
+361 个穴位全部由七位针灸师组成的专家组定位。专家组逐穴进行：每个穴位，成员先比较各自的取穴位置，讨论其中的差异，再商定一个位置。商定的位置用为本项目开发的三维标注工具标在模型的皮肤表面上，也就是这里发布的坐标。没有任何一个穴位只凭一个人的判断。专家组成员不具名。双侧穴左右对称：右侧的点是左侧对应点的镜像。
 
 发布的坐标都对着这具身体核对过：
 
@@ -151,10 +152,10 @@ python3 scripts/validate.py
 
 ```bibtex
 @misc{acu361,
-  title        = {Acu361: An Open, Expert-Annotated {3D} Atlas of the 361 {WHO} Standard Acupoints},
+  title        = {{Acu361}: Precise, Expert-Consensus Locations of the 361 {WHO} Standard Acupoints},
   author       = {Zhang, Yuyue and Reese, Tim and He, Yang and Zhu, Michael},
   year         = {2026},
-  version      = {1.0.0},
+  version      = {1.0.1},
   doi          = {10.5281/zenodo.24448101},
   howpublished = {\url{https://github.com/Elwyn921/Acu361}},
   note         = {Human Motion \& Molecular Health Lab, Department of Statistics, Purdue University}
@@ -174,6 +175,10 @@ GitHub 页面上的「Cite this repository」按钮会根据 [`CITATION.cff`](CI
 - "BodyParts3D - The Database Center for Life Science - CC-BY-SA 2.1 Japan"
 
 穴位码、361 穴的范围和骨度分寸遵循上面引用的 WHO 标准。完整的署名和对上游网格所做的每一项改动见 [`ATTRIBUTIONS.md`](ATTRIBUTIONS.md)。
+
+## 致谢
+
+感谢专家组的各位针灸师。
 
 ## 联系
 

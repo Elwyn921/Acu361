@@ -1,9 +1,9 @@
 {
   "dataset": "Acu361",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "CC-BY-SA-4.0",
   "description": "Positions of the 361 WHO standard acupoints (670 points: 309 bilateral codes x 2 sides + 52 midline codes) on the skin of the Z-Anatomy male standing body.",
-  "annotation": "All 361 acupoints were located and finalized one by one by an acupuncturist in a 3D annotation tool. Bilateral points are left-right symmetric: each right-side point is the mirror image (x -> -x) of its left-side counterpart.",
+  "annotation": "Each of the 361 acupoints was located by consensus of a panel of seven acupuncturists, who went through the points one by one and agreed on a single position for each; the agreed position was marked on the skin surface in a 3D annotation tool. Bilateral points are left-right symmetric: each right-side point is the mirror image (x -> -x) of its left-side counterpart.",
   "nomenclature": "Point codes, the set of 361 points and their order follow World Health Organization Regional Office for the Western Pacific, WHO Standard Acupuncture Point Locations in the Western Pacific Region (2008).",
   "frame": {
     "units": "mm",

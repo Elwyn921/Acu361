@@ -1,7 +1,7 @@
 {
-  "title": "Acu361: an open, expert-annotated 3D atlas of the 361 WHO standard acupoints",
+  "title": "Acu361: precise, expert-consensus locations of the 361 WHO standard acupoints",
   "upload_type": "dataset",
-  "description": "<p>Acu361 is a dataset of 3D coordinates for the 361 acupoints of the WHO standard (<em>WHO Standard Acupuncture Point Locations in the Western Pacific Region</em>, 2008): 670 points in total, 309 bilateral codes on both sides and 52 on the midline. An acupuncturist placed every point on the skin of an openly licensed anatomical model, the Z-Anatomy male body. The body comes with seven anatomical layers (skin, muscle, bone, ligament, organ, vessel, nerve), so each point can be read against the structures beneath it.</p><p>The package contains the points as JSON and CSV, surface lines of the 14 meridians, the 27 proportional bone (B-cun) measurements of the WHO standard measured on the body, the seven layers of the body as GLB files, JSON Schemas, a validation script and the source of the online 3D explorer. Coordinates are in millimetres.</p><p>Data are released under CC BY-SA 4.0; code under MIT. The body is adapted from Z-Anatomy, which is based on BodyParts3D; see ATTRIBUTIONS.md in the package.</p>",
+  "description": "<p>Acu361 is a precise reference for the locations of the 361 WHO standard acupoints (<em>WHO Standard Acupuncture Point Locations in the Western Pacific Region</em>, 2008). A panel of seven acupuncturists went through the points one by one, discussed each, and agreed on a single location for it. Each agreed location is recorded as a millimetre coordinate on the skin of an openly licensed anatomical model, the Z-Anatomy male body. The body has seven anatomical layers, so every point can be read against the muscles, bones, vessels and nerves beneath it. The data are released under CC BY-SA 4.0.</p><p>The package contains the points as JSON and CSV, surface lines of the 14 meridians, the 27 proportional bone (B-cun) measurements of the WHO standard measured on the body, the seven layers of the body as GLB files, JSON Schemas, a validation script and the source of the online 3D explorer. Coordinates are in millimetres.</p><p>Data are released under CC BY-SA 4.0; code under MIT. The body is adapted from Z-Anatomy, which is based on BodyParts3D; see ATTRIBUTIONS.md in the package.</p>",
   "creators": [
     {
       "name": "Zhang, Yuyue",
@@ -29,6 +29,7 @@
     "acupoints",
     "meridians",
     "3D atlas",
+    "expert consensus",
     "anatomy",
     "traditional Chinese medicine",
     "WHO standard acupuncture point locations",

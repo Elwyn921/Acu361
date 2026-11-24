@@ -1,9 +1,9 @@
 cff-version: 1.2.0
 message: "If you use this dataset, please cite it as below."
 type: dataset
-title: "Acu361: an open, expert-annotated 3D atlas of the 361 WHO standard acupoints"
-version: 1.0.0
-date-released: 2026-11-22
+title: "Acu361: precise, expert-consensus locations of the 361 WHO standard acupoints"
+version: 1.0.1
+date-released: 2026-11-24
 license: CC-BY-SA-4.0
 doi: 10.5281/zenodo.24448101
 repository-code: "https://github.com/Elwyn921/Acu361"
@@ -11,9 +11,10 @@ url: "https://elwyn921.github.io/Acu361/"
 abstract: >-
   3D coordinates of the 361 acupoints of the WHO Standard Acupuncture Point
   Locations in the Western Pacific Region (2008), 670 points in total, on the
-  undeformed male standing body of the open anatomical model Z-Anatomy. All 361
-  acupoints were located and finalized one by one by an acupuncturist in a 3D
-  annotation tool; bilateral points are left-right symmetric, each right-side
+  undeformed male standing body of the open anatomical model Z-Anatomy. Each of
+  the 361 acupoints was located by consensus of a panel of seven acupuncturists,
+  who went through the points one by one and agreed on a single position for
+  each; bilateral points are left-right symmetric, each right-side
   point being the mirror image of its left-side counterpart. The package also
   contains surface lines of the 14 meridians on the skin, the WHO proportional
   bone (skeletal) measurements in B-cun with endpoints on the body, and the
