@@ -4,7 +4,7 @@
 
 - Website and 3D explorer: {{SITE_URL}}
 - Repository (all files, schemas, validator): {{REPO_URL}}
-- Authors: Yuyue Zhang (corresponding, {{CONTACT_EMAIL}}), Tim Reese, Yang He, Michael Zhu; Human Motion & Molecular Health Lab, Department of Statistics, Purdue University ({{LAB_URL}})
+- Authors: Yuyue Zhang (corresponding, {{CONTACT_EMAIL}}), Timothy G Reese, Yang He, Michael Zhu; Human Motion & Molecular Health Lab, Department of Statistics, Purdue University ({{LAB_URL}})
 - A point can be linked directly: {{SITE_URL}}#LU7_L opens the explorer at Lieque (LU7), left side.
 
 ## Data files
@@ -48,10 +48,10 @@ Each of the 361 acupoints was located by a panel of seven acupuncturists. The pa
 
 ## Citation
 
-Zhang Y, Reese T, He Y, Zhu M. {{TITLE}}. Version {{VERSION}}. {{YEAR}}. {{REPO_URL}}
+Zhang Y, Reese TG, He Y, Zhu M. {{TITLE}}. Version {{VERSION}}. {{YEAR}}. {{REPO_URL}}
 
 @dataset{acu361_2026,
-  author    = {Zhang, Yuyue and Reese, Tim and He, Yang and Zhu, Michael},
+  author    = {Zhang, Yuyue and Reese, Timothy G and He, Yang and Zhu, Michael},
   title     = {{Acu361}: Precise, Expert-Consensus Locations of the 361 {WHO} Standard Acupoints},
   year      = {{{YEAR}}},
   version   = {{{VERSION}}},

@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  Yuyue Zhang<sup>1,*</sup>, Tim Reese<sup>1</sup>, Yang He<sup>1</sup>, Michael Zhu<sup>1</sup>
+  Yuyue Zhang<sup>1,*</sup>, Timothy G Reese<sup>1</sup>, Yang He<sup>1</sup>, Michael Zhu<sup>1</sup>
 </p>
 
 <p align="center">
@@ -153,7 +153,7 @@ python3 scripts/validate.py
 ```bibtex
 @misc{acu361,
   title        = {{Acu361}: Precise, Expert-Consensus Locations of the 361 {WHO} Standard Acupoints},
-  author       = {Zhang, Yuyue and Reese, Tim and He, Yang and Zhu, Michael},
+  author       = {Zhang, Yuyue and Reese, Timothy G and He, Yang and Zhu, Michael},
   year         = {2026},
   version      = {1.0.1},
   doi          = {10.5281/zenodo.24448101},

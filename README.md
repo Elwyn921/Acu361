@@ -160,7 +160,7 @@ If you use Acu361, please cite it:
 ```bibtex
 @misc{acu361,
   title        = {{Acu361}: Precise, Expert-Consensus Locations of the 361 {WHO} Standard Acupoints},
-  author       = {Zhang, Yuyue and Reese, Tim and He, Yang and Zhu, Michael},
+  author       = {Zhang, Yuyue and Reese, Timothy G and He, Yang and Zhu, Michael},
   year         = {2026},
   version      = {1.0.1},
   doi          = {10.5281/zenodo.24448101},

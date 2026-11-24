@@ -21,7 +21,7 @@ const tokens: Record<string, string> = {
 };
 for (const [p, b] of bytes) tokens[`SIZE:${p}`] = size(b);
 
-const authors = ['Yuyue Zhang', 'Tim Reese', 'Yang He', 'Michael Zhu'];
+const authors = ['Yuyue Zhang', 'Timothy G Reese', 'Yang He', 'Michael Zhu'];
 const lab = { '@type': 'Organization', name: 'Human Motion & Molecular Health Lab, Department of Statistics, Purdue University', url: LAB_URL };
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -59,7 +59,7 @@ const jsonLd = {
     { '@type': 'Dataset', name: 'BodyParts3D', url: 'https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html', license: 'https://creativecommons.org/licenses/by-sa/2.1/jp/' },
     { '@type': 'Book', name: 'WHO Standard Acupuncture Point Locations in the Western Pacific Region', isbn: '978-92-9061-248-7', datePublished: '2008', publisher: { '@type': 'Organization', name: 'World Health Organization Regional Office for the Western Pacific' } },
   ],
-  citation: `Zhang Y, Reese T, He Y, Zhu M. ${TITLE}. Version ${VERSION}. ${YEAR}. ${REPO_URL}`,
+  citation: `Zhang Y, Reese TG, He Y, Zhu M. ${TITLE}. Version ${VERSION}. ${YEAR}. ${REPO_URL}`,
 };
 tokens.JSON_LD = JSON.stringify(jsonLd, null, 1).replace(/</g, '\\u003c');
 
