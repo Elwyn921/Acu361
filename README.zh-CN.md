@@ -18,6 +18,7 @@
   <a href="#文件">数据</a> ·
   <a href="#快速上手">快速上手</a> ·
   <a href="#引用">引用</a> ·
+  <a href="https://huggingface.co/datasets/EWAN921/Acu361">Hugging Face</a> ·
   <a href="README.md">English</a>
 </p>
 

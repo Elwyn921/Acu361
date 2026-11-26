@@ -4,6 +4,8 @@
 
 - Website and 3D explorer: {{SITE_URL}}
 - Repository (all files, schemas, validator): {{REPO_URL}}
+- DOI (all versions): https://doi.org/10.5281/zenodo.24448101
+- Hugging Face mirror: https://huggingface.co/datasets/EWAN921/Acu361
 - Authors: Yuyue Zhang (corresponding, {{CONTACT_EMAIL}}), Timothy G Reese, Yang He, Michael Zhu; Human Motion & Molecular Health Lab, Department of Statistics, Purdue University ({{LAB_URL}})
 - A point can be linked directly: {{SITE_URL}}#LU7_L opens the explorer at Lieque (LU7), left side.
 

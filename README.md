@@ -18,6 +18,7 @@
   <a href="#files">Data</a> ·
   <a href="#quick-start">Quick start</a> ·
   <a href="#citation">Cite</a> ·
+  <a href="https://huggingface.co/datasets/EWAN921/Acu361">Hugging Face</a> ·
   <a href="README.zh-CN.md">中文</a>
 </p>
 
